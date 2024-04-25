@@ -7,5 +7,8 @@ sdk default java 8.0.412-zulu
 chmod +x ./startturnel.sh
 ./startturnel.sh
 #
+chmod +x ./online.sh
+./online.sh
+#
 chmod +x ./startserver.sh
 ./startserver.sh
