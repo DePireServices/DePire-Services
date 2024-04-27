@@ -1,0 +1,1357 @@
+{
+	id: "4463D2C6B833C4B8"
+	group: ""
+	order_index: 3
+	filename: "astral_reaching_the_star"
+	title: "&l&1[Astral]&r&9 SaO"
+	icon: "astralsorcery:tome"
+	subtitle: ["Trèo Cao :D"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Astral Socery"
+			icon: "astralsorcery:tome"
+			x: 1.0d
+			y: -4.0d
+			shape: "octagon"
+			size: 3.0d
+			id: "589378CF99845EC7"
+			tasks: [
+				{
+					id: "13A80C5D1D499D02"
+					type: "item"
+					item: "astralsorcery:tome"
+				}
+				{
+					id: "407A1C360C24352C"
+					type: "checkmark"
+					title: "Viết Lên Lịch Sử Của Bạn Trong Rise oF KinGDoM"
+				}
+			]
+			rewards: [
+				{
+					id: "11FBAD3744A934CA"
+					type: "item"
+					title: "[Thạch]"
+					item: "astralsorcery:marble_raw"
+					count: 16
+				}
+				{
+					id: "099C9CF5CC893A36"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Thạch I"
+			icon: "astralsorcery:marble_raw"
+			x: -2.0d
+			y: -2.0d
+			shape: "pentagon"
+			subtitle: "ko dành để xây nhà đâu"
+			description: ["Đừng nói với tui là định xài đá này để xây nhà"]
+			dependencies: [
+				"2C1AA4D6F1595E7B"
+				"589378CF99845EC7"
+			]
+			dependency_requirement: "one_completed"
+			id: "20A5D7024A84209E"
+			tasks: [
+				{
+					id: "39DB37230EAB8FB3"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+				{
+					id: "3029D5687D3E681F"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "310861B6476078FF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Thạch II"
+			icon: "astralsorcery:aquamarine_sand_ore"
+			x: -6.0d
+			y: -2.0d
+			shape: "pentagon"
+			subtitle: "Băng?"
+			description: ["Băng Thể :D"]
+			dependencies: [
+				"20A5D7024A84209E"
+				"336ADDE4E1D48A43"
+			]
+			dependency_requirement: "one_completed"
+			id: "51BB4310B7B1CDB1"
+			tasks: [{
+				id: "21F87E279B323199"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+				count: 12L
+			}]
+			rewards: [{
+				id: "657B40E4588246FB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Đây Là Rất Thạch"
+			icon: "astralsorcery:rock_crystal_ore"
+			x: -7.0d
+			y: -5.5d
+			shape: "pentagon"
+			subtitle: "Đẹp?"
+			description: ["Nhưng cũng ko phế :D"]
+			dependencies: [
+				"20A5D7024A84209E"
+				"51BB4310B7B1CDB1"
+				"5B8A7394AE011479"
+				"336ADDE4E1D48A43"
+			]
+			dependency_requirement: "one_completed"
+			id: "2DA5E3BF2E9DBB77"
+			tasks: [{
+				id: "63716CD9982806AE"
+				type: "item"
+				item: {
+					id: "astralsorcery:rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "2EBB2D49A3EB34B8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Máy Dò [Rất Thạch]"
+			x: -3.9d
+			y: -7.5d
+			shape: "pentagon"
+			dependencies: [
+				"20A5D7024A84209E"
+				"51BB4310B7B1CDB1"
+				"336ADDE4E1D48A43"
+			]
+			dependency_requirement: "one_completed"
+			id: "5B8A7394AE011479"
+			tasks: [{
+				id: "4148164FB1DA3221"
+				type: "item"
+				item: {
+					id: "astralsorcery:resonator"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							upgrades: [0]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "55E3252D2ABC719C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2848BE63B42A8FD1"
+					type: "loot"
+					title: "Skill Kích Hoạt "
+					table_id: 6603143157456595385L
+				}
+				{
+					id: "157756773F5D22D3"
+					type: "loot"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Sao"
+			x: -1.0d
+			y: -5.5d
+			shape: "pentagon"
+			subtitle: "Crafting Table xịn :))"
+			dependencies: [
+				"20A5D7024A84209E"
+				"589378CF99845EC7"
+			]
+			dependency_requirement: "one_completed"
+			id: "336ADDE4E1D48A43"
+			tasks: [{
+				id: "1460C4E00286AB3A"
+				type: "item"
+				item: "astralsorcery:altar_discovery"
+			}]
+			rewards: [
+				{
+					id: "426D99383DB6C9D5"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "354CFC19E6F3BAA6"
+					type: "loot"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "AHHHHHHH"
+			x: 1.0d
+			y: 4.5d
+			shape: "octagon"
+			subtitle: "cơ bản"
+			dependencies: [
+				"589378CF99845EC7"
+				"6638DDAC2C45DFD1"
+				"20A5D7024A84209E"
+			]
+			dependency_requirement: "one_completed"
+			id: "2958A68CF2073953"
+			tasks: [{
+				id: "6ED2F66026FF62F2"
+				type: "item"
+				item: "astralsorcery:wand"
+			}]
+			rewards: [
+				{
+					id: "1175191333E1587A"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+				{
+					id: "5094846CCD73BCE1"
+					type: "loot"
+					table_id: 6603143157456595385L
+				}
+				{
+					id: "7565A706BEB228E5"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Sao II"
+			x: 3.0d
+			y: -5.5d
+			shape: "hexagon"
+			subtitle: "Sao Xịn"
+			dependencies: [
+				"336ADDE4E1D48A43"
+				"589378CF99845EC7"
+			]
+			dependency_requirement: "one_completed"
+			id: "571338C8F67722B3"
+			tasks: [{
+				id: "7FB144A7E6B93A1D"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+			rewards: [
+				{
+					id: "42D5A1C7CC2B2CAC"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "1C8987008791BF7F"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Len"
+			icon: "minecraft:white_wool"
+			x: 4.0d
+			y: 0.0d
+			subtitle: "Need a shear"
+			description: ["for nothing"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "32E3B95FF35DE02D"
+			tasks: [{
+				id: "2842201DF3C03B65"
+				type: "item"
+				item: {
+					id: "astralsorcery:lens"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1B6A5AC10BC31B3F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "014FA03B924149E4"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "FEm(???)n"
+			x: -6.5d
+			y: 0.0d
+			subtitle: "Fe + Ánh Sáng ---> Fem(???)n + méo bt"
+			dependencies: ["32E3B95FF35DE02D"]
+			dependency_requirement: "one_completed"
+			id: "341A669C3DEA8BBD"
+			tasks: [{
+				id: "4AFEF4B1FDBE6D09"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+			rewards: [
+				{
+					id: "1B1DB816117B35BC"
+					type: "choice"
+					table_id: 1212758161558160075L
+				}
+				{
+					id: "0439E4E89486BCD3"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Rất [Sao]"
+			x: 7.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"571338C8F67722B3"
+				"2D73733FD7FA52D0"
+				"6FD3F76F39E94BC9"
+				"3A98CDAE7190EEF3"
+				"6638DDAC2C45DFD1"
+			]
+			dependency_requirement: "one_completed"
+			id: "10840D95F7913E0A"
+			tasks: [{
+				id: "1B2ED07AED8B4200"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1BD5A322A7B5BF54"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "2A58EC8B10A69C1E"
+					type: "choice"
+					icon: "ars_nouveau:archwood_chest"
+					table_id: 5357984676897664128L
+				}
+				{
+					id: "40E4C5B11308CA70"
+					type: "random"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Sao III"
+			x: 7.0d
+			y: -8.0d
+			shape: "hexagon"
+			subtitle: "Xiao Xịn"
+			dependencies: ["571338C8F67722B3"]
+			dependency_requirement: "one_completed"
+			id: "2D73733FD7FA52D0"
+			tasks: [{
+				id: "1836706F82878980"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+			rewards: [
+				{
+					id: "35B8DA83CC77DADE"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "06EEEC1E64BAAB15"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Sao IV"
+			x: 11.0d
+			y: -5.5d
+			shape: "hexagon"
+			subtitle: "YaoYao vô cùng xịn"
+			dependencies: [
+				"2D73733FD7FA52D0"
+				"571338C8F67722B3"
+				"336ADDE4E1D48A43"
+			]
+			dependency_requirement: "one_completed"
+			id: "3A98CDAE7190EEF3"
+			tasks: [{
+				id: "147B9D9A4BD212D8"
+				type: "item"
+				item: "astralsorcery:altar_constellation"
+			}]
+			rewards: [
+				{
+					id: "7F6EE1CA8B11A63E"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "249555691B168720"
+					type: "choice"
+					icon: "ars_nouveau:archwood_chest"
+					table_id: 5357984676897664128L
+				}
+			]
+		}
+		{
+			title: "Sao V"
+			x: 11.0d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "UUUUUUUUUUUUUUUUUUUUU"
+			dependencies: [
+				"571338C8F67722B3"
+				"2D73733FD7FA52D0"
+				"3A98CDAE7190EEF3"
+			]
+			dependency_requirement: "one_completed"
+			id: "6FD3F76F39E94BC9"
+			tasks: [{
+				id: "60AD2212E4194D10"
+				type: "item"
+				item: "astralsorcery:altar_radiance"
+			}]
+			rewards: [
+				{
+					id: "34EE4F873A1F0082"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2E1F10EFF2C2CB55"
+					type: "choice"
+					icon: "ars_nouveau:archwood_chest"
+					table_id: 5357984676897664128L
+				}
+			]
+		}
+		{
+			title: "Sao VI"
+			x: 3.0d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "Lmouse"
+			dependencies: [
+				"6FD3F76F39E94BC9"
+				"3A98CDAE7190EEF3"
+				"2D73733FD7FA52D0"
+				"571338C8F67722B3"
+				"589378CF99845EC7"
+				"2958A68CF2073953"
+			]
+			dependency_requirement: "one_completed"
+			id: "6638DDAC2C45DFD1"
+			tasks: [{
+				id: "1D3C8E968D7D2A2F"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+			rewards: [
+				{
+					id: "308B12ABDEE55D67"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "48F62E40FE8CBC71"
+					type: "choice"
+					icon: "ars_nouveau:archwood_chest"
+					table_id: 5357984676897664128L
+				}
+			]
+		}
+		{
+			title: "Thấu Thị I"
+			x: -4.0d
+			y: -1.0d
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "70EE830E10D92181"
+			tasks: [{
+				id: "278986C6088EB258"
+				type: "item"
+				item: "astralsorcery:hand_telescope"
+			}]
+			rewards: [
+				{
+					id: "7571B33BBD8DABD6"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "3E9F4254357E2B8D"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+				{
+					id: "0739481CE6D22D8F"
+					type: "command"
+					title: "Skill Kích Hoạt : Thấu Thị"
+					icon: "iceandfire:cockatrice_eye"
+					command: "/effect give @a minecraft:blindness 300 25"
+					player_command: false
+				}
+				{
+					id: "21823BFC6583A5EF"
+					type: "random"
+					title: "Skill Kích Hoạt"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Thấu Thị II"
+			x: -11.5d
+			y: -1.0d
+			dependencies: ["70EE830E10D92181"]
+			dependency_requirement: "one_completed"
+			id: "2D6FF123AF035B39"
+			tasks: [{
+				id: "0B76B5938E471375"
+				type: "item"
+				item: "astralsorcery:telescope"
+			}]
+			rewards: [
+				{
+					id: "7EC50A7EEBBE8095"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "107C2F8204EA7B63"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Thấu Thị Extra"
+			x: -21.0d
+			y: -1.0d
+			dependencies: ["2D6FF123AF035B39"]
+			dependency_requirement: "one_completed"
+			id: "1B29F2B0F569EF47"
+			tasks: [{
+				id: "5FBBE55CA0F6784D"
+				type: "item"
+				item: "astralsorcery:observatory"
+			}]
+			rewards: [
+				{
+					id: "3A5D291006BF6189"
+					type: "choice"
+					icon: "ars_nouveau:archwood_chest"
+					table_id: 5357984676897664128L
+				}
+				{
+					id: "7B0FA8D6CDC7C5FE"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			title: "Tạp"
+			x: 6.0d
+			y: 2.0d
+			subtitle: "chịu"
+			description: ["ko biết đâu"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "63D7BBDED1F23ED1"
+			tasks: [{
+				id: "7D2187C13E62A3D6"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_gateway"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "52D3134B68A7DD40"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0BD378E9A64F828B"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Rất [Sao]"
+			x: 2.5d
+			y: 8.0d
+			subtitle: "sao?"
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "4E97C97BD3B8B318"
+			tasks: [{
+				id: "0D57B5EAF1DAD868"
+				type: "item"
+				item: "astralsorcery:shifting_star"
+			}]
+			rewards: [
+				{
+					id: "424935B948C9D825"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4283413D48FB7592"
+					type: "choice"
+					icon: "ars_nouveau:archwood_chest"
+					table_id: 5357984676897664128L
+				}
+				{
+					id: "703BB6B41796FD7E"
+					type: "loot"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Sao???"
+			x: 7.0d
+			y: 11.5d
+			subtitle: "Chỉ là sao"
+			dependencies: ["4E97C97BD3B8B318"]
+			dependency_requirement: "one_completed"
+			id: "3438ACB0F2400920"
+			tasks: [{
+				id: "26D5B451EB3B0893"
+				type: "item"
+				item: "astralsorcery:shifting_star_aevitas"
+			}]
+			rewards: [
+				{
+					id: "51EBA3FF857A5EFA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5A1E057E57699C4C"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Sao???"
+			x: 3.0d
+			y: 11.5d
+			subtitle: "Chỉ là sao"
+			dependencies: ["4E97C97BD3B8B318"]
+			dependency_requirement: "one_completed"
+			id: "4F2C5BADC850C6EB"
+			tasks: [{
+				id: "395F134CED3ACBE6"
+				type: "item"
+				item: "astralsorcery:shifting_star_armara"
+			}]
+			rewards: [
+				{
+					id: "06BF5AA2FCBEF938"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6D069B54CCA7E566"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Sao???"
+			x: 0.5d
+			y: 9.5d
+			subtitle: "Chỉ là sao"
+			dependencies: ["4E97C97BD3B8B318"]
+			dependency_requirement: "one_completed"
+			id: "3B7AC5B6C7DDB362"
+			tasks: [{
+				id: "3627406162EFCFA8"
+				type: "item"
+				item: "astralsorcery:shifting_star_discidia"
+			}]
+			rewards: [
+				{
+					id: "6E4ECB163C9EA8D2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2F368005680C1594"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Sao???"
+			x: 5.0d
+			y: 12.0d
+			subtitle: "Chỉ là sao"
+			dependencies: ["4E97C97BD3B8B318"]
+			dependency_requirement: "one_completed"
+			id: "3E99D7D6F0FDB7F5"
+			tasks: [{
+				id: "2FED5652CB1B4752"
+				type: "item"
+				item: "astralsorcery:shifting_star_evorsio"
+			}]
+			rewards: [
+				{
+					id: "5E813159560BF48C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6ECA906576C32BA2"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Sao???"
+			x: 1.5d
+			y: 10.5d
+			subtitle: "Chỉ là sao"
+			dependencies: ["4E97C97BD3B8B318"]
+			dependency_requirement: "one_completed"
+			id: "162CBB9ADCE5949A"
+			tasks: [{
+				id: "57E57B4C266ED2DC"
+				type: "item"
+				item: "astralsorcery:shifting_star_vicio"
+			}]
+			rewards: [
+				{
+					id: "06223ACBF602E085"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "33805E3A31301876"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "[Pulse] Hàng Hiệu"
+			x: 8.5d
+			y: 10.5d
+			subtitle: "[Enchant vjp]"
+			dependencies: ["4E97C97BD3B8B318"]
+			dependency_requirement: "one_completed"
+			id: "1C66818FD751E883"
+			tasks: [{
+				id: "65DC7B352A36ADA0"
+				type: "item"
+				item: {
+					id: "astralsorcery:enchantment_amulet"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "578F603D031672BD"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "2915C11B0BF0F0B3"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+				{
+					id: "1284B9575C9C7459"
+					type: "loot"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Hoá?"
+			x: 6.5d
+			y: 4.0d
+			subtitle: "phản ứng kiểu j z"
+			description: ["Req : Hoá?"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "50DD0D8C19FC8895"
+			tasks: [{
+				id: "057484EA1322D82C"
+				type: "item"
+				item: "astralsorcery:infuser"
+			}]
+			rewards: [
+				{
+					id: "3557D0B27AA9FA85"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7C17828A9AFC07DB"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "#Tế"
+			x: 6.5d
+			y: 5.0d
+			subtitle: "Zz"
+			description: ["Cúng tí"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "69F2A6D243A2F325"
+			tasks: [{
+				id: "0331BF325010D6F7"
+				type: "item"
+				item: "astralsorcery:ritual_pedestal"
+			}]
+			rewards: [
+				{
+					id: "107FC141CA4BB952"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5423E815AA6326E8"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Cường Hoá nè"
+			x: 6.0d
+			y: 6.0d
+			subtitle: "Cơ bản là z"
+			description: ["Chỉ là cường hoá!!!"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "6C3E21620F3D4F62"
+			tasks: [{
+				id: "498E536165026004"
+				type: "item"
+				item: "astralsorcery:refraction_table"
+			}]
+			rewards: [
+				{
+					id: "6BE5552AD58E878C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "79E2506C0ECE1335"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "zZ_Torch_Zz"
+			x: 6.5d
+			y: 3.0d
+			subtitle: "Đuốc"
+			description: ["Đuốc xịn luôn"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "0A77AD92FB5EA8BC"
+			tasks: [{
+				id: "7B9C81E1F0FCDB74"
+				type: "item"
+				item: "astralsorcery:illuminator"
+			}]
+			rewards: [
+				{
+					id: "58F3F4C93FB0E142"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "75DB37E305A29486"
+					type: "loot"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Beacon 2.0"
+			x: 5.0d
+			y: 1.0d
+			description: ["Đèn Hiệu Cây hay Cây Đèn Hiệu hay Hiệu Đèn Cây hay Cây Hiệu Đèn Hay Đèn Cây Hiệu hay Hiệu Cây Đèn ..."]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "711DE75099292311"
+			tasks: [{
+				id: "65F05F972A0C9138"
+				type: "item"
+				item: "astralsorcery:tree_beacon"
+			}]
+			rewards: [
+				{
+					id: "432A344468283AE4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "688CD8ACF84B1C4E"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "[Extra]"
+			x: 5.0d
+			y: 7.0d
+			subtitle: "More?"
+			description: ["Nhiều Quá!!!!"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "4C5810715C49BFC8"
+			tasks: [{
+				id: "3EF9AFEDA15ECAED"
+				type: "item"
+				item: "astralsorcery:fountain"
+			}]
+			rewards: [
+				{
+					id: "3718193FE1A3D95D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1BC515A1A8F91893"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+				{
+					id: "435C3B8E75FFDF7A"
+					type: "random"
+					title: "Skill Kích Hoạt"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Đoán xem là j"
+			x: -15.5d
+			y: 0.0d
+			subtitle: "Đã bảo đoán"
+			description: ["Sao ko đoán"]
+			dependencies: ["341A669C3DEA8BBD"]
+			dependency_requirement: "one_completed"
+			id: "4988A23F28912FB7"
+			tasks: [{
+				id: "7648AF6710F421C4"
+				type: "item"
+				item: "astralsorcery:stardust"
+			}]
+			rewards: [
+				{
+					id: "2181E4837DDD0F9F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "3CDA0FB1FB283D67"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "RePel them"
+			x: 10.0d
+			y: 9.5d
+			subtitle: "done"
+			dependencies: ["4C5810715C49BFC8"]
+			dependency_requirement: "one_completed"
+			id: "2A7D0DD8A70F98E6"
+			tasks: [{
+				id: "60EFC93E4BCC6879"
+				type: "item"
+				item: "astralsorcery:fountain_prime_liquid"
+			}]
+			rewards: [
+				{
+					id: "2E44B5A1EEC316AB"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "479679B930878DEC"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Rất"
+			x: 11.0d
+			y: 8.0d
+			subtitle: "Dư thừa"
+			dependencies: ["4C5810715C49BFC8"]
+			dependency_requirement: "one_completed"
+			id: "2ACB1A650B4869BD"
+			tasks: [{
+				id: "4B8EF074C3CBF9B2"
+				type: "item"
+				item: "astralsorcery:fountain_prime_vortex"
+			}]
+			rewards: [
+				{
+					id: "34432B3ADDB8008A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "42C5C9772ADA429B"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Dư"
+			x: 11.5d
+			y: 6.5d
+			subtitle: "Thừa"
+			description: ["Lắm"]
+			dependencies: ["4C5810715C49BFC8"]
+			dependency_requirement: "one_completed"
+			id: "597FC213EAA46DB1"
+			tasks: [{
+				id: "66BDD4361568141D"
+				type: "item"
+				item: "astralsorcery:fountain_prime_ore"
+			}]
+			rewards: [
+				{
+					id: "73C33A361D06D603"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "584DD3123B9C402E"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Đuốc á"
+			x: -1.5d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "Đuốc nè"
+			description: ["Là đuốc hoi"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_started"
+			id: "3AC55E87A8F624A6"
+			tasks: [{
+				id: "118810EADCA60720"
+				type: "item"
+				item: {
+					id: "astralsorcery:illumination_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4A466AE0C1AEF7A6"
+					type: "random"
+					title: "[Astral] Random Extra Loot"
+					icon: "ars_nouveau:archwood_chest"
+					table_id: 5357984676897664128L
+				}
+				{
+					id: "6FD5365B50220AE9"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "785F876D7E3392F6"
+					type: "random"
+					title: "Skill Kích Hoạt"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Gậy."
+			x: -3.5d
+			y: 0.5d
+			shape: "diamond"
+			subtitle: "ko có review đâu"
+			description: ["làm đi rồi xài ;d"]
+			dependencies: [
+				"12D6F0155884E42C"
+				"07A45779579FA602"
+				"3AC55E87A8F624A6"
+			]
+			dependency_requirement: "one_started"
+			id: "4FFABAF2BA604750"
+			tasks: [{
+				id: "6D8926F51D22CAB3"
+				type: "item"
+				item: {
+					id: "astralsorcery:architect_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "39B617E3B8004C29"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "6A29D07318AA4B21"
+					type: "loot"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+		{
+			title: "Nhìn Xuống"
+			x: -13.5d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "Nhìn Lên"
+			description: ["Đừng Nhìn"]
+			dependencies: ["3AC55E87A8F624A6"]
+			dependency_requirement: "one_started"
+			id: "07A45779579FA602"
+			tasks: [{
+				id: "6553DAAB0E63C1AF"
+				type: "item"
+				item: {
+					id: "astralsorcery:exchange_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5064C998564FC4F1"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+				{
+					id: "1F1B47EB603B0328"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "69EC38A02DF34E2C"
+					type: "random"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Kăng"
+			x: -3.5d
+			y: 8.5d
+			shape: "diamond"
+			subtitle: "Uầy Kinh"
+			description: ["Gậy Này Xài Đi rồi biết =))"]
+			dependencies: [
+				"3AC55E87A8F624A6"
+				"4FFABAF2BA604750"
+				"07A45779579FA602"
+			]
+			dependency_requirement: "one_started"
+			id: "12D6F0155884E42C"
+			tasks: [{
+				id: "1AC388452FF687C5"
+				type: "item"
+				item: "astralsorcery:grapple_wand"
+			}]
+			rewards: [
+				{
+					id: "6096789D980646ED"
+					type: "random"
+					title: "[Astral] Random Extra Loot"
+					icon: "ars_nouveau:archwood_chest"
+					table_id: 1212758161558160075L
+				}
+				{
+					id: "266721CD1C5A933C"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "Link đâu"
+			x: -3.5d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "Linhali"
+			description: ["Link j?"]
+			dependencies: ["2958A68CF2073953"]
+			dependency_requirement: "one_completed"
+			id: "4B5DC5AB4F690A08"
+			tasks: [{
+				id: "57409EFE16BA0515"
+				type: "item"
+				item: "astralsorcery:linking_tool"
+			}]
+			rewards: [
+				{
+					id: "7CB173975DD15F41"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6E83295529AD4FD7"
+					type: "random"
+					title: "[Astral] Random Loot"
+					icon: "astralsorcery:shifting_star"
+					table_id: 1212758161558160075L
+				}
+			]
+		}
+	]
+}

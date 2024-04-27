@@ -1,0 +1,219 @@
+{
+	id: "1BA795DBA9F56D28"
+	group: ""
+	order_index: 14
+	filename: "the_abyss_v_nh_o"
+	title: "&l&0[The Abyss] &r&9Vô Định ඞ"
+	icon: "theabyss:eye_of_abyss"
+	subtitle: ["Thao Túng Hay Bị Thao Túng?"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "[-=&l&0T&kh&re &b&kAb&ry&kss&r=-]"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "theabyss:abyssbookitem"
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			subtitle: "<&mu&r&knk&rn&ko&rw&ln&r>"
+			dependency_requirement: "one_completed"
+			id: "2458B04E4D52A96D"
+			tasks: [{
+				id: "036779AAB6722235"
+				type: "checkmark"
+				title: "&0De&kep&l D&lả&kk? &bD&ne&k&nep&r&ce&lr!&ki!"
+			}]
+			rewards: [{
+				id: "4CE2A1E79B7D4156"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "\"&k???&r\""
+			x: 3.0d
+			y: 5.0d
+			subtitle: "Call of The &k&mDepth"
+			description: ["&k||Buzz||rudiytfgkmorudiytfgkmorudiytfgkmorudiytfgkmorudiytfgkmorudiytfgkmorudiytfgkmorudiytfgkmorudiytfgkưqfasfsf"]
+			dependencies: ["2458B04E4D52A96D"]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "42A0285DC3E095F8"
+			tasks: [{
+				id: "44CDB1D0E88183F5"
+				type: "dimension"
+				title: "???"
+				icon: "theabyss:broken_radio"
+				dimension: "theabyss:radio"
+			}]
+			rewards: [{
+				id: "7983CD87C287B493"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "&k&b?Mana?"
+			icon: "theabyss:loran"
+			x: 6.0d
+			y: 5.0d
+			subtitle: "&k&bMag&r&cic?&kSome t&r&bhing ju&k&2st l&k&like &r&5thi&ks?"
+			dependencies: ["42A0285DC3E095F8"]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "1597F43058B6CBA4"
+			tasks: [{
+				id: "13FE64424138EE1E"
+				type: "item"
+				item: "theabyss:loran"
+			}]
+			rewards: [{
+				id: "7E644CD44F99A59D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "&c&k&mFlint And Steel"
+			x: 6.0d
+			y: 8.7d
+			dependencies: ["1597F43058B6CBA4"]
+			dependency_requirement: "one_completed"
+			id: "24E3B84FB00E076A"
+			tasks: [{
+				id: "106AE630B6276FAA"
+				type: "item"
+				item: {
+					id: "theabyss:the_abyss"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "50711CBC78A4A15B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "&c&kưqw;rhqiruqiw"
+			x: 8.0d
+			y: 11.0d
+			dependencies: ["1597F43058B6CBA4"]
+			dependency_requirement: "one_completed"
+			id: "40013B70B4EDA82C"
+			tasks: [{
+				id: "139B4822C57C488E"
+				type: "item"
+				item: "theabyss:unstable_obsidian"
+				count: 10L
+			}]
+			rewards: [{
+				id: "19B5EE47E800A227"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Th&ke &r&c&kAbyss"
+			x: 3.0d
+			y: 11.0d
+			dependencies: [
+				"42A0285DC3E095F8"
+				"40013B70B4EDA82C"
+				"24E3B84FB00E076A"
+				"2D06F835E497FB65"
+			]
+			dependency_requirement: "one_completed"
+			size: 2.5d
+			id: "4B9B798A824E8636"
+			tasks: [{
+				id: "6A6E70CCF6AB82C0"
+				type: "dimension"
+				icon: "theabyss:eye_of_abyss"
+				dimension: "theabyss:the_abyss"
+			}]
+			rewards: [{
+				id: "762D3E349623AFE1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "&k&bKhô&r&0ng &kỔn &m&kMột &k&9Tí N&rào"
+			icon: "theabyss:stripped_blaru_log"
+			x: 0.0d
+			y: 8.7d
+			dependency_requirement: "one_completed"
+			id: "2D06F835E497FB65"
+			tasks: [{
+				id: "2B130256FC053C6C"
+				type: "advancement"
+				advancement: "theabyss:strange_rem_phases"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2A84FF479803FB40"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "&3Freezing Key"
+			x: 6.0d
+			y: 15.0d
+			dependencies: ["4B9B798A824E8636"]
+			dependency_requirement: "one_completed"
+			id: "4D16BDD4BE485B8F"
+			tasks: [{
+				id: "26EA04B7721A0D77"
+				type: "item"
+				item: {
+					id: "theabyss:frost_world"
+					Count: 1b
+					tag: {
+						Damage: 0
+						AS_Amulet_Holder: [I;
+							1483367895
+							-856933047
+							-1715678475
+							592429842
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1E27C7E283CFDE03"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "&1Cold D: &bsO c&boLD&k||"
+			icon: "iceandfire:dread_portal"
+			x: 6.0d
+			y: 18.599999999999998d
+			dependencies: ["4D16BDD4BE485B8F"]
+			dependency_requirement: "one_completed"
+			id: "73FD974595EE6FF3"
+			tasks: [{
+				id: "57F9DF0089CCEB1F"
+				type: "dimension"
+				icon: "iceandfire:dread_portal"
+				dimension: "theabyss:frost_world"
+			}]
+			rewards: [{
+				id: "1B8EE2C15801D714"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+}

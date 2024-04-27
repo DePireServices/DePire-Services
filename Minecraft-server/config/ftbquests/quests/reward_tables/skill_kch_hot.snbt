@@ -1,0 +1,110 @@
+{
+	id: "5BA313B77D4069B9"
+	order_index: 3
+	title: "Skill Kích Hoạt "
+	loot_size: 1
+	rewards: [
+		{
+			title: "Skill Kích Hoạt : Băng Thể"
+			icon: "minecraft:packed_ice"
+			command: "/effect give @a mowziesmobs:frozen 120 5"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : Vô Xâm"
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			command: "/effect give @a minecraft:mining_fatigue 120 25"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : WTF???"
+			icon: "artifacts:mimic_spawn_egg"
+			command: "/effect give @a cataclysm:stun 200 25"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : Ko có j hết"
+			icon: "minecraft:rotten_flesh"
+			command: "/effect give @a minecraft:hunger 100 255"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : Súc Sinh ௹"
+			icon: "byg:green_apple"
+			command: "/effect give @a minecraft:nausea 100 25"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : Phục Sinh"
+			icon: "cyclic:heart"
+			command: "/effect give @a minecraft:regeneration 100 255"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : Bào Mòn"
+			icon: "scalinghealth:cursed_heart"
+			command: "/effect give @a minecraft:wither 100 5"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : Đào ko chậm"
+			icon: {
+				id: "minecraft:golden_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			command: "/effect give @a minecraft:haste 100 25"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : Bất Tử [o]"
+			icon: "minecraft:nether_star"
+			command: "/effect give @r theabyss:immortal 50 25"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "Skill Kích Hoạt : Cao cả"
+			icon: {
+				id: "minecraft:elytra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			command: "/effect give @r minecraft:levitation 50 125"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "WTF"
+			icon: "minecraft:crimson_nylium"
+			command: "/effect give @a cataclysm:stun 200 25"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "WTF"
+			icon: "minecraft:crimson_nylium"
+			command: "/effect give @a cataclysm:stun 200 25"
+			player_command: false
+			type: "command"
+		}
+	]
+}

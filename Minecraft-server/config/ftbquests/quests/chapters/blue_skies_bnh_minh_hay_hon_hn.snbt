@@ -1,0 +1,506 @@
+{
+	id: "66A520D3D845D1A5"
+	group: ""
+	order_index: 13
+	filename: "blue_skies_bnh_minh_hay_hon_hn"
+	title: "&l&9[Blue Skies] &r&5Dream?"
+	icon: "blue_skies:star_flare"
+	subtitle: ["Time?Stopped!!"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Đã Nhận Ra?"
+			icon: "blue_skies:star_flare"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Mai về cũng được!!!"
+			description: ["Mai?"]
+			dependency_requirement: "one_completed"
+			id: "50FA7519F350EE26"
+			tasks: [{
+				id: "31F9A71359F06172"
+				type: "checkmark"
+				title: "Forever??"
+			}]
+		}
+		{
+			title: "[Mãi Mãi]"
+			x: -5.0d
+			y: -5.0d
+			subtitle: "-=[kotheketthuc]=-"
+			dependencies: ["50FA7519F350EE26"]
+			dependency_requirement: "one_completed"
+			id: "733EFE881E4CC5B1"
+			tasks: [{
+				id: "2899DBAE2E2998E1"
+				type: "dimension"
+				title: "Dawn Forever?"
+				icon: "blue_skies:everdawn_portal"
+				dimension: "blue_skies:everdawn"
+			}]
+			rewards: [
+				{
+					id: "59996E40E309D19A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "037C48FC6A7604E6"
+					type: "loot"
+					title: "Thích Nghi"
+					auto: "enabled"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "[Mãi Mãi]"
+			icon: "blue_skies:everbright_portal"
+			x: 5.0d
+			y: 5.0d
+			subtitle: "-=[kotheketthuc]=-"
+			description: [""]
+			dependencies: ["50FA7519F350EE26"]
+			dependency_requirement: "one_completed"
+			id: "7FFF439E7CC30128"
+			tasks: [{
+				id: "6C14F1B57BD844C7"
+				type: "dimension"
+				icon: "blue_skies:everbright_portal"
+				dimension: "blue_skies:everdawn"
+			}]
+			rewards: [
+				{
+					id: "42AB4051A1B56E1D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "118DF3DE76909C04"
+					type: "random"
+					title: "Thích Nghi Đi"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "!i"
+			x: -5.0d
+			y: -10.0d
+			subtitle: "kocojhet"
+			dependencies: ["733EFE881E4CC5B1"]
+			dependency_requirement: "one_completed"
+			id: "26E7DCFB8754F2D7"
+			tasks: [{
+				id: "017ADBEEBB1D782D"
+				type: "advancement"
+				advancement: "blue_skies:everdawn/poison_shroom"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3466EE9301526EFD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "New Dawn?"
+			x: -10.0d
+			y: -5.0d
+			dependencies: ["733EFE881E4CC5B1"]
+			dependency_requirement: "one_completed"
+			id: "0729927CE962B174"
+			tasks: [{
+				id: "558298E236445978"
+				type: "advancement"
+				advancement: "blue_skies:everdawn/get_wood"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "4EC44436918D001B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Albedo!!!"
+			x: -9.0d
+			y: -9.0d
+			subtitle: "Sussy?"
+			dependencies: [
+				"0729927CE962B174"
+				"26E7DCFB8754F2D7"
+				"733EFE881E4CC5B1"
+			]
+			dependency_requirement: "one_completed"
+			id: "20690A6B5F1FB985"
+			tasks: [{
+				id: "12BCD08C4B8CE5AF"
+				type: "advancement"
+				advancement: "blue_skies:everdawn/kill_alchemist"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "14A900C2BE56E8AB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Tri Thức Là Sức Mạnh"
+			x: -15.0d
+			y: -9.0d
+			dependencies: ["20690A6B5F1FB985"]
+			dependency_requirement: "one_completed"
+			id: "1BC232EED7F55B1A"
+			tasks: [{
+				id: "7E1730193154CA5E"
+				type: "advancement"
+				advancement: "blue_skies:everdawn/use_alchemy_table"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "764582CC69FDDCDD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Sức Mạnh Của Tri Thức"
+			x: -20.0d
+			y: -5.0d
+			dependencies: ["1BC232EED7F55B1A"]
+			dependency_requirement: "one_completed"
+			id: "4F0BD4CAFCED2D87"
+			tasks: [{
+				id: "2AFF145000D93E30"
+				type: "advancement"
+				advancement: "blue_skies:everdawn/alchemy_gold"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "47BB262383BEFFCE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Động Bàn Tơ"
+			x: -9.0d
+			y: -15.0d
+			dependencies: ["20690A6B5F1FB985"]
+			dependency_requirement: "one_completed"
+			id: "38DB63891842F088"
+			tasks: [{
+				id: "08FD0927D66F1C78"
+				type: "advancement"
+				advancement: "blue_skies:everdawn/enter_poison_dungeon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "39CCB7EDC5CA197D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "eh?"
+			x: -5.0d
+			y: -20.0d
+			subtitle: "??"
+			dependencies: ["38DB63891842F088"]
+			dependency_requirement: "one_completed"
+			id: "26388D1FC9D6E257"
+			tasks: [{
+				id: "14D8CC6C1FF456C1"
+				type: "advancement"
+				advancement: "blue_skies:everdawn/kill_arachnarch"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "228EB2248DEF65AB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -13.5d
+			y: -13.799999999999999d
+			dependencies: ["20690A6B5F1FB985"]
+			dependency_requirement: "one_completed"
+			id: "3D999C6AA2DDC155"
+			tasks: [{
+				id: "1000D092F7E10CA9"
+				type: "advancement"
+				title: ".Diff."
+				advancement: "blue_skies:everdawn/think_different"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "53EC4A91BFCC3744"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Tương Lai Tươi Séng"
+			x: 5.0d
+			y: 10.0d
+			dependencies: ["7FFF439E7CC30128"]
+			dependency_requirement: "one_completed"
+			id: "30C332171813E2C7"
+			tasks: [{
+				id: "0FCA3A76FF8E3C4C"
+				type: "advancement"
+				advancement: "blue_skies:everbright/get_wood"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "47CB32A9D6E90120"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Tinkơ"
+			x: 10.0d
+			y: 5.0d
+			dependencies: ["7FFF439E7CC30128"]
+			dependency_requirement: "one_completed"
+			id: "318C0A583E9C48EB"
+			tasks: [{
+				id: "2C79F0526D8BF7B0"
+				type: "advancement"
+				advancement: "blue_skies:everbright/use_tool_box"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2139A7F025442815"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Sucrose!i"
+			x: 9.0d
+			y: 9.0d
+			dependencies: [
+				"30C332171813E2C7"
+				"318C0A583E9C48EB"
+				"7FFF439E7CC30128"
+			]
+			dependency_requirement: "one_completed"
+			id: "0E7B5160AF2E3D41"
+			tasks: [{
+				id: "7EEC452E6432760A"
+				type: "advancement"
+				advancement: "blue_skies:everbright/kill_summoner"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3CF859A1B8C9B196"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Tipppp"
+			x: 6.3d
+			y: 6.3d
+			dependencies: [
+				"318C0A583E9C48EB"
+				"30C332171813E2C7"
+			]
+			dependency_requirement: "one_completed"
+			id: "5AE1717883A5B97E"
+			tasks: [{
+				id: "18D55AE1EE46698D"
+				type: "advancement"
+				advancement: "blue_skies:everbright/use_falsite_in_tool_box"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "299EB9EB644FF5F1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "AI"
+			x: 9.299999999999999d
+			y: 15.299999999999999d
+			dependencies: ["0E7B5160AF2E3D41"]
+			dependency_requirement: "one_completed"
+			id: "058918C60F9D8BB9"
+			tasks: [{
+				id: "3561645ABCB442D0"
+				type: "advancement"
+				advancement: "blue_skies:everbright/summon_artificial_golem"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "67FF49A896F58FAC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Trái Tim Của Biển Cả"
+			x: 15.0d
+			y: 9.0d
+			dependencies: ["0E7B5160AF2E3D41"]
+			dependency_requirement: "one_completed"
+			id: "0509828194D56812"
+			tasks: [{
+				id: "555F6C232FDCF484"
+				type: "advancement"
+				advancement: "blue_skies:everbright/enter_nature_dungeon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "631FB2247D17EE2D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Vì sao?"
+			x: 10.2d
+			y: 14.399999999999999d
+			dependencies: ["0509828194D56812"]
+			dependency_requirement: "one_completed"
+			id: "439E1C51B6DB2287"
+			tasks: [{
+				id: "5975198FB313CFC2"
+				type: "advancement"
+				advancement: "blue_skies:everbright/kill_starlit_crusher"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "65FD402980C097B6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Chọn!!!"
+			x: -5.0d
+			y: 5.0d
+			dependencies: [
+				"7FFF439E7CC30128"
+				"733EFE881E4CC5B1"
+			]
+			dependency_requirement: "one_completed"
+			id: "5836A37C0C6EFE0E"
+			tasks: [{
+				id: "14C74BE84D3D081E"
+				type: "advancement"
+				advancement: "blue_skies:thinking_with_portals"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1EE10BBABE476C03"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Thắp Sáng Tương Lại"
+			x: 5.0d
+			y: -5.0d
+			dependencies: ["5836A37C0C6EFE0E"]
+			dependency_requirement: "one_completed"
+			id: "7BA7C767D52E31CB"
+			tasks: [{
+				id: "0CE0575B30ED10C8"
+				type: "advancement"
+				advancement: "blue_skies:get_moonstone_shard"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "256B0683E3319550"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Tháp Pháp Sư"
+			x: -9.0d
+			y: 9.0d
+			dependencies: ["5836A37C0C6EFE0E"]
+			dependency_requirement: "one_completed"
+			id: "0C4800011E8B0DB2"
+			tasks: [{
+				id: "3E0627F4B1B49F57"
+				type: "advancement"
+				advancement: "blue_skies:enter_blinding_dungeon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "760C2B3703C630B6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -15.0d
+			y: 10.0d
+			dependencies: ["0C4800011E8B0DB2"]
+			dependency_requirement: "one_completed"
+			id: "06E89F2C2D392601"
+			tasks: [{
+				id: "2E697E6E1D08FB31"
+				type: "advancement"
+				advancement: "blue_skies:keys"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "5D6CB9020DA051CB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Phục Sinh "
+			x: -10.0d
+			y: 15.0d
+			dependencies: ["0C4800011E8B0DB2"]
+			dependency_requirement: "one_completed"
+			id: "224E713EF0C7AC23"
+			tasks: [{
+				id: "4DCFDA30F7C5AB67"
+				type: "advancement"
+				advancement: "blue_skies:regrowth"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3CF5E1A1D3717B02"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Bánh"
+			x: -10.0d
+			y: 10.0d
+			dependencies: [
+				"06E89F2C2D392601"
+				"224E713EF0C7AC23"
+			]
+			dependency_requirement: "one_completed"
+			id: "47DFF3287F18AE5E"
+			tasks: [{
+				id: "4FAE6F5932255C41"
+				type: "advancement"
+				advancement: "blue_skies:blue_sky_pie"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2D856D9360D3AB07"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+}

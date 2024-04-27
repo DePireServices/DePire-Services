@@ -1,0 +1,1268 @@
+{
+	id: "739DF20C6E9AA0A7"
+	group: ""
+	order_index: 0
+	filename: "minecraft"
+	title: "&l&5J cơ?"
+	icon: "minecraft:grass_block"
+	subtitle: ["Đọc Hướng Dẫn Sử Dụng"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Cỏ Mỹ (tho)"
+			icon: "minecraft:grass_block"
+			x: -0.3d
+			y: -24.599999999999998d
+			shape: "hexagon"
+			subtitle: "#1 Chạm cỏ"
+			description: ["Bước 1 : Chạm cỏ :D"]
+			dependency_requirement: "one_started"
+			size: 4.0d
+			id: "4526222895E5BD20"
+			tasks: [
+				{
+					id: "7368E7B0CA107DE6"
+					type: "item"
+					item: "minecraft:grass"
+				}
+				{
+					id: "4EE8C9FD1E3F326B"
+					type: "checkmark"
+					title: "Đã chạm cỏ ✔"
+				}
+			]
+			rewards: [
+				{
+					id: "3A895B01C0B8C94E"
+					type: "item"
+					item: {
+						id: "biomesoplenty:bush"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\":\"Rác chứ j\"}"
+							}
+						}
+					}
+					count: 64
+				}
+				{
+					id: "4D235DBA0B8326ED"
+					type: "xp"
+					xp: 1
+				}
+			]
+		}
+		{
+			title: "Đá?"
+			icon: "minecraft:cobblestone"
+			x: 7.0d
+			y: -24.5d
+			subtitle: "#2 Đập Đá Đi"
+			description: ["Bước 2 : Đập đá"]
+			dependencies: ["4526222895E5BD20"]
+			dependency_requirement: "one_completed"
+			id: "3EFE4807C12C6FBB"
+			tasks: [
+				{
+					id: "5D832F18986A1E7A"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "41B6A12E965FF47B"
+					type: "checkmark"
+					title: "Đã làm và ko có ăn ✔"
+				}
+			]
+			rewards: [
+				{
+					id: "30C27156C7BF96D4"
+					type: "item"
+					item: {
+						id: "byg:cattail"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\":\"cỎ Mĩ Thooooooooooo\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "30E67BE3529296DC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "FE?"
+			icon: "minecraft:iron_ingot"
+			x: 7.0d
+			y: -17.5d
+			subtitle: "Sắt Hoá Trị (II ; III)"
+			description: ["Van tha hoá nhưng hoá ko tha van ;-;"]
+			dependencies: ["3EFE4807C12C6FBB"]
+			dependency_requirement: "one_completed"
+			size: 3.0d
+			id: "4ACA899B97738CCD"
+			tasks: [{
+				id: "0A9E9F9284D3F6FE"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 16L
+			}]
+			rewards: [{
+				id: "67290A3DA5A64952"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Ui Zàng"
+			icon: "minecraft:gold_ingot"
+			x: -2.0d
+			y: -5.0d
+			subtitle: "Zàng kìa!!!"
+			description: ["Khai thác bất hợp pháp D:"]
+			dependencies: ["4ACA899B97738CCD"]
+			dependency_requirement: "one_completed"
+			id: "36CD354EA7E32325"
+			tasks: [{
+				id: "17A95012006BD98D"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 16L
+			}]
+			rewards: [{
+				id: "7E11E3A7248F8BDF"
+				type: "item"
+				title: "Naice"
+				item: "minecraft:gold_nugget"
+				count: 9
+			}]
+		}
+		{
+			title: "Thẻ Kim Cương nè"
+			icon: "minecraft:diamond_block"
+			x: 14.0d
+			y: -17.5d
+			subtitle: "Ui thẻ kim cương"
+			description: ["Giàu chưa?"]
+			dependencies: ["4ACA899B97738CCD"]
+			dependency_requirement: "one_completed"
+			id: "0AEE9FE67533F2D5"
+			tasks: [{
+				id: "5559F6F22ABE83EC"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "21B23D3B005EA9A3"
+					type: "item"
+					title: "Bonus "
+					icon: "minecraft:diamond_block"
+					item: "byg:firecracker_flower_bush"
+					count: 64
+				}
+				{
+					id: "33E02C6C0145110D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "em đen lắm "
+			icon: "minecraft:obsidian"
+			x: 13.799999999999999d
+			y: -10.5d
+			subtitle: "màu tím mà?"
+			description: ["Dảk Purple mà??"]
+			dependencies: ["0AEE9FE67533F2D5"]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "2E62558AD4C5908F"
+			tasks: [{
+				id: "1701FD47838D85FC"
+				type: "item"
+				title: "em đen lắm I"
+				item: "minecraft:obsidian"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "35FFC86E16D7F766"
+					type: "command"
+					title: "em đen lắm II"
+					icon: "minecraft:golden_carrot"
+					auto: "enabled"
+					command: "/effect give @a minecraft:nausea 100 50"
+					player_command: false
+				}
+				{
+					id: "63C9658C747F0C36"
+					type: "command"
+					title: "em đen lắm III"
+					icon: {
+						id: "minecraft:golden_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					auto: "enabled"
+					command: "/effect give @a minecraft:mining_fatigue 100 255"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Default!!!"
+			icon: "minecraft:grass_block"
+			x: 31.0d
+			y: -5.0d
+			shape: "octagon"
+			hide_dependency_lines: true
+			dependencies: [
+				"04945DB0AD0F69CD"
+				"2324E9A60E4040DF"
+				"2DDD42B0EC288AC5"
+				"4526222895E5BD20"
+				"3B0434A5AFEF0CBF"
+				"2E62558AD4C5908F"
+				"4ACA899B97738CCD"
+				"3B0434A5AFEF0CBF"
+				"4ACA899B97738CCD"
+				"6CFD02AE5D35DF59"
+				"0E8B785719804C62"
+				"41FC0D44E81B4CCB"
+				"012FF66529684A1E"
+				"0AEE9FE67533F2D5"
+				"6AB35965AE84364F"
+				"12E7FADD4908E2B2"
+				"5CF49FA4A9527A91"
+				"36CD354EA7E32325"
+				"3CDE26D93E21F92E"
+				"7F9F899C52456000"
+				"2706E683087F62BE"
+				"2C1AA4D6F1595E7B"
+				"7DFBE96F4FE57E1F"
+				"0E0ECA25D1842B71"
+				"6A06CA97FAFC3A79"
+				"3EFE4807C12C6FBB"
+				"5E62F66D2D35C7F0"
+				"77B5C2173ED86AA1"
+			]
+			id: "6DE20AE85DD1AF80"
+			tasks: [{
+				id: "0AAC6537C42E75CB"
+				type: "checkmark"
+				title: "Giàu"
+			}]
+			rewards: [{
+				id: "3E202E509F317905"
+				type: "command"
+				command: "/say Moiiiiiiiii"
+				player_command: false
+			}]
+		}
+		{
+			x: -14.0d
+			y: -5.0d
+			dependencies: ["3EFE4807C12C6FBB"]
+			dependency_requirement: "one_completed"
+			id: "77B5C2173ED86AA1"
+			tasks: [{
+				id: "6FEE8D18726228FC"
+				type: "item"
+				title: "Cácbon"
+				icon: "minecraft:coal"
+				item: "minecraft:coal"
+				count: 64L
+			}]
+			rewards: [{
+				id: "7E9250E737B58971"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Radiant Bucket"
+			icon: "minecraft:bucket"
+			x: -11.5d
+			y: -5.0d
+			subtitle: "Ngon :D"
+			description: ["Wonderful ¯\\_(ツ)_/¯"]
+			dependencies: ["4ACA899B97738CCD"]
+			dependency_requirement: "one_completed"
+			id: "012FF66529684A1E"
+			tasks: [
+				{
+					id: "0BCF2BEEF5E1A91E"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "596B10E0F922347E"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "5845676808E8B14F"
+					type: "item"
+					item: "caves_and_cliffs:powdered_snow"
+				}
+			]
+			rewards: [{
+				id: "23C3202F0F40420D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Why?"
+			icon: "byg:chain_plating"
+			x: -5.0d
+			y: -5.0d
+			subtitle: "Why???"
+			description: ["Học sinh nghèo vượt khó hỏ"]
+			dependencies: ["4ACA899B97738CCD"]
+			dependency_requirement: "one_completed"
+			id: "3CDE26D93E21F92E"
+			tasks: [{
+				id: "116856E058073B28"
+				type: "item"
+				item: "byg:chain_plating"
+				count: 12L
+			}]
+			rewards: [{
+				id: "4AE681EFAEAA2E40"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "I'm Unstoppable"
+			icon: {
+				id: "minecraft:iron_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -8.0d
+			y: -5.0d
+			subtitle: "Gkê chưa =))"
+			description: ["I put my armor on, show you how strong I am"]
+			dependencies: ["4ACA899B97738CCD"]
+			dependency_requirement: "one_completed"
+			id: "6CFD02AE5D35DF59"
+			tasks: [
+				{
+					id: "06F1317C5D705F66"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "07A42348B197370E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "04564B23C7C431F9"
+					type: "item"
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "548BB0AEB6FB8B6F"
+					type: "item"
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "729781CCA8493D2D"
+					type: "item"
+					item: {
+						id: "minecraft:shield"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "63BDC55615C7886E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "215983DFAE2D6F2D"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "25F8DE3BC5B0AAFE"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4B9D376B93BE481B"
+					type: "item"
+					item: {
+						id: "minecraft:iron_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6402903990D17BFC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Xenlulozơ"
+			icon: "minecraft:oak_log"
+			x: -0.3d
+			y: -32.1d
+			subtitle: "Tha hoá"
+			description: ["Gỗ hoi có j đâu"]
+			dependencies: ["4526222895E5BD20"]
+			dependency_requirement: "one_completed"
+			id: "7F9F899C52456000"
+			tasks: [
+				{
+					id: "4F0DB251548A59E1"
+					type: "item"
+					title: "Any #minecraft:logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "0E757F71AC541E3A"
+					type: "checkmark"
+					title: "1000 Punch man"
+				}
+			]
+			rewards: [{
+				id: "79656BD6A419387A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "<Than>"
+			icon: "minecraft:charcoal"
+			x: -16.5d
+			y: -5.0d
+			subtitle: "Hoá ko tha đâu"
+			description: ["(C6H10O5)n + 6nO2 ---t--> 6nCO2 + 5nH2O"]
+			dependencies: ["7F9F899C52456000"]
+			dependency_requirement: "one_completed"
+			id: "04945DB0AD0F69CD"
+			tasks: [{
+				id: "7B24541B8D0D269E"
+				type: "item"
+				icon: "minecraft:charcoal"
+				item: "minecraft:charcoal"
+				count: 8L
+			}]
+			rewards: [{
+				id: "6CEDDFD68B89F9F3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Xenlulozơ"
+			icon: "minecraft:trapped_chest"
+			x: -19.5d
+			y: -5.0d
+			subtitle: "gỗ mà?"
+			description: ["2x Logs"]
+			dependencies: ["7F9F899C52456000"]
+			dependency_requirement: "one_completed"
+			id: "2706E683087F62BE"
+			tasks: [{
+				id: "4D07CF62930E6723"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+			rewards: [
+				{
+					id: "53B1509F82E1BF4A"
+					type: "item"
+					title: "Quartz"
+					icon: "minecraft:stone"
+					item: "minecraft:quartz_block"
+					count: 16
+				}
+				{
+					id: "480C9DFB1E3A4E63"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Đeo Huy CHƯƠNGGGGGGGGGGGGG"
+			icon: {
+				id: "minecraft:diamond_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.0d
+			y: -5.0d
+			subtitle: "Sử Dụng \"Thẻ Kim Cương\""
+			description: ["vô dụng :D"]
+			dependencies: ["0AEE9FE67533F2D5"]
+			dependency_requirement: "one_completed"
+			id: "6A06CA97FAFC3A79"
+			tasks: [
+				{
+					id: "5BCB29E628111F52"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "685CDF6853631DFE"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "44054A05FFACF38D"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "414A2804B0E1741E"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5D5687C10FBC8D60"
+					type: "item"
+					title: "+1 Thẻ Kim Cương"
+					icon: "minecraft:diamond"
+					tags: ["1"]
+					item: {
+						id: "minecraft:written_book"
+						Count: 1b
+						tag: {
+							pages: [
+								"{\"text\":\"Kim cương lè\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"Dễ j em ơi\"}"
+							]
+							title: "Nerd!"
+							author: "Rupee_NotFound"
+						}
+					}
+				}
+				{
+					id: "13CA49FF7C3A0C3E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Ènchant luôn"
+			icon: "minecraft:enchanting_table"
+			x: 9.0d
+			y: -5.0d
+			subtitle: "aduvjp"
+			description: ["Bao tuổi r mà còn phép thuật win"]
+			dependencies: ["0AEE9FE67533F2D5"]
+			dependency_requirement: "one_completed"
+			id: "2C1AA4D6F1595E7B"
+			tasks: [
+				{
+					id: "53502512240590FA"
+					type: "item"
+					item: "minecraft:enchanting_table"
+				}
+				{
+					id: "3CE4CB784661B577"
+					type: "advancement"
+					title: "Enchant đi"
+					advancement: "minecraft:story/enchant_item"
+					criterion: ""
+				}
+				{
+					id: "38B690D47C82DB55"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "0B7F14EC9F74AB47"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "175B883EF23397CC"
+					type: "item"
+					item: "minecraft:book"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Thợ Rèn I"
+			icon: "minecraft:anvil"
+			x: 0.5d
+			y: -5.0d
+			subtitle: "Rèn???"
+			description: ["Đập??"]
+			dependencies: ["4ACA899B97738CCD"]
+			dependency_requirement: "one_completed"
+			id: "6AB35965AE84364F"
+			tasks: [{
+				id: "640FDEC2557D4198"
+				type: "item"
+				item: "minecraft:anvil"
+			}]
+			rewards: [
+				{
+					id: "096C055BDF4296D6"
+					type: "item"
+					title: "Diamond"
+					icon: "minecraft:diamond"
+					item: "minecraft:coal"
+					count: 64
+				}
+				{
+					id: "475BED593C226775"
+					type: "item"
+					title: "+1 XP Levels"
+					icon: "minecraft:experience_bottle"
+					item: {
+						id: "minecraft:written_book"
+						Count: 1b
+						tag: {
+							pages: [
+								"{\"text\":\"Kim cương lè\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"\"}"
+								"{\"text\":\"Dễ j em ơi\"}"
+							]
+							title: "Nerd!"
+							author: "Rupee_NotFound"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Thợ Rèn II"
+			icon: "cyclic:anvil"
+			x: 6.0d
+			y: -5.0d
+			subtitle: "Uầy kinh òi"
+			description: ["Nhưng điện đâu mà xài >:))"]
+			dependencies: ["0AEE9FE67533F2D5"]
+			dependency_requirement: "one_completed"
+			id: "12E7FADD4908E2B2"
+			tasks: [{
+				id: "52E37BFFEDD83B3B"
+				type: "item"
+				item: "cyclic:anvil"
+			}]
+			rewards: [
+				{
+					id: "35BDF272B12B4FD1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4AC90AD8AB2C7D51"
+					type: "item"
+					title: "Kó làm mới kó ăn"
+					item: "cyclic:peat_unbaked"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Thợ Rèn III"
+			icon: "cyclic:anvil_magma"
+			x: 11.5d
+			y: -5.0d
+			subtitle: "Biết điều rồi đấy :)"
+			description: ["Lựa chọn \"sáng sủa\""]
+			dependencies: ["7DFBE96F4FE57E1F"]
+			dependency_requirement: "one_completed"
+			id: "5CF49FA4A9527A91"
+			tasks: [{
+				id: "557F23AECC988A24"
+				type: "item"
+				item: "cyclic:anvil_magma"
+			}]
+			rewards: [
+				{
+					id: "181972D5B1537007"
+					type: "item"
+					title: "Lava Bucket"
+					icon: "minecraft:lava_bucket"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "5DFEB1F190A93DEF"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Zùng đất ling hòn"
+			icon: "minecraft:netherrack"
+			x: 21.0d
+			y: -10.5d
+			subtitle: "Nơi Ahsorry thuộc về"
+			description: ["AAtrox đâu rồi"]
+			dependencies: [
+				"2E62558AD4C5908F"
+				"7F9F899C52456000"
+			]
+			dependency_requirement: "one_completed"
+			id: "7DFBE96F4FE57E1F"
+			tasks: [{
+				id: "71CA30E28AE470E3"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [
+				{
+					id: "655F36637861D687"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "57EC874843C6489E"
+					type: "item"
+					title: "Netherite Ingot"
+					icon: "minecraft:netherite_ingot"
+					item: "minecraft:crimson_roots"
+					count: 256
+				}
+				{
+					id: "63AC06D727CA25E5"
+					type: "item"
+					title: "Ỳe"
+					icon: "atum:bone_torch"
+					item: {
+						id: "minecraft:written_book"
+						Count: 1b
+						tag: {
+							pages: ["{\"text\":\"ko có j hết á\"}"]
+							title: "ko có j hết á"
+							author: "Rupee_NotFound"
+							resolved: 1b
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Choấy chưa"
+			icon: "minecraft:blaze_rod"
+			x: 20.5d
+			y: -5.0d
+			subtitle: "Hoả"
+			description: ["Miếu"]
+			dependencies: ["7DFBE96F4FE57E1F"]
+			dependency_requirement: "one_completed"
+			id: "2324E9A60E4040DF"
+			tasks: [{
+				id: "3F534021DB497416"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+			rewards: [
+				{
+					id: "30C117240D10EC7E"
+					type: "item"
+					title: "Đồ Chùa!!!"
+					icon: "minecraft:snowball"
+					item: "minecraft:snowball"
+					count: 64
+				}
+				{
+					id: "71AD37C09A4F5DB0"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Ngọc là ngọc ko phải mắt!"
+			icon: "minecraft:ender_pearl"
+			x: 14.5d
+			y: -5.0d
+			subtitle: "EYEEEEEEEEEEEE , pearl not eye"
+			description: ["nGọC eNđờ"]
+			dependencies: ["7DFBE96F4FE57E1F"]
+			id: "41FC0D44E81B4CCB"
+			tasks: [{
+				id: "46B02E3E259FA04B"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "502A910E63D6F2EE"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6A1A4B4E85318C30"
+					type: "command"
+					title: "Skill Kích hoạt : Băng Thể"
+					icon: "minecraft:packed_ice"
+					command: "/effect give @a mowziesmobs:frozen 100 5"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Endgame r nè!!!"
+			icon: "minecraft:end_stone"
+			x: 31.0d
+			y: -10.5d
+			subtitle: "game con nít =))"
+			description: ["Dễ mà đúng ko?"]
+			dependencies: ["7DFBE96F4FE57E1F"]
+			dependency_requirement: "one_completed"
+			id: "3B0434A5AFEF0CBF"
+			tasks: [{
+				id: "131C8014F567BA09"
+				type: "dimension"
+				title: "Qua Đì end"
+				icon: "minecraft:end_portal_frame"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [
+				{
+					id: "73CB9F96E2D7BE2A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "52248134AB8ACB3E"
+					type: "random"
+					title: "[DeFault] Random Loot"
+					icon: "minecraft:nether_star"
+					table_id: 4134898219745657401L
+				}
+			]
+		}
+		{
+			title: "Bình Dương hột vịt lộn!!!"
+			icon: "minecraft:egg"
+			x: 33.0d
+			y: -5.0d
+			subtitle: "Rất Bình Dương"
+			description: ["Dễ j :))"]
+			dependencies: [
+				"3B0434A5AFEF0CBF"
+				"5E62F66D2D35C7F0"
+			]
+			dependency_requirement: "one_completed"
+			id: "2DDD42B0EC288AC5"
+			tasks: [{
+				id: "16A8D8A4821DF256"
+				type: "item"
+				item: "minecraft:dragon_egg"
+			}]
+			rewards: [
+				{
+					id: "0925E258092ED285"
+					type: "random"
+					title: "[DeFault] Random Loot"
+					icon: "minecraft:nether_star"
+					table_id: 4134898219745657401L
+				}
+				{
+					id: "4A23F0B322E3A4C6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Èndcity nè"
+			icon: "minecraft:purpur_block"
+			x: 29.0d
+			y: -5.0d
+			subtitle: "Dễ zậy"
+			description: ["Đương nhiên"]
+			dependencies: ["3B0434A5AFEF0CBF"]
+			dependency_requirement: "one_completed"
+			id: "0E0ECA25D1842B71"
+			tasks: [{
+				id: "39E8D3E117127D29"
+				type: "advancement"
+				title: "Asian Chorus Tree?"
+				icon: "minecraft:purpur_block"
+				advancement: "minecraft:end/find_end_city"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "2A3B27BA96015893"
+					type: "loot"
+					title: "[DeFault] Random Loot"
+					icon: "minecraft:nether_star"
+					table_id: 4134898219745657401L
+				}
+				{
+					id: "739AE2A0ABD81F5E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "lại Hack òi"
+			icon: {
+				id: "minecraft:elytra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 24.0d
+			y: -5.0d
+			subtitle: "Hacker lỏ"
+			description: ["non vãi!"]
+			dependencies: [
+				"3B0434A5AFEF0CBF"
+				"0E0ECA25D1842B71"
+			]
+			dependency_requirement: "one_completed"
+			id: "0E8B785719804C62"
+			tasks: [{
+				id: "5D001A5F13DDBBFD"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5165E2E809DF4EFC"
+					type: "random"
+					title: "[DeFault] Random Loot"
+					icon: "minecraft:nether_star"
+					table_id: 4134898219745657401L
+				}
+				{
+					id: "63681EF8A3738D15"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Đờm D:"
+			x: 37.0d
+			y: -5.0d
+			subtitle: "ewwwwwww"
+			description: ["Gớm!"]
+			dependencies: [
+				"3B0434A5AFEF0CBF"
+				"2706E683087F62BE"
+			]
+			dependency_requirement: "one_completed"
+			id: "5E62F66D2D35C7F0"
+			tasks: [{
+				id: "1DF1E157B8AFA617"
+				type: "item"
+				item: "minecraft:dragon_breath"
+				count: 12L
+			}]
+			rewards: [
+				{
+					id: "255A71A3570B5BF0"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0C1AAD476273A143"
+					type: "item"
+					title: "Healing"
+					icon: {
+						id: "minecraft:lingering_potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					item: {
+						id: "minecraft:lingering_potion"
+						Count: 1b
+						tag: {
+							Potion: "goblintraders:extended_night_vision"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Moắt"
+			x: 17.5d
+			y: -5.0d
+			subtitle: "Choáy rồi"
+			description: ["Choáy quá em ơi!!!"]
+			dependencies: [
+				"41FC0D44E81B4CCB"
+				"2324E9A60E4040DF"
+			]
+			dependency_requirement: "one_completed"
+			id: "7349E14F0D563813"
+			tasks: [{
+				id: "7AE5686A40A07F31"
+				type: "item"
+				title: "Kinh Dị D:"
+				item: "minecraft:ender_eye"
+				count: 12L
+			}]
+			rewards: [
+				{
+					id: "57D59CE1E6C74745"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+							display: {
+								Name: "{\"text\":\"ĐI vè em ơi\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "06C9194699EF9E61"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2C00024D468BCF7B"
+					type: "loot"
+					title: "[DeFault] Random Loot"
+					table_id: 4134898219745657401L
+				}
+			]
+		}
+		{
+			x: 21.3d
+			y: -27.0d
+			shape: "octagon"
+			hide_dependency_lines: true
+			dependencies: ["16A8D8A4821DF256"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "06A9FD516A8A7B19"
+			tasks: [{
+				id: "665AF993C6CE436D"
+				type: "checkmark"
+				title: "[Béo]"
+			}]
+			rewards: [{
+				id: "1CCE644E6F8922CF"
+				type: "command"
+				title: "Kích Hoạt Skill : Thiên Thể"
+				icon: "artifacts:superstitious_hat"
+				auto: "enabled"
+				command: "/effect give @p minecraft:levitation 5 3"
+				player_command: false
+			}]
+		}
+	]
+}

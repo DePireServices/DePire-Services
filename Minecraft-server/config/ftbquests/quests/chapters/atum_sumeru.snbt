@@ -1,0 +1,1232 @@
+{
+	id: "35C7697EA09F3CF3"
+	group: ""
+	order_index: 6
+	filename: "atum_sumeru"
+	title: "&l&e[Atum] &r&aSumeru nè"
+	icon: "atum:scarab"
+	subtitle: ["Sumeru not Saharah"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Đến Với Biển Cát ..."
+			x: -1.7999999999999998d
+			y: 0.0d
+			subtitle: "Xem Chi tiết:"
+			description: [
+				"Bạn Và Những Người Khác Cố tình rơi vào cách cổng đi vào biển cát. Và biết rằng mình có thể cố tình rơi vào cổng lần nữa để trở về >:))"
+				"Bạn Lo Rằng Mình Sẽ Lạc Mất Cánh Cổng Nhưng Chỉ Cần Nhìn Lên Jouney Map Là Biết Được Bố Nó ở Đâu D:"
+			]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "42F4A028FA785F32"
+			tasks: [{
+				id: "395365DC8E3F67E6"
+				type: "dimension"
+				title: "ĐếN ÀTum"
+				icon: "minecraft:chiseled_sandstone"
+				dimension: "atum:atum"
+			}]
+			rewards: [
+				{
+					id: "14680B9DA8C4D042"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "29D7E26C1C6CDF94"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: 3.5999999999999996d
+			y: 1.3499999999999999d
+			subtitle: "Tham Quan Hết 9 Địa Hình Cát Bụi"
+			dependencies: ["42F4A028FA785F32"]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "331F62CD95626D69"
+			tasks: [{
+				id: "0B896DEC33C6DA82"
+				type: "advancement"
+				title: "Du Lịch Xuyên Lục Địa"
+				advancement: "atum:core/ajourney"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "5DF86C36F6B8E50A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "0B5285BB5944B433"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Tham Quan Di Tích"
+			x: -5.0d
+			y: -5.0d
+			dependencies: ["42F4A028FA785F32"]
+			dependency_requirement: "one_completed"
+			size: 3.0d
+			id: "097F14C885398529"
+			tasks: [{
+				id: "58B61BA5CE1C0E55"
+				type: "advancement"
+				advancement: "atum:core/pyramidscheme"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "13B5991422CF6971"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "1DB2B7D2DB841667"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+				{
+					id: "16DFCC6377F5A93A"
+					type: "loot"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Mai-Wa-eh"
+			x: -14.1d
+			y: -0.6d
+			dependencies: [
+				"097F14C885398529"
+				"395365DC8E3F67E6"
+			]
+			dependency_requirement: "one_completed"
+			id: "1D0FAC4C1DF031A3"
+			tasks: [{
+				id: "3D9CD1BE91B1409D"
+				type: "advancement"
+				advancement: "atum:core/amirage"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "6E5596CC7DB734A3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "146871297671FEBD"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Mai-Wa-eh"
+			x: 4.5d
+			y: -9.9d
+			dependencies: [
+				"097F14C885398529"
+				"395365DC8E3F67E6"
+			]
+			dependency_requirement: "one_completed"
+			id: "027646D61BEE79B7"
+			tasks: [{
+				id: "130EA36CAE5BF7FE"
+				type: "advancement"
+				advancement: "atum:core/ahope"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "6A2C06AAE37CE977"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "02DDE61C0D516894"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Du Đông Kích Miền Bắc"
+			x: -10.0d
+			y: 2.0d
+			dependencies: ["1D0FAC4C1DF031A3"]
+			dependency_requirement: "one_completed"
+			id: "1567C771EE4B11E6"
+			tasks: [{
+				id: "4391B97E8BBC6867"
+				type: "advancement"
+				advancement: "atum:core/assassinassin"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "78B90B6A78D50DE6"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "02715B495EC0C7DE"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Ăn"
+			x: 4.8d
+			y: -4.8d
+			dependencies: ["027646D61BEE79B7"]
+			dependency_requirement: "one_completed"
+			id: "197F37E1458C1AED"
+			tasks: [{
+				id: "0CF6425471DE3F37"
+				type: "item"
+				item: "atum:date"
+			}]
+			rewards: [
+				{
+					id: "637FF1A768CD17F5"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "6C3A3F8EAC79D65B"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Ăn II"
+			x: 0.8999999999999999d
+			y: -11.4d
+			dependencies: ["197F37E1458C1AED"]
+			dependency_requirement: "one_completed"
+			id: "51B8179945685E7E"
+			tasks: [{
+				id: "45126F71E316B75D"
+				type: "item"
+				item: "atum:golden_date"
+			}]
+			rewards: [
+				{
+					id: "0D96AA29CE228FCC"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "555A144D1EE28111"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Tham Ăn III"
+			x: 2.4d
+			y: -13.799999999999999d
+			dependencies: ["51B8179945685E7E"]
+			dependency_requirement: "one_completed"
+			id: "1C6FE8EF5CECDCCD"
+			tasks: [{
+				id: "5F3E54CD48E4C0E3"
+				type: "item"
+				item: "atum:golden_date_enchanted"
+			}]
+			rewards: [
+				{
+					id: "490CBD19902D7272"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "0B44B3B95E576AC3"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Thanh Trừng"
+			x: -14.0d
+			y: -5.0d
+			dependencies: ["1567C771EE4B11E6"]
+			dependency_requirement: "one_completed"
+			id: "438D3CC55A233441"
+			tasks: [{
+				id: "02DC2CF9761D2397"
+				type: "advancement"
+				advancement: "atum:core/lawbringer"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "69A52EDD106CDF14"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "5914A284AE7CE519"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Rất Thanh Trừng"
+			x: -17.099999999999998d
+			y: -4.8d
+			shape: "circle"
+			dependencies: ["438D3CC55A233441"]
+			dependency_requirement: "one_completed"
+			id: "66CA1AADAA1E4A9A"
+			tasks: [{
+				id: "06DE26DFB18FF273"
+				type: "advancement"
+				advancement: "atum:core/deserthunter"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "02C2CE951A9EC32C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "3493BCDF03AB014A"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -6.3d
+			y: -7.199999999999999d
+			dependencies: ["097F14C885398529"]
+			dependency_requirement: "one_completed"
+			id: "430B69D234047757"
+			tasks: [{
+				id: "5944C10F765D7DF6"
+				type: "item"
+				item: "atum:relic_dirty_idol"
+			}]
+			rewards: [
+				{
+					id: "5AD02BC8838AE57A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "65ADA5B0710F0864"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -7.8d
+			dependencies: ["097F14C885398529"]
+			dependency_requirement: "one_completed"
+			id: "5E4BD5677CD90687"
+			tasks: [{
+				id: "61398E7A8F12F80A"
+				type: "item"
+				item: "atum:relic_dirty_necklace"
+			}]
+			rewards: [
+				{
+					id: "7E3C6173E4B1724E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7EC3940CDC8B03CC"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -2.6999999999999997d
+			y: -8.7d
+			dependencies: ["097F14C885398529"]
+			dependency_requirement: "one_completed"
+			id: "2D6A36853AA07C49"
+			tasks: [{
+				id: "018AB0A2FF7B7CB9"
+				type: "item"
+				item: "atum:relic_dirty_ring"
+			}]
+			rewards: [
+				{
+					id: "7748451AF0009AA7"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "66DE1E00E1661594"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -5.0d
+			dependencies: ["097F14C885398529"]
+			dependency_requirement: "one_completed"
+			id: "1BA52309223BFEC8"
+			tasks: [{
+				id: "16ABF67DA41430E1"
+				type: "item"
+				item: "atum:relic_dirty_brooch"
+			}]
+			rewards: [
+				{
+					id: "795FDB74B623E44C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "63AD54D24B82DAA7"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -6.0d
+			dependencies: ["097F14C885398529"]
+			dependency_requirement: "one_completed"
+			id: "1578435D85400089"
+			tasks: [{
+				id: "538FEF017F7476A4"
+				type: "item"
+				item: "atum:relic_dirty_bracelet"
+			}]
+			rewards: [
+				{
+					id: "14A0A6B04EC58A5A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "35A4B857674B5E53"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			title: "Giáp Xịn? Giáp Đẹp?"
+			x: 0.6d
+			y: -3.3d
+			dependencies: ["097F14C885398529"]
+			dependency_requirement: "one_completed"
+			id: "2F53D4F1ED57941D"
+			tasks: [{
+				id: "756FF1C5A4B70E47"
+				type: "advancement"
+				advancement: "atum:core/radyforaction"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "35A9C3B661B70345"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+				{
+					id: "7CA7B64F8526641B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "3CDC49A6667EB796"
+					type: "choice"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Hàng Đẹp?"
+			x: -6.0d
+			y: 0.3d
+			dependencies: ["097F14C885398529"]
+			dependency_requirement: "one_completed"
+			id: "1E7071243C0BEE8C"
+			tasks: [{
+				id: "239B17E57ABF69D2"
+				type: "advancement"
+				advancement: "atum:core/atumed"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "313B44C07B09AE07"
+					type: "loot"
+					title: "[Atum] Immersive Loot"
+					table_id: 8117461124274328440L
+				}
+				{
+					id: "4EC703ED94C1297F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "368055692CA50CE0"
+					type: "choice"
+					title: "Skill Kích Hoạt"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			x: -3.5999999999999996d
+			y: -10.5d
+			dependencies: ["2D6A36853AA07C49"]
+			dependency_requirement: "one_completed"
+			id: "2179CAC77A0361A0"
+			tasks: [{
+				id: "25A38D2646804C3B"
+				type: "item"
+				item: "atum:relic_silver_ring"
+			}]
+			rewards: [
+				{
+					id: "1BEA0C1D491B25C0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "2ECCDB384670D7CF"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -5.3999999999999995d
+			y: -9.299999999999999d
+			dependencies: ["5E4BD5677CD90687"]
+			dependency_requirement: "one_completed"
+			id: "736CFEB4C7C3BBD8"
+			tasks: [{
+				id: "6E49C0D25AE4F408"
+				type: "item"
+				item: "atum:relic_silver_necklace"
+			}]
+			rewards: [
+				{
+					id: "27CB81C8C51E23C6"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "042BBF5C82C10996"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -6.8999999999999995d
+			y: -8.7d
+			dependencies: ["430B69D234047757"]
+			dependency_requirement: "one_completed"
+			id: "66B996768F0AA748"
+			tasks: [{
+				id: "269BF4A5C157A5A1"
+				type: "item"
+				item: "atum:relic_silver_idol"
+			}]
+			rewards: [
+				{
+					id: "1D709A36CA15EA8C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "75C208C14DCC7DE9"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -10.799999999999999d
+			y: -6.3d
+			dependencies: ["1BA52309223BFEC8"]
+			dependency_requirement: "one_completed"
+			id: "62CD9717A1493262"
+			tasks: [{
+				id: "7AADD3AB795EE8E7"
+				type: "item"
+				item: "atum:relic_silver_brooch"
+			}]
+			rewards: [
+				{
+					id: "3C5E2A4FD1D86B7D"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "28A2CBD4C97C7B98"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -7.5d
+			dependencies: ["1578435D85400089"]
+			dependency_requirement: "one_completed"
+			id: "7551C4EBAE70EA55"
+			tasks: [{
+				id: "7F6E6578F3D96E44"
+				type: "item"
+				item: "atum:relic_silver_bracelet"
+			}]
+			rewards: [
+				{
+					id: "2624BD05BB0820CB"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "66A64EE36DAB9B2F"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -4.2d
+			y: -11.7d
+			dependencies: ["2D6A36853AA07C49"]
+			dependency_requirement: "one_completed"
+			id: "75D0D22BE458E2BF"
+			tasks: [{
+				id: "6BB2F815740FD295"
+				type: "item"
+				item: "atum:relic_gold_ring"
+			}]
+			rewards: [
+				{
+					id: "5E0CD9F3190B258F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "54D493D3304E5349"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -10.799999999999999d
+			dependencies: ["5E4BD5677CD90687"]
+			dependency_requirement: "one_completed"
+			id: "5C153E72587F2D2B"
+			tasks: [{
+				id: "2CE3528C3D3904D9"
+				type: "item"
+				item: "atum:relic_gold_necklace"
+			}]
+			rewards: [
+				{
+					id: "32B7266247F1BDD4"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4676330F605A6E03"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -11.4d
+			y: -7.5d
+			dependencies: ["1BA52309223BFEC8"]
+			dependency_requirement: "one_completed"
+			id: "262109770AE89ABE"
+			tasks: [{
+				id: "3F02BADE8C49226F"
+				type: "item"
+				item: "atum:relic_gold_brooch"
+			}]
+			rewards: [
+				{
+					id: "7AE14749FBCB7253"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "0CCA563175B1D0AE"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -9.6d
+			y: -8.7d
+			dependencies: ["1578435D85400089"]
+			dependency_requirement: "one_completed"
+			id: "23EDA9C029C93921"
+			tasks: [{
+				id: "41BA3264C580C492"
+				type: "item"
+				item: "atum:relic_gold_bracelet"
+			}]
+			rewards: [
+				{
+					id: "6CD15AB078C4F52E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "6D51F497EE0055C3"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -9.9d
+			dependencies: ["430B69D234047757"]
+			dependency_requirement: "one_completed"
+			id: "64DBCC86A7D801D5"
+			tasks: [{
+				id: "6C1DD943B4244419"
+				type: "item"
+				item: "atum:relic_gold_idol"
+			}]
+			rewards: [
+				{
+					id: "16EBE3E7B7C98AB0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "6BC57C1543D8D0FB"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -6.6d
+			y: -12.0d
+			dependencies: ["5E4BD5677CD90687"]
+			dependency_requirement: "one_completed"
+			id: "45921060569E635F"
+			tasks: [{
+				id: "1C85B814E6D46A30"
+				type: "item"
+				item: "atum:relic_sapphire_necklace"
+			}]
+			rewards: [
+				{
+					id: "746C4EBC9AD92AB0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "0AE93243347FE135"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -5.1d
+			y: -12.899999999999999d
+			dependencies: ["2D6A36853AA07C49"]
+			dependency_requirement: "one_completed"
+			id: "407A461ED6C41420"
+			tasks: [{
+				id: "3FC61CC5A5C4A302"
+				type: "item"
+				item: "atum:relic_sapphire_ring"
+			}]
+			rewards: [
+				{
+					id: "4F3CF01A5121653A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "1E480FBD58121019"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -8.1d
+			y: -11.1d
+			dependencies: ["430B69D234047757"]
+			dependency_requirement: "one_completed"
+			id: "746F4EB6D48A8D01"
+			tasks: [{
+				id: "1A8C06699223ACAC"
+				type: "item"
+				item: "atum:relic_sapphire_idol"
+			}]
+			rewards: [
+				{
+					id: "7A4FED15127B9C86"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "24CEC942E52A67CA"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -12.299999999999999d
+			y: -9.0d
+			dependencies: ["1BA52309223BFEC8"]
+			dependency_requirement: "one_completed"
+			id: "06238BED99F6583A"
+			tasks: [{
+				id: "1D15C307DAAF0526"
+				type: "item"
+				item: "atum:relic_sapphire_brooch"
+			}]
+			rewards: [
+				{
+					id: "2B8CC4DFAB3E1CFD"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "39F8B4316D1C75A6"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -10.2d
+			y: -9.9d
+			dependencies: ["1578435D85400089"]
+			dependency_requirement: "one_completed"
+			id: "5BD6EB2DABCFFDBF"
+			tasks: [{
+				id: "1E30F70575805432"
+				type: "item"
+				item: "atum:relic_sapphire_bracelet"
+			}]
+			rewards: [
+				{
+					id: "7D715DC4429EC765"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "09A8B4464D9B0174"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -13.5d
+			dependencies: ["5E4BD5677CD90687"]
+			dependency_requirement: "one_completed"
+			id: "5E298838525D3DCF"
+			tasks: [{
+				id: "1B53A14D5AACABE3"
+				type: "item"
+				item: "atum:relic_ruby_necklace"
+			}]
+			rewards: [
+				{
+					id: "4DD73A63E41C275E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "0208A43492AFE2B7"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -12.6d
+			dependencies: ["430B69D234047757"]
+			dependency_requirement: "one_completed"
+			id: "24E8234D812DF1AC"
+			tasks: [{
+				id: "513EB97A4EFB2251"
+				type: "item"
+				item: "atum:relic_ruby_idol"
+			}]
+			rewards: [
+				{
+					id: "29C0D0EC4281AF64"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "704B217E3B5D5767"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -5.7d
+			y: -14.1d
+			dependencies: ["2D6A36853AA07C49"]
+			dependency_requirement: "one_completed"
+			id: "45ADCECF8653C605"
+			tasks: [{
+				id: "4A5166C61DBBB474"
+				type: "item"
+				item: "atum:relic_ruby_ring"
+			}]
+			rewards: [
+				{
+					id: "0FF415AB24B7026A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "3DE6FDB013170FA8"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -11.1d
+			y: -11.4d
+			dependencies: ["1578435D85400089"]
+			dependency_requirement: "one_completed"
+			id: "19A257753E449A6A"
+			tasks: [{
+				id: "2A98945B132280EC"
+				type: "item"
+				item: "atum:relic_ruby_bracelet"
+			}]
+			rewards: [
+				{
+					id: "4496AF0824710C08"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "709CD216257BF7E0"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -13.2d
+			y: -10.5d
+			dependencies: ["1BA52309223BFEC8"]
+			dependency_requirement: "one_completed"
+			id: "14AEC755A030F3A1"
+			tasks: [{
+				id: "6A1355B2F9C4C313"
+				type: "item"
+				item: "atum:relic_ruby_brooch"
+			}]
+			rewards: [
+				{
+					id: "0C0F6106A7CF6D52"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4F6208FC250218E1"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -6.8999999999999995d
+			y: -15.899999999999999d
+			dependencies: ["2D6A36853AA07C49"]
+			dependency_requirement: "one_completed"
+			id: "56D43C36A07A800A"
+			tasks: [{
+				id: "6C24E7CE5FAA54A6"
+				type: "item"
+				item: "atum:relic_emerald_ring"
+			}]
+			rewards: [
+				{
+					id: "1B51356831D40B36"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "250B3729B47A85BC"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -14.1d
+			y: -12.0d
+			dependencies: ["1BA52309223BFEC8"]
+			dependency_requirement: "one_completed"
+			id: "79B35CF3D1DC0039"
+			tasks: [{
+				id: "076C76AE0FB3722B"
+				type: "item"
+				item: "atum:relic_emerald_brooch"
+			}]
+			rewards: [
+				{
+					id: "7B7C6E86F378A9C3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "15DE1C47DB1A8382"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -8.4d
+			y: -15.299999999999999d
+			dependencies: ["5E4BD5677CD90687"]
+			dependency_requirement: "one_completed"
+			id: "0802BB28FA562201"
+			tasks: [{
+				id: "3D94F71F39717C20"
+				type: "item"
+				item: "atum:relic_emerald_necklace"
+			}]
+			rewards: [
+				{
+					id: "4D02D3F1E3F12238"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "00E86E1E5E5C5F56"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: -13.2d
+			dependencies: ["1578435D85400089"]
+			dependency_requirement: "one_completed"
+			id: "2D0C54A839854C19"
+			tasks: [{
+				id: "362123E023F3BB96"
+				type: "item"
+				item: "atum:relic_emerald_bracelet"
+			}]
+			rewards: [
+				{
+					id: "7F3866FF31B44793"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "33C4570D97B40F43"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -9.9d
+			y: -14.1d
+			dependencies: ["430B69D234047757"]
+			dependency_requirement: "one_completed"
+			id: "06BC4F6CE36F9A5F"
+			tasks: [{
+				id: "57FFDB2E2CBCD71F"
+				type: "item"
+				item: "atum:relic_emerald_idol"
+			}]
+			rewards: [
+				{
+					id: "641F2A97F4A36391"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "0762FE14A74CE9B4"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -17.099999999999998d
+			dependencies: ["2D6A36853AA07C49"]
+			dependency_requirement: "one_completed"
+			id: "499F14CE3FD44E3B"
+			tasks: [{
+				id: "77A0D900DFC59CA4"
+				type: "item"
+				item: "atum:relic_diamond_ring"
+			}]
+			rewards: [
+				{
+					id: "38320D71D42D9A73"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "5ECBE7A46D0BC2F6"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -14.7d
+			y: -13.2d
+			dependencies: ["1BA52309223BFEC8"]
+			dependency_requirement: "one_completed"
+			id: "766C9B34A13667AA"
+			tasks: [{
+				id: "54442780F5B2C442"
+				type: "item"
+				item: "atum:relic_diamond_brooch"
+			}]
+			rewards: [
+				{
+					id: "7258E29D584BE580"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "6849A94592BF9717"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -16.5d
+			dependencies: ["5E4BD5677CD90687"]
+			dependency_requirement: "one_completed"
+			id: "3A4F1DB3DBB6ECF0"
+			tasks: [{
+				id: "09E194E5136A0261"
+				type: "item"
+				item: "atum:relic_diamond_necklace"
+			}]
+			rewards: [
+				{
+					id: "4B98811B2877CBF4"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "69DEE80F2C277C44"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -12.6d
+			y: -14.399999999999999d
+			dependencies: ["1578435D85400089"]
+			dependency_requirement: "one_completed"
+			id: "0C0B1806F0D6A7A7"
+			tasks: [{
+				id: "492D37B626704C02"
+				type: "item"
+				item: "atum:relic_diamond_bracelet"
+			}]
+			rewards: [
+				{
+					id: "07B5A078E0087AAA"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "2B654CB9B92919AA"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+		{
+			x: -10.799999999999999d
+			y: -15.6d
+			dependencies: ["430B69D234047757"]
+			dependency_requirement: "one_completed"
+			id: "0A965BD2AB48896A"
+			tasks: [{
+				id: "474B708F1768452C"
+				type: "item"
+				item: "atum:relic_diamond_idol"
+			}]
+			rewards: [
+				{
+					id: "7C69AEA23E8E0725"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "26C3EF0DA046F1D9"
+					type: "loot"
+					table_id: 8117461124274328440L
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	id: "563CDB310EEF348D"
+	order_index: 5
+	title: "[Create] Choice Reward"
+	icon: "create_stuff_additions:quartz_crusher"
+	loot_size: 1
+	rewards: [
+		{ item: "create:electron_tube", count: 2 }
+		{ item: "create:precision_mechanism", count: 2 }
+		{ item: "create:andesite_casing", count: 4 }
+		{ item: "create:brass_casing" }
+		{ item: "create:copper_casing", count: 4 }
+		{
+			item: {
+				id: "create:super_glue"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "createaddition:overcharged_casing" }
+		{ item: "create:shadow_steel_casing" }
+		{ item: "create:copper_ingot", count: 8 }
+		{ item: "create:andesite_alloy", count: 8 }
+		{ item: "create:brass_ingot", count: 3 }
+		{
+			item: {
+				id: "create:chromatic_compound"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{ item: "create:goggles" }
+	]
+}

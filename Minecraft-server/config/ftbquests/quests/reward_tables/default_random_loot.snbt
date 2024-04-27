@@ -1,0 +1,35 @@
+{
+	id: "39621C05F255C239"
+	order_index: 0
+	title: "[DeFault] Random Loot"
+	icon: "minecraft:nether_star"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:stone" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:diamond_block" }
+		{ item: "tombstone:impregnated_diamond" }
+		{ item: "minecraft:emerald" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:diamond" }
+		{ item: "minecraft:diamond" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:tube_coral" }
+		{ item: "minecraft:brain_coral" }
+		{ item: "minecraft:horn_coral" }
+		{ item: "minecraft:dead_bubble_coral" }
+		{ item: "minecraft:fire_coral_fan" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+		{ item: "minecraft:poisonous_potato" }
+	]
+}

@@ -1,0 +1,41 @@
+{
+	id: "10D4951F5A2142CB"
+	order_index: 1
+	title: "[Astral] Random Loot"
+	icon: "astralsorcery:tome"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:music_disc_11" }
+		{ item: "minecraft:phantom_membrane" }
+		{ item: "minecraft:iron_bars" }
+		{
+			item: {
+				id: "astralsorcery:constellation_paper"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+		}
+		{ item: "minecraft:stone_pressure_plate" }
+		{ item: "minecraft:shroomlight" }
+		{ item: "astralsorcery:glass_lens" }
+		{ item: "minecraft:chain" }
+		{ item: "minecraft:beetroot", count: 6 }
+		{ item: "astralsorcery:glow_flower" }
+		{ item: "astralsorcery:black_marble_raw", count: 8 }
+		{ item: "astralsorcery:marble_raw", count: 8 }
+		{ item: "minecraft:beetroot_seeds" }
+		{ item: "astralsorcery:aquamarine", count: 8 }
+		{ item: "astralsorcery:nocturnal_powder", count: 2 }
+		{ item: "minecraft:iron_nugget", count: 4 }
+		{ item: "astralsorcery:illumination_powder" }
+		{ item: "minecraft:prismarine_crystals" }
+		{ item: "minecraft:music_disc_ward" }
+		{ item: "minecraft:oxeye_daisy" }
+		{ item: "minecraft:cactus" }
+		{ item: "minecraft:stone_button" }
+		{ item: "minecraft:vine" }
+		{ item: "minecraft:prismarine_shard" }
+	]
+}

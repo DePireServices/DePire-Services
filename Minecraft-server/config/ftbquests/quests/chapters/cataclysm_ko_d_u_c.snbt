@@ -1,0 +1,228 @@
+{
+	id: "5A657A07E3B29B19"
+	group: ""
+	order_index: 15
+	filename: "cataclysm_ko_d_u_c"
+	title: "&l&d[Cataclysm] &r&8Ko dễ đâu :C"
+	icon: "cataclysm:void_core"
+	subtitle: ["Truy Lùng"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "&l&d[Cataclysm]"
+			icon: "minecraft:ender_eye"
+			x: 0.6d
+			y: 0.0d
+			dependency_requirement: "one_completed"
+			id: "7C6BFB0176EB6F38"
+			tasks: [{
+				id: "627CB93C98A61D8F"
+				type: "checkmark"
+				title: "Kăng vl"
+			}]
+		}
+		{
+			title: "Lò Rèn Địa Phủ :D"
+			x: 1.7999999999999998d
+			y: -2.1d
+			subtitle: "hot hot hot hot hot"
+			description: [""]
+			dependencies: ["7C6BFB0176EB6F38"]
+			dependency_requirement: "one_completed"
+			id: "4BA0A4A94B8F2B65"
+			tasks: [{
+				id: "42577018BB0B9AD0"
+				type: "advancement"
+				icon: "minecraft:polished_blackstone_bricks"
+				advancement: "cataclysm:find_soul_black_smith"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "50EBF9974F2A8B5B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 2.6999999999999997d
+			y: -3.5999999999999996d
+			dependencies: ["4BA0A4A94B8F2B65"]
+			dependency_requirement: "one_completed"
+			id: "4D4E5F6F8424ACD0"
+			tasks: [{
+				id: "05D5632452B69B21"
+				type: "advancement"
+				title: "đOánh BoẠi cỔ MáY chẾT cHóC"
+				advancement: "cataclysm:kill_monstrosity"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "0916A46CFB324236"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Toà Thoành j đó ;D"
+			x: -2.1d
+			y: 0.0d
+			dependencies: ["7C6BFB0176EB6F38"]
+			dependency_requirement: "one_completed"
+			id: "0C3101F750D4C61D"
+			tasks: [{
+				id: "327A9469AAFD82C4"
+				type: "advancement"
+				advancement: "cataclysm:find_ruined_citadel"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7538066FAD62CA2E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Vệ Binh Kết Thúc"
+			x: -3.9d
+			y: 0.0d
+			subtitle: "Golem v3.0AA"
+			dependencies: ["0C3101F750D4C61D"]
+			dependency_requirement: "one_completed"
+			id: "2A7278F69D632DE9"
+			tasks: [{
+				id: "62EDCE49339822CB"
+				type: "advancement"
+				advancement: "cataclysm:kill_ender_golem"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "6B584A886E4140AD"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Giám Hộ Cuối Cùng"
+			x: -3.3d
+			y: 1.5d
+			subtitle: "Shulker 2.0"
+			dependencies: ["0C3101F750D4C61D"]
+			dependency_requirement: "one_completed"
+			id: "2A0B88E20D0211A4"
+			tasks: [{
+				id: "5881667CCB349335"
+				type: "advancement"
+				title: "Shulker Cải Tiến"
+				advancement: "cataclysm:kill_ender_guardian"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7A5FAF9A3DB0F2AB"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 3.5999999999999996d
+			y: -2.1d
+			dependencies: ["4BA0A4A94B8F2B65"]
+			dependency_requirement: "one_completed"
+			id: "547CA13CB814B1B8"
+			tasks: [
+				{
+					id: "232518059C3B11DA"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3FDBC11D7E2A880B"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4D2360664D9C0367"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2483BF022C426A91"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3EAFE94558C2A50F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Tao Có KHIENNNNNNNNNNNNNNNNNNNNNN"
+			x: 1.2d
+			y: -3.5999999999999996d
+			dependencies: ["4BA0A4A94B8F2B65"]
+			dependency_requirement: "one_completed"
+			id: "3EB317997B472C25"
+			tasks: [{
+				id: "03B3BD4BED2CE0B1"
+				type: "item"
+				item: "cataclysm:bulwark_of_the_flame"
+			}]
+			rewards: [{
+				id: "58B4AEBAFE11F782"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Mũ Bảo Hiểm"
+			x: 3.5999999999999996d
+			y: -3.0d
+			subtitle: "Ngon"
+			dependencies: ["4BA0A4A94B8F2B65"]
+			dependency_requirement: "one_completed"
+			id: "5B8B7213D7E1D386"
+			tasks: [{
+				id: "4104A9B02A984A55"
+				type: "item"
+				item: {
+					id: "cataclysm:monstrous_helm"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1F9B1CC82C424296"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

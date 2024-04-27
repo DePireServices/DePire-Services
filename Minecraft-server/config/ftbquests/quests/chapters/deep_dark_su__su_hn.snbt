@@ -1,0 +1,116 @@
+{
+	id: "69E0F96A199F0D62"
+	group: ""
+	order_index: 1
+	filename: "deep_dark_su__su_hn"
+	title: "&l&0[Deep Dark] &r&8Sâu , Sâu hơn?"
+	icon: "caves_and_cliffs:sculk_chute"
+	subtitle: ["Warden diff"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Ổ? ⨊o#"
+			icon: "dead_guys_untitled_deep_dark_:sculk_shrieker"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "ko xong rồi D:"
+			description: [
+				"Bên Dưới Vực Sâu Tắm Tối Tồn Tại 1 Hệ Thống Hang Động Được Bao Trùm Bởi *####*"
+				"Deep Dảk : N#! c#ư$ b%$ g*^ !n t#@n và #$n c*n) chưa b!ế# đư^^ @ối r! của @h$ g%%i n(*y..."
+			]
+			dependencies: ["78539D457425DF94"]
+			dependency_requirement: "one_completed"
+			size: 3.0d
+			id: "3A19D42253F643EB"
+			tasks: [{
+				id: "10195A33591EB750"
+				type: "dimension"
+				icon: "dead_guys_untitled_deep_dark_:sculk_shrieker"
+				dimension: "dead_guys_untitled_deep_dark_:deep_darky"
+			}]
+		}
+		{
+			title: "C0 #Hể s* hữu d^%#"
+			x: 3.0d
+			y: -4.0d
+			dependencies: ["3A19D42253F643EB"]
+			dependency_requirement: "one_completed"
+			id: "3BE613C3105D4845"
+			tasks: [{
+				id: "17732020C4A9E3FE"
+				type: "item"
+				item: "dead_guys_untitled_deep_dark_:sculk_o_finder"
+			}]
+		}
+		{
+			title: "^@h !*@#"
+			x: -3.0d
+			y: -4.0d
+			dependencies: ["3A19D42253F643EB"]
+			dependency_requirement: "one_completed"
+			id: "2B469C08389B355F"
+			tasks: [{
+				id: "0A025BF23DDE3BEB"
+				type: "advancement"
+				advancement: "dead_guys_untitled_deep_dark_:light"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Sẵn Sàng?"
+			x: 0.0d
+			y: -3.0d
+			subtitle: "Chuẩn Bị Cho Một Hành Trình Cực Kì Nguy Hiểm!!!"
+			dependency_requirement: "one_completed"
+			id: "78539D457425DF94"
+			tasks: [{
+				id: "3DDC9B45503ACA9E"
+				type: "item"
+				item: "dead_guys_untitled_deep_dark_:unactivated_lightn_dark_block"
+			}]
+		}
+		{
+			title: "!@# t*ấy !?i"
+			x: 0.0d
+			y: 3.5999999999999996d
+			subtitle: "F*#n^ !t"
+			dependencies: ["3A19D42253F643EB"]
+			dependency_requirement: "one_completed"
+			id: "7194017B919120DF"
+			tasks: [{
+				id: "7D78CCF8A8339ACA"
+				type: "item"
+				item: "dead_guys_untitled_deep_dark_:unactivated_darkn_light"
+			}]
+		}
+		{
+			title: "đ?a cH*t"
+			x: 2.4d
+			y: 0.0d
+			dependencies: ["3A19D42253F643EB"]
+			dependency_requirement: "one_completed"
+			id: "29C5D79CAF2625CE"
+			tasks: [{
+				id: "1CBED1F21E7B6DF0"
+				type: "advancement"
+				advancement: "dead_guys_untitled_deep_dark_:lets_see_how_many_times_you_can_be_pulled_apart"
+				criterion: ""
+			}]
+		}
+		{
+			title: "?@*$ ở ^ơ! @$# *$:!"
+			x: -2.4d
+			y: 0.0d
+			dependencies: ["3A19D42253F643EB"]
+			dependency_requirement: "one_completed"
+			id: "501DF4207E2D6C4E"
+			tasks: [{
+				id: "4914E065947BEE5B"
+				type: "advancement"
+				advancement: "dead_guys_untitled_deep_dark_:gotta_catch_em_all"
+				criterion: ""
+			}]
+		}
+	]
+}

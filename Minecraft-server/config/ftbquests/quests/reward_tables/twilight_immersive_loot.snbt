@@ -1,0 +1,24 @@
+{
+	id: "4B0321D7E64BA9EE"
+	order_index: 9
+	title: "[Twilight] Immersive Loot"
+	icon: "twilightforest:transformation_powder"
+	loot_size: 1
+	rewards: [
+		{ item: "twilightforest:moonworm" }
+		{ item: "twilightforest:maze_wafer" }
+		{ item: "twilightforest:charm_of_life_1" }
+		{ item: "twilightforest:armor_shard" }
+		{ item: "twilightforest:raven_feather" }
+		{ item: "twilightforest:magic_map_focus" }
+		{ item: "twilightforest:ironwood_ingot" }
+		{ item: "twilightforest:cooked_meef" }
+		{ item: "twilightforest:magic_map_empty" }
+		{ item: "twilightforest:steeleaf_ingot" }
+		{ item: "twilightforest:cicada" }
+		{ item: "twilightforest:borer_essence" }
+		{ item: "twilightforest:experiment_115" }
+		{ item: "twilightforest:naga_scale" }
+		{ item: "twilightforest:carminite" }
+	]
+}

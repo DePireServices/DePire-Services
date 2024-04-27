@@ -1,0 +1,45 @@
+{
+	id: "4B4E9737BCED2BE6"
+	order_index: 6
+	title: "[Reliquary] Immersive Loot"
+	icon: {
+		id: "xreliquary:mercy_cross"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{ item: "xreliquary:angelheart_vial" }
+		{ item: "xreliquary:withered_rib" }
+		{ item: "xreliquary:rib_bone" }
+		{ item: "xreliquary:witch_hat" }
+		{ item: "xreliquary:molten_core" }
+		{
+			item: {
+				id: "xreliquary:void_tear"
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+					}
+				}
+			}
+		}
+		{ item: "xreliquary:chelicerae" }
+		{ item: "xreliquary:zombie_heart" }
+		{ item: "xreliquary:kraken_shell_fragment" }
+		{ item: "xreliquary:bat_wing" }
+		{ item: "xreliquary:slime_pearl" }
+		{ item: "xreliquary:squid_beak" }
+		{ item: "xreliquary:frozen_core" }
+		{ item: "xreliquary:guardian_spike" }
+		{ item: "xreliquary:nebulous_heart" }
+		{ item: "xreliquary:catalyzing_gland" }
+		{ item: "xreliquary:glowing_bread" }
+		{ item: "xreliquary:fertile_essence" }
+		{ item: "xreliquary:eye_of_the_storm" }
+		{ item: "xreliquary:glowing_water" }
+	]
+}

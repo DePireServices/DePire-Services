@@ -1,0 +1,39 @@
+{
+	id: "531BF475C32A7849"
+	group: ""
+	order_index: 7
+	filename: "bountiful_bauble_bo"
+	title: "&l&5[Bountiful Bauble] &r&6Báo."
+	icon: "bountifulbaubles:ankh_charm"
+	subtitle: ["aduvjp"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "bountifulbaubles:ankh_charm"
+			x: 0.0d
+			y: 0.0d
+			dependency_requirement: "one_completed"
+			id: "39A818936EFF422B"
+			tasks: [{
+				id: "5D60BA95D78A2B9D"
+				type: "checkmark"
+				title: "Mod Này Rất Khó Để Làm Nên sẽ ko có Quest nha!!!"
+			}]
+		}
+		{
+			title: "Mục Tiêu >!<"
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["39A818936EFF422B"]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "6D69870B2086FC0D"
+			tasks: [{
+				id: "3E17B40C585D80CC"
+				type: "item"
+				item: "bountifulbaubles:ankh_charm"
+			}]
+		}
+	]
+}

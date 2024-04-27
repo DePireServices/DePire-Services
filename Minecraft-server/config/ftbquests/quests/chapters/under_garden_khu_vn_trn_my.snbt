@@ -1,0 +1,318 @@
+{
+	id: "52D022622E866B85"
+	group: ""
+	order_index: 12
+	filename: "under_garden_khu_vn_trn_my"
+	title: "&l&7[Under Garden] &r&fKhu Vườn Trên Mây."
+	icon: "undergarden:depthrock"
+	subtitle: ["Hidden In The [???]"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Vé 1 Chiều"
+			x: -4.5d
+			y: -3.5999999999999996d
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "6EF8F0E31F7A36A7"
+			tasks: [{
+				id: "59B044DE752B7578"
+				type: "item"
+				item: "undergarden:catalyst"
+			}]
+			rewards: [{
+				id: "7715DCD5020A1651"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "The BetweenLand?"
+			x: 0.0d
+			y: 4.5d
+			subtitle: "is this?"
+			dependencies: ["6EF8F0E31F7A36A7"]
+			dependency_requirement: "one_completed"
+			size: 3.0d
+			id: "44237F599B1353C7"
+			tasks: [{
+				id: "0C512BDE1E2D305E"
+				type: "dimension"
+				title: "Angry Pixel?"
+				icon: "undergarden:deepturf_block"
+				dimension: "undergarden:undergarden"
+			}]
+			rewards: [{
+				id: "2B0F00FA6FD60433"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -6.6d
+			y: 6.0d
+			dependencies: ["44237F599B1353C7"]
+			dependency_requirement: "one_completed"
+			id: "3DC3A629CF14A068"
+			tasks: [{
+				id: "2A65936719AB79AB"
+				type: "advancement"
+				title: "Khoáng Thạch Vùng Cao"
+				advancement: "undergarden:undergarden/any_ore"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "55E0269DF662847A"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Sở Thú Truyền Kì"
+			x: -6.8999999999999995d
+			y: 4.5d
+			dependencies: [
+				"6EF8F0E31F7A36A7"
+				"44237F599B1353C7"
+			]
+			dependency_requirement: "one_completed"
+			id: "6AF216EE66F618B2"
+			tasks: [{
+				id: "7DFCED37E5D0C31B"
+				type: "advancement"
+				advancement: "undergarden:undergarden/all_undergarden_biomes"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "273014C89D30B8A1"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "áC"
+			x: 3.9d
+			y: 4.5d
+			dependencies: ["44237F599B1353C7"]
+			dependency_requirement: "one_completed"
+			id: "0AB32F780E7E7F59"
+			tasks: [{
+				id: "2F9B267DBFDDF281"
+				type: "advancement"
+				advancement: "undergarden:undergarden/slay_rotling"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2DA3C8E458A28DD3"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Ác vl"
+			x: 6.6d
+			y: 4.5d
+			dependencies: ["44237F599B1353C7"]
+			dependency_requirement: "one_completed"
+			id: "247E1D93415E7916"
+			tasks: [{
+				id: "2499A5BE488C5BC5"
+				type: "advancement"
+				advancement: "undergarden:undergarden/slay_scintling"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "50F23B405F40C116"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Xấu D:"
+			x: 11.7d
+			y: 4.5d
+			subtitle: "ơ"
+			dependencies: ["44237F599B1353C7"]
+			dependency_requirement: "one_completed"
+			id: "16ED20DA1E6CE84C"
+			tasks: [{
+				id: "055564AC7672FD37"
+				type: "advancement"
+				advancement: "undergarden:undergarden/catch_gwibling"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "58B88638C0AD1596"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Lên đỒ"
+			x: -3.5999999999999996d
+			y: 7.5d
+			dependencies: [
+				"3DC3A629CF14A068"
+				"44237F599B1353C7"
+			]
+			dependency_requirement: "one_completed"
+			id: "7FC7311DE2C39B79"
+			tasks: [{
+				id: "06E5D7C1D629B0D1"
+				type: "advancement"
+				advancement: "undergarden:undergarden/cloggrum_armor"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "39640D9AD47D5B64"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Nghĩa Trang Liệt Sĩ"
+			x: -2.1d
+			y: 8.4d
+			subtitle: "Tham Quan Di tích???"
+			dependencies: ["44237F599B1353C7"]
+			dependency_requirement: "one_completed"
+			id: "413790F9641B1480"
+			tasks: [{
+				id: "13856DEC5E383472"
+				type: "advancement"
+				advancement: "undergarden:undergarden/catacombs"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "6C4DF6C1CF69492A"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Giải Phóng Miền Nam"
+			x: 2.4d
+			y: 9.9d
+			subtitle: "Tiêu Diệt Forrgoten Guardian"
+			dependencies: ["413790F9641B1480"]
+			dependency_requirement: "one_completed"
+			id: "67088F9FE0C9F0F2"
+			tasks: [{
+				id: "2B04A5994983A6C3"
+				type: "advancement"
+				advancement: "undergarden:undergarden/slay_forgotten_guardian"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "373DD54FB2C32D55"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "D:"
+			x: 10.799999999999999d
+			y: 7.8d
+			subtitle: "oh no"
+			dependencies: ["67088F9FE0C9F0F2"]
+			dependency_requirement: "one_completed"
+			id: "6E224344AA818122"
+			tasks: [{
+				id: "4FB65046F4F9EB07"
+				type: "advancement"
+				advancement: "undergarden:undergarden/forgotten_ingot"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "64A50A5FDDE4A8E8"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Cúp Quên Lãng"
+			x: 13.5d
+			y: 4.5d
+			subtitle: "Công Cụ Truyền Thuyết Đến Từ Thiên Không =))"
+			dependencies: ["6E224344AA818122"]
+			dependency_requirement: "one_completed"
+			id: "0D16428FE7114091"
+			tasks: [{
+				id: "53F76274FB03CD59"
+				type: "advancement"
+				advancement: "undergarden:undergarden/forgotten_tools"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2ACCF7313EEE98B6"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Rìu Truyền Thuyết"
+			x: 9.299999999999999d
+			y: 4.5d
+			subtitle: "Mao"
+			dependencies: ["6E224344AA818122"]
+			dependency_requirement: "one_completed"
+			id: "424ED61B30A26E08"
+			tasks: [{
+				id: "3E6C2EF24F347311"
+				type: "advancement"
+				advancement: "undergarden:undergarden/forgotten_battleaxe"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "04D5B1BC924AB62D"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "ÁC vCl"
+			x: 3.9d
+			y: 1.5d
+			subtitle: "D;"
+			description: [
+				""
+				""
+			]
+			dependencies: ["0AB32F780E7E7F59"]
+			dependency_requirement: "one_completed"
+			id: "5FC88BF0CC8D3F67"
+			tasks: [{
+				id: "4FAA1F1DD02ED777"
+				type: "advancement"
+				advancement: "undergarden:undergarden/slay_all_rotspawn"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7B523A902E1A6D31"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Đuốc xịn?"
+			x: 5.3999999999999995d
+			y: 6.6d
+			subtitle: "Uiiiiiii"
+			dependencies: ["0AB32F780E7E7F59"]
+			dependency_requirement: "one_completed"
+			id: "528FF936D735F9D2"
+			tasks: [{
+				id: "0EA4D35B2926D688"
+				type: "advancement"
+				advancement: "undergarden:undergarden/shard_torch"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "726F9DC3A9D9B9C1"
+				type: "xp"
+				xp: 50
+			}]
+		}
+	]
+}

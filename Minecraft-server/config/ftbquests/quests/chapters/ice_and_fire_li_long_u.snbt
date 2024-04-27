@@ -1,0 +1,748 @@
+{
+	id: "0EC34A1E2F7E7BDE"
+	group: ""
+	order_index: 5
+	filename: "ice_and_fire_li_long_u"
+	title: "&l&e[Ice And Fire] &r&dLôi Long Đâu????"
+	icon: "iceandfire:dragon_skull_lightning"
+	subtitle: ["More [MuscleBloop]"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Chinh Phục Sức Moạnh của Muscle Bloop!!!"
+			x: 0.0d
+			y: 0.0d
+			id: "0285976E46DC743E"
+			tasks: [{
+				id: "4D446A12C5B64CCB"
+				type: "item"
+				item: "iceandfire:bestiary"
+			}]
+			rewards: [{
+				id: "0C3D268EF2FA6D60"
+				type: "xp"
+				xp: 25
+			}]
+		}
+		{
+			x: 4.2d
+			y: -7.199999999999999d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "38CAC64616E65F93"
+			tasks: [{
+				id: "7651AB56A51C70E3"
+				type: "advancement"
+				title: "Phản Lực Tự Nhiên"
+				advancement: "iceandfire:iceandfire/tame_amphithere"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "043D8F64148B97BD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Sheeshhhhhhh"
+			x: 12.299999999999999d
+			y: -2.1d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "0A62A50E45F48CFA"
+			tasks: [{
+				id: "0C7A4C24EE900168"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/tame_hippogryph"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7C0F0932A79371E5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Vô dụng"
+			x: 3.5999999999999996d
+			y: -9.299999999999999d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "6385233910B753FE"
+			tasks: [{
+				id: "086F760EDF9AED73"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/kill_myrmex"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "4D200D307E64D932"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Búa?"
+			x: 9.0d
+			y: -9.6d
+			dependencies: ["38CAC64616E65F93"]
+			dependency_requirement: "one_completed"
+			id: "1AEB4E5E54851DAB"
+			tasks: [{
+				id: "1AE352E718F4CA97"
+				type: "item"
+				item: {
+					id: "iceandfire:amphithere_macuahuitl"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "031B96225B3C68E8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Kiếm?"
+			x: 18.9d
+			y: -2.6999999999999997d
+			dependencies: ["0A62A50E45F48CFA"]
+			dependency_requirement: "one_completed"
+			id: "70F6FF797FFADE99"
+			tasks: [{
+				id: "4B7A7950B971C87D"
+				type: "item"
+				item: {
+					id: "iceandfire:hippogryph_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "23AC22A9F6502FB9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "2xu"
+			x: 3.0d
+			y: -12.6d
+			subtitle: "bán ko"
+			dependencies: ["6385233910B753FE"]
+			dependency_requirement: "one_completed"
+			id: "1852E235ACA56305"
+			tasks: [{
+				id: "7E672207A27088CC"
+				type: "item"
+				item: "iceandfire:myrmex_desert_swarm"
+			}]
+			rewards: [{
+				id: "1247E6B90DD62F4B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "3xu"
+			x: 8.7d
+			y: -10.799999999999999d
+			subtitle: "bán đê"
+			dependencies: ["6385233910B753FE"]
+			dependency_requirement: "one_completed"
+			id: "7A9FFF8A91709ACA"
+			tasks: [{
+				id: "2074F0D11453E3F4"
+				type: "item"
+				item: "iceandfire:myrmex_jungle_swarm"
+			}]
+			rewards: [{
+				id: "45640FB9E149A13B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "UUUUUUUUUUUUUUUU"
+			x: -14.7d
+			y: -2.1d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "34A05C6854C2D743"
+			tasks: [{
+				id: "645FA784FF21991A"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/kill_cyclops"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "541F237A1915819C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Lật Mặt :D"
+			x: -17.4d
+			y: 1.7999999999999998d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "78EA3105352991F2"
+			tasks: [{
+				id: "350262B4F2FE6D85"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/kill_siren"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7C47311AA441F984"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Dễ Dụ"
+			x: -9.299999999999999d
+			y: -3.5999999999999996d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "494E6EC83DF50723"
+			tasks: [{
+				id: "75C53DAC02C13917"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/tame_pixie"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "523B68AAD99A305C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Nào..kooooooooooo"
+			x: -13.2d
+			y: -4.8d
+			dependencies: ["494E6EC83DF50723"]
+			dependency_requirement: "one_completed"
+			id: "7117881556D1E1D8"
+			tasks: [{
+				id: "6800B1000E05E8D1"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/pixie_wand"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2DD6A35C32FE24AC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Thông Minh (béo)"
+			x: -11.4d
+			y: -7.199999999999999d
+			dependencies: ["494E6EC83DF50723"]
+			dependency_requirement: "one_completed"
+			id: "2CDCC589072B91B4"
+			tasks: [{
+				id: "5148F0B18669F972"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/jar_pixie"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "448027D650D59AEF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "YAY"
+			x: 8.4d
+			y: -3.3d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "5638B64D393317E0"
+			tasks: [{
+				id: "78A8E8ED70F82A02"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/tame_hippocampus"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1501A0C464563374"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Khè!!!"
+			x: 15.299999999999999d
+			y: -5.1d
+			dependencies: ["5638B64D393317E0"]
+			dependency_requirement: "one_completed"
+			id: "29E32AA2CCEAEA3E"
+			tasks: [{
+				id: "0214DBBEC39BAE03"
+				type: "item"
+				item: {
+					id: "iceandfire:hippocampus_slapper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "19D45B474ABA8514"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Give me a Vandal!!!"
+			x: 2.6999999999999997d
+			y: -3.0d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "5395EC35B974AE9B"
+			tasks: [{
+				id: "357AEE764AC95B50"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/kill_ghost"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3169F80A0BF617FE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Người em gái"
+			x: 12.899999999999999d
+			y: -7.8d
+			subtitle: "bị dính lời nguyền"
+			dependencies: ["5395EC35B974AE9B"]
+			dependency_requirement: "one_completed"
+			id: "7E6B794C7CC677FC"
+			tasks: [{
+				id: "479C82228DD9BEE8"
+				type: "item"
+				item: "iceandfire:ghost_chest"
+			}]
+			rewards: [{
+				id: "524C30923834F03E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.6d
+			y: -13.2d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "50B766CFB13AC4C6"
+			tasks: [{
+				id: "31A317CFCDCC327D"
+				type: "advancement"
+				title: "Dread!!!"
+				advancement: "iceandfire:iceandfire/gorgon_head"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "16D2E0365CC6D414"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Ung rồi"
+			x: -0.6d
+			y: -6.8999999999999995d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "65F092B63DB2C3DB"
+			tasks: [{
+				id: "6105BC801D4A3EBC"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/rotten_egg"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "61CCC3523F1AB691"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Chết rồi!"
+			x: -1.2d
+			y: -9.9d
+			dependencies: ["65F092B63DB2C3DB"]
+			dependency_requirement: "one_completed"
+			id: "3B440EF0FC8536B9"
+			tasks: [{
+				id: "3C27B8EB736B565B"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/tame_cockatrice"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "39A574FB981D6559"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "ahhhhhhhhhhh"
+			x: -3.5999999999999996d
+			y: -12.899999999999999d
+			dependencies: ["3B440EF0FC8536B9"]
+			dependency_requirement: "one_completed"
+			id: "72A007DA359F81D2"
+			tasks: [{
+				id: "6C6900F6472DB5E4"
+				type: "item"
+				item: {
+					id: "iceandfire:cockatrice_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "598A1958A4E959AB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Gium D:"
+			x: -1.7999999999999998d
+			y: -3.0d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "02A2CDA3E57B5C8B"
+			tasks: [{
+				id: "5013610BF7660BBD"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/kill_deathworm"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "6ADA0CF8C96A235D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "ơ"
+			x: -4.2d
+			y: -10.5d
+			dependencies: ["02A2CDA3E57B5C8B"]
+			dependency_requirement: "one_completed"
+			id: "5F7F6E3D0BE92CD0"
+			tasks: [{
+				id: "441EE960B52C6FF0"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/deathworm_egg"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7E6713CA636A4640"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "wtf??"
+			x: -6.6d
+			y: -12.0d
+			dependencies: ["02A2CDA3E57B5C8B"]
+			dependency_requirement: "one_completed"
+			id: "42F1E17D22246CCF"
+			tasks: [{
+				id: "475A7BD450B1859D"
+				type: "item"
+				item: {
+					id: "iceandfire:deathworm_gauntlet_yellow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3ACCE73F9C3395EE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Mực Siêu Cấp Vjp pro!"
+			x: -3.3d
+			y: -2.6999999999999997d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "5FF58F2E707567F9"
+			tasks: [{
+				id: "017246EE9F614641"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/kill_sea_serpent"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "60D599D72783F318"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "uhhhh.?"
+			x: -8.1d
+			y: -10.5d
+			dependencies: ["5FF58F2E707567F9"]
+			dependency_requirement: "one_completed"
+			id: "629FA8CD036603BB"
+			tasks: [{
+				id: "4EF72BE14AF06DB9"
+				type: "item"
+				item: {
+					id: "iceandfire:tide_trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "549271B0F2C7846D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Làm Đúng rồi nhóc ơiiii"
+			x: -7.5d
+			y: -5.7d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "44547E1EA95276E5"
+			tasks: [{
+				id: "0FFB9196AE602A7F"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/kill_stymphalian_bird"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "35BBE77DC277EA19"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "eh?"
+			x: -10.5d
+			y: -9.299999999999999d
+			dependencies: ["44547E1EA95276E5"]
+			dependency_requirement: "one_completed"
+			id: "3E22AEE2603CEB69"
+			tasks: [{
+				id: "47FF41E2F270CD6B"
+				type: "item"
+				item: "iceandfire:stymphalian_feather_bundle"
+			}]
+			rewards: [{
+				id: "391BD79F74AF3748"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Dũng Sĩ Diệt Muscle bloop"
+			x: 0.8999999999999999d
+			y: 4.8d
+			dependencies: ["0285976E46DC743E"]
+			dependency_requirement: "one_completed"
+			id: "44A3E1791F44BAFE"
+			tasks: [{
+				id: "0CDC471C7B659496"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/kill_if_dragon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3455FA39B4F16FE4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Ngon!!!"
+			x: 0.0d
+			y: 9.0d
+			dependencies: ["44A3E1791F44BAFE"]
+			dependency_requirement: "one_completed"
+			id: "3F59F17500901E5D"
+			tasks: [{
+				id: "79583DCEACE00833"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/dragonbone_tool"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1690BAD4E56C00F6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Choáy Quá"
+			x: 4.2d
+			y: 8.1d
+			dependencies: ["44A3E1791F44BAFE"]
+			dependency_requirement: "one_completed"
+			id: "184212A9840B6804"
+			tasks: [{
+				id: "6D40FC5F1175DCCD"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/dragonbone_flaming_sword"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "6EFD3D98B2F7A4E4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Của Nợ?"
+			x: 0.6d
+			y: 12.299999999999999d
+			dependencies: ["44A3E1791F44BAFE"]
+			dependency_requirement: "one_completed"
+			id: "29B67FA209A0DCF7"
+			tasks: [{
+				id: "44105B7F6B07C541"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/dragon_egg"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "117CB3D1674CFC57"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Đến cÙng!"
+			x: 3.9d
+			y: 12.0d
+			dependencies: ["44A3E1791F44BAFE"]
+			dependency_requirement: "one_completed"
+			id: "6EB9B238469B1F43"
+			tasks: [{
+				id: "234515F1A7696685"
+				type: "advancement"
+				advancement: "iceandfire:iceandfire/dragon_forge_brick"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "5CA28E4AD76659FE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.6999999999999997d
+			y: 15.299999999999999d
+			dependencies: ["44A3E1791F44BAFE"]
+			dependency_requirement: "one_completed"
+			id: "25DC17480FA09086"
+			tasks: [{
+				id: "302C02509A355B47"
+				type: "advancement"
+				title: "Đến Tận Cùng?"
+				advancement: "iceandfire:iceandfire/dragonsteel_weapon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "17E83AC27649689C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 16.5d
+			dependencies: ["25DC17480FA09086"]
+			hide: true
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "461554C1D39C7CB8"
+			tasks: [{
+				id: "62ADA5CC4C0E1363"
+				type: "item"
+				item: "iceandfire:dread_queen_staff"
+			}]
+			rewards: [{
+				id: "349C6C3BDC47E8CB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: 15.899999999999999d
+			dependencies: ["25DC17480FA09086"]
+			hide: true
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "6BADA222AFDE4014"
+			tasks: [{
+				id: "771F7BA1433FFCA1"
+				type: "item"
+				item: {
+					id: "iceandfire:dread_queen_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "349DDAC2CBCF61DA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.3d
+			y: 17.099999999999998d
+			dependencies: ["25DC17480FA09086"]
+			hide: true
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "61AB5A0245294252"
+			tasks: [{
+				id: "6526C91E16A30455"
+				type: "item"
+				item: "iceandfire:dread_queen_staff"
+			}]
+			rewards: [{
+				id: "2DC8E21FB8F3A408"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+}

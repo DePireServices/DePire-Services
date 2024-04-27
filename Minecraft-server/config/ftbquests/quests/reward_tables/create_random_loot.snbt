@@ -1,0 +1,48 @@
+{
+	id: "3B52254D5E268E57"
+	order_index: 4
+	title: "[Create] Random Loot"
+	icon: "create:crafting_blueprint"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:chain" }
+		{ item: "ars_nouveau:stripped_blue_archwood_log" }
+		{ item: "minecraft:polished_andesite_slab" }
+		{ item: "minecraft:red_sandstone_wall" }
+		{ item: "create:dough" }
+		{ item: "create:tree_fertilizer" }
+		{
+			item: {
+				id: "create:sand_paper"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "create:red_sand_paper"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "create:builders_tea" }
+		{ item: "ars_nouveau:stripped_blue_archwood_wood" }
+		{ item: "minecraft:andesite_slab" }
+		{ item: "create:andesite_alloy", count: 4 }
+		{ item: "minecraft:andesite", count: 2 }
+		{ item: "create:brass_nugget" }
+		{ item: "create:tree_fertilizer" }
+		{ item: "ars_nouveau:blue_archwood_wood" }
+		{ item: "ars_nouveau:blue_archwood_sapling" }
+		{ item: "minecraft:dandelion" }
+		{ item: "create:copper_ingot", count: 2 }
+		{ item: "create:zinc_ingot" }
+		{ item: "create:zinc_nugget" }
+		{ item: "create:brass_ingot", count: 2 }
+		{ item: "create:tree_fertilizer" }
+	]
+}

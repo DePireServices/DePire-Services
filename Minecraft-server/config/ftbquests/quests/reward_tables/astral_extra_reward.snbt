@@ -1,0 +1,21 @@
+{
+	id: "4A5B62AD0278AC80"
+	order_index: 2
+	title: "[Astral] Extra Reward"
+	icon: {
+		id: "astralsorcery:knowledge_share"
+		Count: 1b
+		tag: {
+			astralsorcery: { }
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{ item: "astralsorcery:marble_raw", count: 64 }
+		{ item: "astralsorcery:black_marble_raw", count: 64 }
+		{ item: "astralsorcery:nocturnal_powder", count: 8 }
+		{ item: "astralsorcery:aquamarine", count: 16 }
+		{ item: "astralsorcery:rock_crystal_ore", count: 4 }
+		{ item: "astralsorcery:liquid_starlight_bucket", count: 4 }
+	]
+}

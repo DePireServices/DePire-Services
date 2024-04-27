@@ -1,0 +1,487 @@
+{
+	id: "3871343CD0D2D47E"
+	group: ""
+	order_index: 16
+	filename: "corail_tombstone_100_tht"
+	title: "&l&0[Corail Tombstone] &r&7Soul?God?Béo?"
+	icon: "tombstone:soul_receptacle"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Bị dính lời nguyền?"
+			x: 3.5999999999999996d
+			y: 1.2d
+			id: "7D89D0C15C573008"
+			tasks: [{
+				id: "640CBE1DE4D2E786"
+				type: "checkmark"
+				title: "Sợ à!?!"
+			}]
+		}
+		{
+			title: "Bụi >.<"
+			x: 1.7999999999999998d
+			y: 3.3d
+			hide_dependency_lines: true
+			dependencies: ["7D89D0C15C573008"]
+			dependency_requirement: "one_completed"
+			id: "39BF6D4857973A7B"
+			tasks: [{
+				id: "03FF84D878B7F290"
+				type: "item"
+				item: "tombstone:grave_dust"
+			}]
+			rewards: [{
+				id: "618B42B63D6A6085"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Thích Màu Nào Đây"
+			x: 5.3999999999999995d
+			y: -0.8999999999999999d
+			dependencies: [
+				"03FF84D878B7F290"
+				"35B3B3B50121209B"
+				"39BF6D4857973A7B"
+			]
+			dependency_requirement: "one_completed"
+			id: "70AE8A9782A48AA0"
+			tasks: [{
+				id: "4509B4452A79B739"
+				type: "item"
+				item: "tombstone:white_marble"
+			}]
+			rewards: [{
+				id: "384F086DA6A8DDCD"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Thích Màu Nào Đây"
+			x: 1.7999999999999998d
+			y: -0.8999999999999999d
+			dependencies: [
+				"39BF6D4857973A7B"
+				"35B3B3B50121209B"
+			]
+			dependency_requirement: "one_completed"
+			id: "678E698E2AB936E9"
+			tasks: [{
+				id: "3B0372F0CB5D6459"
+				type: "item"
+				item: "tombstone:dark_marble"
+			}]
+			rewards: [{
+				id: "469A5C7196347E95"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Beer"
+			x: 14.399999999999999d
+			y: 1.2d
+			subtitle: "Beer"
+			dependencies: ["640CBE1DE4D2E786"]
+			dependency_requirement: "one_completed"
+			id: "71994A4BCF62FDBA"
+			tasks: [{
+				id: "1E2123B09D719891"
+				type: "item"
+				item: "tombstone:grave_plate"
+			}]
+			rewards: [{
+				id: "614DAA2C0CA0E786"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Chú \"kobinhthuong''"
+			x: 3.5999999999999996d
+			y: 6.0d
+			dependencies: [
+				"39BF6D4857973A7B"
+				"35B3B3B50121209B"
+			]
+			dependency_requirement: "one_completed"
+			id: "0B440C488C8C0152"
+			tasks: [{
+				id: "558FC23D33DD2469"
+				type: "item"
+				item: "tombstone:strange_scroll"
+			}]
+			rewards: [{
+				id: "50D0EFC3EF3A39FF"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Bảng \"ko bình thường\""
+			x: 3.5999999999999996d
+			y: -3.5999999999999996d
+			dependencies: [
+				"678E698E2AB936E9"
+				"70AE8A9782A48AA0"
+			]
+			dependency_requirement: "one_completed"
+			id: "3F8F1BA7B1760AB9"
+			tasks: [{
+				id: "4C3C4A95E356FFD3"
+				type: "item"
+				item: "tombstone:strange_tablet"
+			}]
+			rewards: [{
+				id: "0581880AC3D11329"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Bụi Âm Binh"
+			x: 5.3999999999999995d
+			y: 3.3d
+			hide_dependency_lines: true
+			dependencies: [
+				"7D89D0C15C573008"
+				"39BF6D4857973A7B"
+			]
+			dependency_requirement: "one_completed"
+			id: "35B3B3B50121209B"
+			tasks: [{
+				id: "4A1071CD31DA82EC"
+				type: "item"
+				item: "tombstone:essence_of_undeath"
+			}]
+			rewards: [{
+				id: "51D05BA60978BBF1"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 16.2d
+			y: -2.6999999999999997d
+			dependencies: ["71994A4BCF62FDBA"]
+			dependency_requirement: "one_started"
+			id: "059230576543CD12"
+			tasks: [{
+				id: "2F6FB5AD19C815D8"
+				type: "item"
+				item: "tombstone:impregnated_diamond"
+			}]
+			rewards: [{
+				id: "0B213EBCE7F6867E"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Bụi Hư Vô"
+			x: 16.5d
+			y: 5.1d
+			dependencies: ["71994A4BCF62FDBA"]
+			dependency_requirement: "one_completed"
+			id: "042A3EEF6EB3BAF1"
+			tasks: [{
+				id: "7C01E9316025F6FD"
+				type: "item"
+				item: "tombstone:dust_of_vanishing"
+			}]
+			rewards: [{
+				id: "27940F0C157C878A"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 21.0d
+			y: 5.1d
+			dependencies: [
+				"455DF82F359D37A0"
+				"2D72122267AF815E"
+			]
+			dependency_requirement: "one_completed"
+			id: "53939A33DFEBB4B9"
+			tasks: [{
+				id: "7A0E8FB652578859"
+				type: "item"
+				item: {
+					id: "tombstone:decorative_grave_cross"
+					Count: 1b
+					tag: {
+						model_texture: 1
+					}
+				}
+			}]
+			rewards: [{
+				id: "08219B595BCCE02B"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Mộ Thường"
+			x: 16.5d
+			y: 1.2d
+			dependencies: ["71994A4BCF62FDBA"]
+			dependency_requirement: "one_completed"
+			id: "206E52607946F9EA"
+			tasks: [{
+				id: "089B4ECDB8F6685D"
+				type: "item"
+				item: {
+					id: "tombstone:decorative_grave_simple"
+					Count: 1b
+					tag: {
+						model_texture: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3C8A34422624944D"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 18.599999999999998d
+			y: -0.3d
+			dependencies: ["206E52607946F9EA"]
+			dependency_requirement: "one_completed"
+			id: "2D72122267AF815E"
+			tasks: [{
+				id: "05F70E6D73E1E33B"
+				type: "item"
+				item: {
+					id: "tombstone:decorative_subaraki_grave"
+					Count: 1b
+					tag: {
+						model_texture: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6D99D033A3F54F5E"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 21.0d
+			y: -2.4d
+			dependencies: [
+				"2D72122267AF815E"
+				"455DF82F359D37A0"
+			]
+			dependency_requirement: "one_completed"
+			id: "4CF090353BBA0AC8"
+			tasks: [{
+				id: "0DACBD7FB3623C09"
+				type: "item"
+				item: {
+					id: "tombstone:decorative_subaraki_grave"
+					Count: 1b
+					tag: {
+						model_texture: 1
+					}
+				}
+			}]
+			rewards: [{
+				id: "0181561709E81335"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 21.0d
+			y: 1.5d
+			dependencies: [
+				"2D72122267AF815E"
+				"455DF82F359D37A0"
+			]
+			dependency_requirement: "one_completed"
+			id: "46089F7767418050"
+			tasks: [{
+				id: "34F866461D9D287B"
+				type: "item"
+				item: {
+					id: "tombstone:decorative_tombstone"
+					Count: 1b
+					tag: {
+						model_texture: 1
+					}
+				}
+			}]
+			rewards: [{
+				id: "0C298471576362B5"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 18.599999999999998d
+			y: 2.6999999999999997d
+			dependencies: ["206E52607946F9EA"]
+			dependency_requirement: "one_completed"
+			id: "455DF82F359D37A0"
+			tasks: [{
+				id: "7AE21DCE18F08A63"
+				type: "item"
+				item: {
+					id: "tombstone:decorative_grave_original"
+					Count: 1b
+					tag: {
+						model_texture: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "60B1F7C26295FB5E"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 4.8d
+			y: -3.5999999999999996d
+			dependencies: ["059230576543CD12"]
+			dependency_requirement: "one_completed"
+			id: "101CB130E2F9D3F7"
+			tasks: [{
+				id: "68249ED8E59F55B2"
+				type: "item"
+				item: "tombstone:familiar_receptacle"
+			}]
+			rewards: [{
+				id: "54671841E6411248"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 4.8d
+			y: 6.0d
+			dependencies: ["042A3EEF6EB3BAF1"]
+			dependency_requirement: "one_completed"
+			id: "6D9054CC0A7161E0"
+			tasks: [{
+				id: "55B642548CC9C725"
+				type: "item"
+				item: {
+					id: "tombstone:fishing_rod_of_misadventure"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2C92C95E30A6065B"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Sach Sua Chua"
+			x: 0.6d
+			y: -0.8999999999999999d
+			subtitle: "unikey lỗi rồi"
+			dependencies: ["22C1D3E328476D3D"]
+			dependency_requirement: "one_completed"
+			id: "7C017BA7D1740AA2"
+			tasks: [{
+				id: "552F924A04873887"
+				type: "item"
+				item: "tombstone:book_of_repairing"
+			}]
+			rewards: [{
+				id: "6C6F5D6D66808707"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Sách Trù Phú"
+			x: -7.5d
+			y: 5.1d
+			dependencies: ["3CA871CD5266DEE1"]
+			dependency_requirement: "one_completed"
+			id: "10E94807ECC8AA0D"
+			tasks: [{
+				id: "7EDA6E298E79741B"
+				type: "item"
+				item: "tombstone:book_of_magic_impregnation"
+			}]
+			rewards: [{
+				id: "27E9AAAAB1D7CBA4"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Sách Chia Cường"
+			x: 0.6d
+			y: 3.3d
+			dependencies: ["10E94807ECC8AA0D"]
+			dependency_requirement: "one_completed"
+			id: "605756FB90DBCAE1"
+			tasks: [{
+				id: "2CF49E4CC4CE6EA5"
+				type: "item"
+				item: "tombstone:book_of_disenchantment"
+			}]
+			rewards: [{
+				id: "49668591D6C5D3F3"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			title: "Sách Tái Chanh"
+			x: -7.199999999999999d
+			y: -4.2d
+			dependencies: ["3CA871CD5266DEE1"]
+			dependency_requirement: "one_completed"
+			id: "22C1D3E328476D3D"
+			tasks: [{
+				id: "579F38E922FFA74F"
+				type: "item"
+				item: "tombstone:book_of_recycling"
+			}]
+			rewards: [{
+				id: "2F4C007A9D3EE452"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -4.2d
+			y: 0.8999999999999999d
+			dependencies: ["640CBE1DE4D2E786"]
+			dependency_requirement: "one_completed"
+			id: "3CA871CD5266DEE1"
+			tasks: [{
+				id: "1B77120D0E1CA4B6"
+				type: "item"
+				item: {
+					id: "tombstone:ankh_of_pray"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5D3C729F703FF7FF"
+				type: "xp"
+				xp: 50
+			}]
+		}
+	]
+}

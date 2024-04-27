@@ -1,0 +1,892 @@
+{
+	id: "0C94F9D1ED47E67F"
+	group: ""
+	order_index: 4
+	filename: "tw"
+	title: "&l&9[Twilight Forest] &r&3Rừng Bình Minh D:"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	subtitle: ["Boss cuối?"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Rừng Bình Minh (Béo)"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: 9.6d
+			y: 3.9d
+			subtitle: "5 Rừng"
+			description: ["Cần j top mid ad"]
+			id: "258BA3E2ED31831E"
+			tasks: [{
+				id: "3E3F0C2164B1112D"
+				type: "dimension"
+				title: "Toàn là \"Rừng\""
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				dimension: "twilightforest:twilightforest"
+			}]
+			rewards: [
+				{
+					id: "02CFD679494D3024"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "774808B8F9D3AF3D"
+					type: "loot"
+					auto: "invisible"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "Rắn Béo"
+			icon: "twilightforest:naga_courtyard_miniature_structure"
+			x: 0.0d
+			y: -5.1d
+			dependencies: ["1550323F35BAD7F7"]
+			dependency_requirement: "one_completed"
+			id: "63BF46E561603A07"
+			tasks: [{
+				id: "596331586DF9D445"
+				type: "item"
+				item: "twilightforest:naga_trophy"
+			}]
+			rewards: [
+				{
+					id: "5E83AB9A16AA1690"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "48068AB682E0D8A5"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "Pháp Sư Nhà Quê"
+			icon: "twilightforest:lich_tower_miniature_structure"
+			x: -4.2d
+			y: -8.1d
+			dependencies: ["63BF46E561603A07"]
+			dependency_requirement: "one_completed"
+			id: "4D87450EAD422B31"
+			tasks: [{
+				id: "78FD0B8D4B36AD14"
+				type: "item"
+				item: "twilightforest:lich_trophy"
+			}]
+			rewards: [
+				{
+					id: "695C1F628BCF20B1"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "460C0DC4C5B53E9F"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "Tham Lam"
+			icon: "minecraft:stone_bricks"
+			x: 4.2d
+			y: -8.1d
+			dependencies: ["63BF46E561603A07"]
+			dependency_requirement: "one_completed"
+			id: "601514CD0E2A378C"
+			tasks: [{
+				id: "1220D637FC3977E5"
+				type: "item"
+				item: "twilightforest:quest_ram_trophy"
+			}]
+			rewards: [{
+				id: "0BE11F9C9A683222"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			title: "Chiến Binh Lòng Đất"
+			icon: "twilightforest:underbrick_mossy"
+			x: -4.2d
+			y: -15.0d
+			dependencies: ["4D87450EAD422B31"]
+			dependency_requirement: "one_completed"
+			id: "55D745ECEE581DB3"
+			tasks: [{
+				id: "0388F73F09ED1C62"
+				type: "item"
+				item: "twilightforest:knight_phantom_trophy"
+			}]
+			rewards: [
+				{
+					id: "44FB6796053A32F7"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "5F3332CBE1BED4F7"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "Long Thể miss Chi"
+			icon: "minecraft:crimson_nylium"
+			x: 4.2d
+			y: -25.799999999999997d
+			dependencies: ["285D4A95A12A6954"]
+			dependency_requirement: "one_completed"
+			id: "2B6E9695F64FB4A8"
+			tasks: [{
+				id: "699FF258313B1AB1"
+				type: "item"
+				item: "twilightforest:hydra_trophy"
+			}]
+			rewards: [
+				{
+					id: "6BFEB2EE8BC735BA"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "695F1491DB354126"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "Bao cát biết bay"
+			icon: "twilightforest:ghast_trap"
+			x: -4.2d
+			y: -21.9d
+			dependencies: ["55D745ECEE581DB3"]
+			dependency_requirement: "one_completed"
+			id: "33E2B8B9B8C74C61"
+			tasks: [{
+				id: "45C4FCB2339EECB5"
+				type: "item"
+				item: "twilightforest:ur_ghast_trophy"
+			}]
+			rewards: [
+				{
+					id: "23AC71EE334676D3"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "40C586318B00B53A"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "Racist???"
+			icon: "twilightforest:maze_stone_brick"
+			x: 4.2d
+			y: -16.5d
+			dependencies: [
+				"78FD0B8D4B36AD14"
+				"601514CD0E2A378C"
+			]
+			dependency_requirement: "one_completed"
+			id: "285D4A95A12A6954"
+			tasks: [{
+				id: "1615A9607EDA6D49"
+				type: "item"
+				item: "twilightforest:minoshroom_trophy"
+			}]
+			rewards: [
+				{
+					id: "7ACC5CCB3115326D"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "3586D03D0B41CFF2"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "Nữ Vương ko thèm mặc áo (khoác)"
+			icon: "twilightforest:aurora_block"
+			x: -11.7d
+			y: -31.2d
+			dependencies: ["4915B9E4982AD250"]
+			dependency_requirement: "one_completed"
+			id: "3E9DC1933F7A2D42"
+			tasks: [{
+				id: "01CD715C00B0DAB2"
+				type: "item"
+				item: "twilightforest:snow_queen_trophy"
+			}]
+			rewards: [
+				{
+					id: "36BF1B888C1E6376"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "1D0DAF2341AC9AA0"
+					type: "command"
+					title: "Kế Thừa"
+					icon: "minecraft:blue_ice"
+					command: "/effect give @p mowziesmobs:frozen 10 25"
+					player_command: false
+				}
+				{
+					id: "271E0802C2896983"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "To hơn, Béo Hơn, Thanh Máu Được Làm Màu Hơn"
+			icon: "minecraft:snow_block"
+			x: -11.7d
+			y: -14.1d
+			dependencies: ["4D87450EAD422B31"]
+			dependency_requirement: "one_completed"
+			id: "4915B9E4982AD250"
+			tasks: [{
+				id: "3BC03A606BD9499B"
+				type: "item"
+				item: "twilightforest:yeti_trophy"
+			}]
+			rewards: [
+				{
+					id: "1EDA94FD073E7CB9"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "24905A060305BC91"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 0.3d
+			dependencies: ["258BA3E2ED31831E"]
+			dependency_requirement: "one_completed"
+			id: "1550323F35BAD7F7"
+			tasks: [{
+				id: "75E474A2D2732226"
+				type: "item"
+				item: "twilightforest:magic_map_empty"
+			}]
+			rewards: [{
+				id: "43E23CEA60E1AAD3"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			title: "Nặng Vãi *Beep*"
+			icon: {
+				id: "twilightforest:giant_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.9d
+			y: -36.0d
+			dependencies: [
+				"3E9DC1933F7A2D42"
+				"2B6E9695F64FB4A8"
+				"33E2B8B9B8C74C61"
+			]
+			dependency_requirement: "one_completed"
+			id: "69C474B17485CC4D"
+			tasks: [
+				{
+					id: "204AE15E09EF9CAC"
+					type: "item"
+					item: {
+						id: "twilightforest:giant_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2A79CD8FCE117A79"
+					type: "item"
+					item: {
+						id: "twilightforest:giant_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "73F089C90E77152B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "1805D7864D233E55"
+					type: "loot"
+					title: "[Twilight Forest] Immersive Loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "Do Thái Tập Thể ..."
+			icon: {
+				id: "twilightforest:lamp_of_cinders"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.9d
+			y: -42.3d
+			dependencies: ["69C474B17485CC4D"]
+			dependency_requirement: "one_completed"
+			id: "13A3CA16735B7D69"
+			tasks: [{
+				id: "1DA485779D625002"
+				type: "item"
+				item: {
+					id: "twilightforest:lamp_of_cinders"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "72FC20D50149246C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "6EBB9CE830898C85"
+					type: "loot"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			title: "Mẹ [Benimatic]"
+			icon: "twilightforest:castle_pillar_encased_tile"
+			x: 9.9d
+			y: -42.3d
+			dependencies: [
+				"13A3CA16735B7D69"
+				"258BA3E2ED31831E"
+			]
+			id: "21CDCDAF82B925F6"
+			tasks: [{
+				id: "50B6A49D04907052"
+				type: "advancement"
+				title: "Kết Thúc [Toà Thành Cuối Cùng]"
+				icon: "twilightforest:castle_rune_brick_purple"
+				advancement: "twilightforest:progress_castle"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "0044B861939E4DFF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "6A4A3FCB4CB596CC"
+					type: "random"
+					table_id: 5405201188940130798L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -5.1d
+			dependencies: ["4D87450EAD422B31"]
+			dependency_requirement: "one_completed"
+			id: "55F96BD7CA9D96C9"
+			tasks: [{
+				id: "7A673CB733BD04D9"
+				type: "item"
+				item: {
+					id: "twilightforest:twilight_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1109BCB747C15CF5"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -6.3d
+			y: -5.1d
+			dependencies: ["4D87450EAD422B31"]
+			dependency_requirement: "one_completed"
+			id: "6F24E13C76EBBF40"
+			tasks: [{
+				id: "0FFCE29127510E67"
+				type: "item"
+				item: {
+					id: "twilightforest:zombie_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0A71D114C4BF9B3F"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -8.1d
+			y: -5.1d
+			dependencies: ["4D87450EAD422B31"]
+			dependency_requirement: "one_completed"
+			id: "4702C48CE228E4DC"
+			tasks: [{
+				id: "26C495C373D42299"
+				type: "item"
+				item: {
+					id: "twilightforest:lifedrain_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "71D9B173DDA6DB7D"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -9.9d
+			y: -5.1d
+			dependencies: ["4D87450EAD422B31"]
+			dependency_requirement: "one_completed"
+			id: "05F2E7067C953C91"
+			tasks: [{
+				id: "31F1ACA6F84277C6"
+				type: "item"
+				item: {
+					id: "twilightforest:shield_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "250043A3F57973A2"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -14.1d
+			y: -34.8d
+			dependencies: ["3E9DC1933F7A2D42"]
+			dependency_requirement: "one_completed"
+			id: "7DEC99587AB0DBB5"
+			tasks: [{
+				id: "13259514E8743D6C"
+				type: "item"
+				item: {
+					id: "twilightforest:seeker_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+						AS_Amulet_Holder: [I;
+							1483367895
+							-856933047
+							-1715678475
+							592429842
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "22191B0EBA231970"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -11.7d
+			y: -34.8d
+			dependencies: ["3E9DC1933F7A2D42"]
+			dependency_requirement: "one_completed"
+			id: "6BA4ADB2B41DEEF8"
+			tasks: [{
+				id: "227AD3181B8CABDB"
+				type: "item"
+				item: {
+					id: "twilightforest:ice_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7A6C7C63F67DA77D"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -10.2d
+			y: -34.8d
+			dependencies: ["3E9DC1933F7A2D42"]
+			dependency_requirement: "one_completed"
+			id: "2C08FA8D82D0EEE0"
+			tasks: [{
+				id: "6510933D25CB9100"
+				type: "item"
+				item: {
+					id: "twilightforest:triple_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3BEC73817157BF19"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -8.7d
+			y: -34.8d
+			dependencies: ["3E9DC1933F7A2D42"]
+			dependency_requirement: "one_completed"
+			id: "35136BFEFFB271CE"
+			tasks: [{
+				id: "488582B99880813F"
+				type: "item"
+				item: {
+					id: "twilightforest:ender_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "05D7BD1AB3289888"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -14.1d
+			y: -31.2d
+			dependencies: ["3E9DC1933F7A2D42"]
+			dependency_requirement: "one_completed"
+			id: "3D7089F5562763D7"
+			tasks: [{
+				id: "0D4B967BA6839E80"
+				type: "item"
+				item: {
+					id: "twilightforest:glass_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "79E012DE2EF72DB1"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -7.8d
+			y: -18.3d
+			dependencies: ["55D745ECEE581DB3"]
+			dependency_requirement: "one_completed"
+			id: "518F6E7B62B44B97"
+			tasks: [{
+				id: "242A900E6D029A03"
+				type: "item"
+				item: {
+					id: "twilightforest:block_and_chain"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "208DCEA125A459F0"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -0.6d
+			y: -20.7d
+			dependencies: ["285D4A95A12A6954"]
+			dependency_requirement: "one_completed"
+			id: "7DD987810E666BE0"
+			tasks: [{
+				id: "6844656071A455A3"
+				type: "item"
+				item: {
+					id: "twilightforest:mazebreaker_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								lvl: 4s
+								id: "minecraft:efficiency"
+							}
+							{
+								lvl: 3s
+								id: "minecraft:unbreaking"
+							}
+							{
+								lvl: 2s
+								id: "minecraft:fortune"
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "6861D71AAF76E759"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 6.6d
+			y: -18.599999999999998d
+			dependencies: ["285D4A95A12A6954"]
+			dependency_requirement: "one_completed"
+			id: "2D2F5A48CF6D0E30"
+			tasks: [{
+				id: "6FAAEE0D6DF750C7"
+				type: "item"
+				item: "twilightforest:maze_map_focus"
+			}]
+			rewards: [{
+				id: "217B1818873051A3"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			title: "Nhìn Ngầu Đấy"
+			x: 7.199999999999999d
+			y: -28.799999999999997d
+			dependencies: ["2B6E9695F64FB4A8"]
+			dependency_requirement: "one_completed"
+			id: "518BC0289BE27A21"
+			tasks: [{
+				id: "50377FA85BD5879E"
+				type: "item"
+				item: "twilightforest:fiery_ingot"
+			}]
+			rewards: [{
+				id: "7AE8EDEA8C4C112D"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 17.4d
+			y: 1.5d
+			dependencies: ["258BA3E2ED31831E"]
+			dependency_requirement: "one_completed"
+			id: "3817AB8E10E87025"
+			tasks: [{
+				id: "55838CE0857018F4"
+				type: "item"
+				item: "twilightforest:charm_of_life_1"
+			}]
+			rewards: [{
+				id: "3461759BFEAF9E37"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 13.2d
+			y: 1.5d
+			dependencies: ["258BA3E2ED31831E"]
+			dependency_requirement: "one_completed"
+			id: "52B946BB9FFAE48F"
+			tasks: [{
+				id: "3D173097F771345D"
+				type: "item"
+				item: "twilightforest:charm_of_keeping_1"
+			}]
+			rewards: [{
+				id: "71C8D3C48639731B"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 6.6d
+			y: -22.5d
+			dependencies: ["2D2F5A48CF6D0E30"]
+			dependency_requirement: "one_completed"
+			id: "69F370D46EBE1AD0"
+			tasks: [{
+				id: "74035FEC5E93231E"
+				type: "item"
+				item: "twilightforest:uncrafting_table"
+			}]
+			rewards: [{
+				id: "0032EAE2ACE34E4B"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 13.2d
+			y: -2.1d
+			dependencies: ["52B946BB9FFAE48F"]
+			dependency_requirement: "one_completed"
+			id: "2C62FCCFBA665946"
+			tasks: [{
+				id: "64F5DD256CD4C2E4"
+				type: "item"
+				item: "twilightforest:charm_of_keeping_2"
+			}]
+			rewards: [{
+				id: "3CB7C9D79800CB3E"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 17.4d
+			y: -2.1d
+			dependencies: ["3817AB8E10E87025"]
+			dependency_requirement: "one_completed"
+			id: "7AD49A00DF092CAC"
+			tasks: [{
+				id: "5F18427D8B647A98"
+				type: "item"
+				item: "twilightforest:charm_of_life_2"
+			}]
+			rewards: [
+				{
+					id: "01247C8BDBE46FAE"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "727720F5F1AD2992"
+					type: "choice"
+					title: "Chọn 1 Skill Bất Kì"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			x: 13.2d
+			y: -5.7d
+			dependencies: ["2C62FCCFBA665946"]
+			dependency_requirement: "one_completed"
+			id: "033E7394EE1DAB1B"
+			tasks: [{
+				id: "4ACB86AA3E95A130"
+				type: "item"
+				item: "twilightforest:charm_of_keeping_3"
+			}]
+			rewards: [
+				{
+					id: "0FAFFDFE2CAD3F8C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "383AE81DD71722A4"
+					type: "choice"
+					title: "Chọn Unlock 1 Skill bất kì"
+					table_id: 6603143157456595385L
+				}
+			]
+		}
+		{
+			title: "ko co j hết"
+			x: -7.8d
+			y: -25.799999999999997d
+			subtitle: "Đòi Hỏi"
+			dependencies: ["33E2B8B9B8C74C61"]
+			dependency_requirement: "one_completed"
+			id: "740ABD0228A1F34B"
+			tasks: [{
+				id: "2886EC3339BA7C63"
+				type: "advancement"
+				advancement: "twilightforest:experiment_115"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "65F2FC8F73B6D932"
+					type: "command"
+					title: "Skill Thăng Thiên"
+					icon: "minecraft:feather"
+					auto: "invisible"
+					command: "/effect give @a minecraft:levitation 3 25"
+					player_command: false
+				}
+				{
+					id: "293B0446E8C23AA4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "54D233F04348C32D"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+	]
+}

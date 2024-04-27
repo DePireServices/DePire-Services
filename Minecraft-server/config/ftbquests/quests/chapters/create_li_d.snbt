@@ -1,0 +1,2158 @@
+{
+	id: "5449EB9A0B9931DE"
+	group: ""
+	order_index: 8
+	filename: "create_li_d"
+	title: "&l&6[Create] &r&eLười D:"
+	icon: "steampowered:bronze_flywheel"
+	subtitle: ["Béo???"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Chứng Chỉ \"Lười\""
+			icon: "create:cogwheel"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			dependency_requirement: "one_completed"
+			size: 4.5d
+			id: "3D55FC79FDB73B53"
+			tasks: [{
+				id: "74B6F68F595028B4"
+				type: "checkmark"
+				title: "Đã có chứng chỉ \"Lười lv98?\""
+			}]
+			rewards: [{
+				id: "245445820D544A74"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Sinh Công!!!"
+			icon: "create:large_cogwheel"
+			x: 0.0d
+			y: -3.5999999999999996d
+			shape: "hexagon"
+			subtitle: "gì cơ?"
+			description: ["D:"]
+			dependencies: ["3D55FC79FDB73B53"]
+			dependency_requirement: "one_completed"
+			id: "1BD858AC6D9FFA3F"
+			tasks: [
+				{
+					id: "7FC1EAC192EE83D9"
+					type: "item"
+					title: "Cơ?"
+					item: "create:cogwheel"
+					count: 8L
+				}
+				{
+					id: "6C51EF21A94F8C15"
+					type: "item"
+					title: "Rất cơ?"
+					item: "create:large_cogwheel"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "037409830AC91494"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "3F46F5624790FA44"
+					type: "loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Chụp hình cùng Fan lè"
+			icon: "create:encased_fan"
+			x: -1.7999999999999998d
+			y: -8.4d
+			subtitle: "Ngon"
+			dependencies: [
+				"1BD858AC6D9FFA3F"
+				"1F28B25286ED30CC"
+			]
+			dependency_requirement: "one_completed"
+			id: "14B5C41E6326F56C"
+			tasks: [{
+				id: "0B53A79E0DE4219F"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "0DDA1BDA0F1F83A9"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Bánh Trôi Nước .-."
+			x: 3.3d
+			y: -6.6d
+			subtitle: "AHHHHHHHHHHH"
+			description: [
+				"ôi bánh trôi nước D:"
+				""
+			]
+			dependencies: [
+				"1BD858AC6D9FFA3F"
+				"588422B50A228B41"
+			]
+			dependency_requirement: "one_completed"
+			id: "30C7C573A46E49E8"
+			tasks: [{
+				id: "11724FB69CD18AFA"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "70BE341AC5348A8A"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Uầy \"Rất Fan\""
+			icon: "create:propeller"
+			x: 1.7999999999999998d
+			y: -8.4d
+			dependencies: [
+				"1BD858AC6D9FFA3F"
+				"30C7C573A46E49E8"
+			]
+			dependency_requirement: "one_completed"
+			id: "122732FADB9D6865"
+			tasks: [{
+				id: "24DDD97090B5C27F"
+				type: "item"
+				item: "create:white_sail"
+				count: 16L
+			}]
+			rewards: [{
+				id: "2A9C478246729F85"
+				type: "loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Truyền Công!!"
+			x: 3.5999999999999996d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: [
+				"2F2C1C7A3C762780"
+				"1BD858AC6D9FFA3F"
+				"2C18B36DDDEC43C4"
+				"551E50AA51B57B70"
+				"3D55FC79FDB73B53"
+			]
+			dependency_requirement: "one_completed"
+			id: "63F226BD6602DFCB"
+			tasks: [{
+				id: "5141357E4A8FA148"
+				type: "item"
+				item: "create:shaft"
+			}]
+			rewards: [
+				{
+					id: "63BE4D8B3E8687C5"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5225E4F066F706C4"
+					type: "loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Công Công..."
+			x: -3.9d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: [
+				"2F2C1C7A3C762780"
+				"1BD858AC6D9FFA3F"
+				"3C8D509953FC725F"
+				"793BBE7048D348A8"
+				"3D55FC79FDB73B53"
+			]
+			dependency_requirement: "one_completed"
+			id: "6BE822A5592A1D58"
+			tasks: [{
+				id: "593ACCA1D3839706"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+			rewards: [
+				{
+					id: "3DD512FA6D72680B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "56235F4AB6FBD9DD"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Chế Công!"
+			x: 0.0d
+			y: 3.5999999999999996d
+			shape: "hexagon"
+			subtitle: "ko động tác thừa"
+			dependencies: [
+				"3D55FC79FDB73B53"
+				"3C8D509953FC725F"
+				"3D55FC79FDB73B53"
+			]
+			dependency_requirement: "one_completed"
+			id: "2F2C1C7A3C762780"
+			tasks: [{
+				id: "6C2F2B8C8BB617D2"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [
+				{
+					id: "24502787DB2ED0F7"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "298FB5A22E363FE0"
+					type: "loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Đồng ()"
+			x: 2.6999999999999997d
+			y: 2.4d
+			shape: "hexagon"
+			subtitle: "chỉ là đồng hoi"
+			description: [
+				"là đồng hoi..."
+				"..."
+				""
+			]
+			dependencies: [
+				"1BD858AC6D9FFA3F"
+				"551E50AA51B57B70"
+				"3C8D509953FC725F"
+				"3D55FC79FDB73B53"
+			]
+			dependency_requirement: "one_completed"
+			id: "793BBE7048D348A8"
+			tasks: [{
+				id: "16AAB778CB1F4589"
+				type: "item"
+				item: "create:copper_ingot"
+			}]
+			rewards: [{
+				id: "3705EE2BFF9AEBB4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Học Sinh lớp 5"
+			icon: "create:brass_ingot"
+			x: -2.6999999999999997d
+			y: 2.4d
+			shape: "hexagon"
+			subtitle: "Ai thông minh(béo) hơn học sinh lớp 5"
+			description: ["đoán xem"]
+			dependencies: [
+				"1BD858AC6D9FFA3F"
+				"3D55FC79FDB73B53"
+			]
+			dependency_requirement: "one_completed"
+			id: "551E50AA51B57B70"
+			tasks: [{
+				id: "1F29F0D4E1897201"
+				type: "item"
+				item: "create:brass_ingot"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "35C3D988A3131C77"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Canxi..."
+			icon: "create:zinc_ingot"
+			x: -2.6999999999999997d
+			y: -2.4d
+			shape: "hexagon"
+			dependencies: [
+				"551E50AA51B57B70"
+				"3C8D509953FC725F"
+				"2F2C1C7A3C762780"
+				"3D55FC79FDB73B53"
+			]
+			dependency_requirement: "one_completed"
+			id: "2C18B36DDDEC43C4"
+			tasks: [{
+				id: "79F0F1CADCBF3542"
+				type: "item"
+				item: "create:zinc_ingot"
+			}]
+			rewards: [{
+				id: "1A955098C05E86BA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Thoạch Oanh ko tím"
+			icon: "minecraft:quartz"
+			x: 2.6999999999999997d
+			y: -2.4d
+			shape: "hexagon"
+			dependencies: [
+				"2F2C1C7A3C762780"
+				"3D55FC79FDB73B53"
+			]
+			dependency_requirement: "one_completed"
+			id: "3C8D509953FC725F"
+			tasks: [{
+				id: "69592BEA9478A2A8"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+			rewards: [{
+				id: "434E6290FB3F7806"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Beacon"
+			icon: "minecraft:beacon"
+			x: 2.6999999999999997d
+			y: -4.5d
+			dependencies: ["3C8D509953FC725F"]
+			dependency_requirement: "one_completed"
+			id: "588422B50A228B41"
+			tasks: [{
+				id: "1AA92A083490549B"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+			rewards: [
+				{
+					id: "6AFF8F17BE93079E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "59433D181A41F2D0"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Bóng...."
+			x: 4.8d
+			y: -2.4d
+			subtitle: "Bán Dẫn"
+			description: [
+				"jjj"
+				""
+			]
+			dependencies: [
+				"3C8D509953FC725F"
+				"588422B50A228B41"
+			]
+			dependency_requirement: "one_completed"
+			id: "38A38C9AA2B15797"
+			tasks: [{
+				id: "6C820D4DA206FF8A"
+				type: "item"
+				item: "createaddition:capacitor"
+			}]
+			rewards: [
+				{
+					id: "222D80D061B883AC"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "64BA96F90DDCEDB5"
+					type: "random"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Crushhhhhh"
+			x: 6.8999999999999995d
+			y: -3.0d
+			subtitle: "Crush nè"
+			description: [
+				"Chụp hình cùng crush đê"
+				""
+				""
+			]
+			dependencies: [
+				"63F226BD6602DFCB"
+				"38A38C9AA2B15797"
+			]
+			dependency_requirement: "one_completed"
+			id: "4C197D55446CC2C7"
+			tasks: [{
+				id: "5CBC531430E265D7"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+			rewards: [{
+				id: "0862C42F73A19D94"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Máy Nén"
+			x: 8.4d
+			y: -1.7999999999999998d
+			subtitle: "Thuỷ Lực?"
+			description: [
+				"Thuỷ Lực???"
+				""
+				""
+			]
+			dependencies: [
+				"63F226BD6602DFCB"
+				"4C197D55446CC2C7"
+			]
+			dependency_requirement: "one_completed"
+			id: "77C7B23B3CB94AEC"
+			tasks: [{
+				id: "5887C83DD8202E8F"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "75A9237FEAC80E71"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Chổi Mẹ tôi"
+			x: -1.5d
+			y: 8.4d
+			subtitle: "Ra Đường hết.."
+			dependencies: ["2F2C1C7A3C762780"]
+			dependency_requirement: "one_completed"
+			id: "3F94F255A50F05A3"
+			tasks: [{
+				id: "46F8816E24569062"
+				type: "item"
+				item: "create:mechanical_plough"
+			}]
+			rewards: [{
+				id: "283AB0B6C80DF875"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "[Đa Năng]"
+			x: 8.4d
+			y: 1.7999999999999998d
+			subtitle: "Đeo Huy Chương"
+			description: [
+				""
+				"Ngầu đét"
+			]
+			dependencies: ["63F226BD6602DFCB"]
+			dependency_requirement: "one_completed"
+			id: "778C5132C47F00CC"
+			tasks: [{
+				id: "33178961E88B4F89"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+			rewards: [{
+				id: "0E8640D4667056AF"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "speedtest.vn"
+			x: 4.8d
+			y: 2.4d
+			subtitle: "Tự Hào VNPT : 1.1Mbps"
+			description: [""]
+			dependencies: [
+				"793BBE7048D348A8"
+				"65FF1544AC537788"
+			]
+			dependency_requirement: "one_completed"
+			id: "1F638BD117C981CD"
+			tasks: [
+				{
+					id: "5BA474CB48B541C4"
+					type: "item"
+					item: "create:speedometer"
+				}
+				{
+					id: "02FB8B1733D43BE7"
+					type: "item"
+					item: "create:stressometer"
+				}
+			]
+			rewards: [
+				{
+					id: "79D244238FAFC14A"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "75FF75B4A89D831E"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Băng..."
+			x: 9.9d
+			y: 0.0d
+			subtitle: "Băng ## ####"
+			description: [
+				"Băng Ch uyền"
+				""
+			]
+			dependencies: [
+				"63F226BD6602DFCB"
+				"778C5132C47F00CC"
+				"77C7B23B3CB94AEC"
+			]
+			dependency_requirement: "one_completed"
+			id: "1FA5620BC6A408CE"
+			tasks: [{
+				id: "5C34872B65E5CBEF"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "44DBD19C19CCC1E3"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Sticky Piston"
+			icon: "minecraft:sticky_piston"
+			x: -3.3d
+			y: 6.8999999999999995d
+			subtitle: "Ngon"
+			description: ["Rất Ngon"]
+			dependencies: [
+				"2F2C1C7A3C762780"
+				"3F94F255A50F05A3"
+			]
+			dependency_requirement: "one_completed"
+			id: "7F545D9435D4EFE4"
+			tasks: [{
+				id: "6649C591A13DBC2C"
+				type: "item"
+				item: "create:sticker"
+			}]
+			rewards: [{
+				id: "7B9ADBF2CF933AA5"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Mixer hay Grinder?"
+			icon: "minecraft:grindstone"
+			x: 2.6999999999999997d
+			y: 4.5d
+			subtitle: "Ai bt"
+			description: [
+				"''Ai\" đâu"
+				""
+			]
+			dependencies: ["793BBE7048D348A8"]
+			dependency_requirement: "one_completed"
+			id: "65FF1544AC537788"
+			tasks: [{
+				id: "3867A47431DDAB5F"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [
+				{
+					id: "3D3706C8D8F7FBC5"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7260E5DA726DFF07"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Havéter"
+			x: 1.5d
+			y: 8.4d
+			dependencies: ["2F2C1C7A3C762780"]
+			dependency_requirement: "one_completed"
+			id: "023073CF79918F56"
+			tasks: [{
+				id: "337B2EFD5A800087"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+			rewards: [{
+				id: "139773C5EB3B3729"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Uầy"
+			icon: {
+				id: "create_stuff_additions:rose_quartz_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.3d
+			y: 3.0d
+			subtitle: "Quadrakill"
+			description: [
+				"Ngầu đét"
+				""
+			]
+			dependencies: [
+				"6BE822A5592A1D58"
+				"7D8D851862D6BC30"
+			]
+			dependency_requirement: "one_completed"
+			id: "10C0DB515AB21BDA"
+			tasks: [{
+				id: "153BFC0D91E45CD5"
+				type: "item"
+				item: "create:clutch"
+			}]
+			rewards: [{
+				id: "1BE7E1E4EA96EFFB"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Công..."
+			x: -8.7d
+			y: -2.1d
+			description: [
+				"#Công Công"
+				""
+			]
+			dependencies: ["6BE822A5592A1D58"]
+			dependency_requirement: "one_completed"
+			id: "5930694EE75B38EC"
+			tasks: [
+				{
+					id: "003171EB89F1B618"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "1493A009573DADDB"
+					type: "item"
+					item: "create:vertical_gearbox"
+				}
+			]
+			rewards: [{
+				id: "27228D7904EAA4FB"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			x: -10.2d
+			y: 0.0d
+			subtitle: "Trợ công"
+			description: ["#Công Công"]
+			dependencies: [
+				"6BE822A5592A1D58"
+				"5930694EE75B38EC"
+				"7D8D851862D6BC30"
+			]
+			dependency_requirement: "one_completed"
+			id: "0979722DECE583BE"
+			tasks: [{
+				id: "61F195FD34795935"
+				type: "item"
+				title: "Công"
+				item: "create:adjustable_chain_gearshift"
+			}]
+			rewards: [{
+				id: "762D05210C1FA237"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Công Được Bảo Toàn 100%"
+			icon: "create:gearshift"
+			x: -8.4d
+			y: 1.7999999999999998d
+			subtitle: "..."
+			description: [
+				"#Công Công"
+				""
+			]
+			dependencies: ["6BE822A5592A1D58"]
+			dependency_requirement: "one_completed"
+			id: "7D8D851862D6BC30"
+			tasks: [{
+				id: "19C21E488406DA08"
+				type: "item"
+				item: "create:gearshift"
+			}]
+			rewards: [{
+				id: "62D39A12E3AAA08B"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Hoán Công"
+			x: -6.3d
+			y: -3.3d
+			subtitle: "Nhị Thức Newton"
+			description: ["UARYHHHHHHHHHHHHHH"]
+			dependencies: [
+				"6BE822A5592A1D58"
+				"5C7E5F42DE2CC0FA"
+				"5930694EE75B38EC"
+			]
+			dependency_requirement: "one_completed"
+			id: "21A34F37C62473DE"
+			tasks: [{
+				id: "7474836EAE1DB5DF"
+				type: "item"
+				item: "create:encased_chain_drive"
+			}]
+			rewards: [{
+				id: "3702CDE8F5767034"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Hopper vjp pro !!!"
+			icon: "cyclic:hopper_gold"
+			x: -4.8d
+			y: -2.4d
+			subtitle: "Hopper"
+			dependencies: ["2C18B36DDDEC43C4"]
+			dependency_requirement: "one_completed"
+			id: "5C7E5F42DE2CC0FA"
+			tasks: [{
+				id: "07C770BEC0688555"
+				type: "item"
+				item: "create:chute"
+			}]
+			rewards: [
+				{
+					id: "574BEBBCF6A0E657"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "6F989A6D772F4F51"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Fai.Fai"
+			x: 0.0d
+			y: 9.6d
+			subtitle: "Hoả Chùa"
+			description: [""]
+			dependencies: [
+				"2F2C1C7A3C762780"
+				"3F94F255A50F05A3"
+				"023073CF79918F56"
+			]
+			dependency_requirement: "one_completed"
+			id: "5C1A4EEBD26D252E"
+			tasks: [{
+				id: "67FB963B952EE893"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+			rewards: [{
+				id: "7A4381E5C6714C60"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Khung chế tạo???"
+			icon: "minecraft:crafting_table"
+			x: 7.199999999999999d
+			y: 3.0d
+			subtitle: "Out Chình"
+			dependencies: [
+				"63F226BD6602DFCB"
+				"778C5132C47F00CC"
+				"1F638BD117C981CD"
+			]
+			dependency_requirement: "one_completed"
+			id: "1BEC40C736890B8A"
+			tasks: [{
+				id: "3E60982F6F1D5091"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "6332D6516D1D9E82"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Ngầu"
+			x: -2.6999999999999997d
+			y: 4.5d
+			subtitle: "Ngầu?"
+			description: ["Chỉ để \"Ngầu\" hoi"]
+			dependencies: [
+				"551E50AA51B57B70"
+				"7F545D9435D4EFE4"
+				"210987AFAC529D5E"
+			]
+			dependency_requirement: "one_completed"
+			id: "385317EAC6B89B45"
+			tasks: [{
+				id: "19D4F46B2F764FC5"
+				type: "item"
+				item: "create:white_seat"
+			}]
+			rewards: [
+				{
+					id: "5D32D8518FF3D099"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "7CE563B3D65AD2B8"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Hơi Lạc đề nhưng kệ :D"
+			icon: "create:deployer"
+			x: 0.0d
+			y: -9.9d
+			subtitle: "Chọc!!!!"
+			description: ["chọc!chọc!chọc!chọc!chọc!chọc!chọc!chọc!"]
+			dependencies: [
+				"1BD858AC6D9FFA3F"
+				"14B5C41E6326F56C"
+				"122732FADB9D6865"
+			]
+			dependency_requirement: "one_completed"
+			id: "0A51848A2F14E600"
+			tasks: [{
+				id: "4430B628E9FBBCCA"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "71CDA36E8F5DC9DC"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Cauldron"
+			icon: "minecraft:cauldron"
+			x: -2.6999999999999997d
+			y: -4.5d
+			subtitle: "Nhờn"
+			dependencies: [
+				"2C18B36DDDEC43C4"
+				"5C7E5F42DE2CC0FA"
+			]
+			dependency_requirement: "one_completed"
+			id: "0B7D80C5526B6A25"
+			tasks: [{
+				id: "551F0E781620F9C2"
+				type: "item"
+				item: "create:basin"
+			}]
+			rewards: [
+				{
+					id: "0EF4A760DDC10867"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "1E139AE79628BB6C"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Xuất"
+			x: 3.3d
+			y: 6.8999999999999995d
+			subtitle: "Thần"
+			description: [
+				"Đằng"
+				""
+			]
+			dependencies: [
+				"2F2C1C7A3C762780"
+				"65FF1544AC537788"
+				"023073CF79918F56"
+			]
+			dependency_requirement: "one_completed"
+			id: "29B3BECDAFFCAAF7"
+			tasks: [{
+				id: "741187C6AD0DBDE7"
+				type: "item"
+				item: "create:depot"
+			}]
+			rewards: [{
+				id: "4E1B4ED86DC30143"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "\"Ngầu\"?"
+			x: -4.8d
+			y: 2.4d
+			subtitle: "\"Ngầu\" hơn"
+			dependencies: [
+				"551E50AA51B57B70"
+				"10C0DB515AB21BDA"
+			]
+			dependency_requirement: "one_completed"
+			id: "210987AFAC529D5E"
+			tasks: [{
+				id: "358CF7BBCACB636E"
+				type: "item"
+				item: "create:schematic_table"
+			}]
+			rewards: [
+				{
+					id: "1CAB0FC438137B6F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "39503D212A8C2CFE"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+			]
+		}
+		{
+			title: "Grakk"
+			x: 25.5d
+			y: -20.099999999999998d
+			subtitle: "???"
+			dependencies: [
+				"5E96FDB567FD200D"
+				"4C76D49246F0FDF6"
+				"59199C269BB5CBAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "2059FDFAC6F13507"
+			tasks: [{
+				id: "10AAFA9E3EBA87EF"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+			rewards: [
+				{
+					id: "57DA66C3BA248E26"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "0C32E9BCBFC1EE30"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 17.7d
+			y: -21.599999999999998d
+			dependencies: [
+				"4C76D49246F0FDF6"
+				"200BC707ED4EBBD5"
+				"59199C269BB5CBAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "55E76EE9485FCC28"
+			tasks: [{
+				id: "56341623293982E7"
+				type: "item"
+				item: "createaddition:multimeter"
+			}]
+			rewards: [{
+				id: "62C1E13A68CA652B"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+		{
+			title: "Ống NưỚc"
+			x: 30.0d
+			y: -21.599999999999998d
+			dependencies: [
+				"2059FDFAC6F13507"
+				"4C76D49246F0FDF6"
+				"59199C269BB5CBAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "1348601CBCFCD16C"
+			tasks: [{
+				id: "3E613798DA0A4ADD"
+				type: "item"
+				item: "create:fluid_pipe"
+			}]
+			rewards: [
+				{
+					id: "6000FF728AFB851E"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "1562EE4C3BC53ACA"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "SúnG"
+			x: 22.5d
+			y: -20.099999999999998d
+			dependencies: [
+				"55E76EE9485FCC28"
+				"4C76D49246F0FDF6"
+				"59199C269BB5CBAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "58D0CC787635451F"
+			tasks: [{
+				id: "725F7BC453102843"
+				type: "item"
+				item: {
+					id: "create:potato_cannon"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1AF8372270359958"
+					type: "command"
+					title: "[Create] Random Loot"
+					icon: "create:crafting_blueprint"
+					command: "/kill @p"
+					player_command: false
+				}
+				{
+					id: "1CCD2A0D49BD6CA2"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Tankkkkkk"
+			x: 24.0d
+			y: -27.299999999999997d
+			dependencies: [
+				"4C76D49246F0FDF6"
+				"0EE76AACCE9270D2"
+				"59199C269BB5CBAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "3408C246299FFF9D"
+			tasks: [{
+				id: "3672BCF7565A6DD4"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+			rewards: [
+				{
+					id: "7A8EEC6E224392B2"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "6847E90AA00D463D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Chất Lỏng ID"
+			x: 24.0d
+			y: -16.2d
+			dependencies: [
+				"58D0CC787635451F"
+				"4C76D49246F0FDF6"
+				"59199C269BB5CBAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "5E96FDB567FD200D"
+			tasks: [{
+				id: "65609594F3797D8C"
+				type: "item"
+				item: "create:portable_fluid_interface"
+			}]
+			rewards: [
+				{
+					id: "30757DBDED68190D"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "7D3918750E5EDB68"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Choáy xịn"
+			x: 22.5d
+			y: -23.099999999999998d
+			dependencies: [
+				"3408C246299FFF9D"
+				"4C76D49246F0FDF6"
+				"59199C269BB5CBAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "200BC707ED4EBBD5"
+			tasks: [{
+				id: "0782C1F5597FD936"
+				type: "item"
+				item: "createaddition:crude_burner"
+			}]
+			rewards: [
+				{
+					id: "7C0320BC5329FE47"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "796EB998787BE5CB"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Door"
+			x: 25.5d
+			y: -23.099999999999998d
+			subtitle: "Đổ"
+			dependencies: [
+				"1348601CBCFCD16C"
+				"59199C269BB5CBAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "0EE76AACCE9270D2"
+			tasks: [{
+				id: "6D7550C556B75022"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [
+				{
+					id: "7275F4A4AC3DF70C"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "74C3EE343CF80D93"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Thấm Hút"
+			x: 24.0d
+			y: -21.599999999999998d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["793BBE7048D348A8"]
+			dependency_requirement: "one_completed"
+			size: 3.0d
+			id: "59199C269BB5CBAE"
+			tasks: [{
+				id: "4C76D49246F0FDF6"
+				type: "item"
+				item: "create:copper_casing"
+			}]
+			rewards: [{
+				id: "4E31F10E0DC49039"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Thông Minh(béo)"
+			x: 45.3d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["1F29F0D4E1897201"]
+			dependency_requirement: "one_completed"
+			size: 4.0d
+			id: "2DCDA53151320A2B"
+			tasks: [{
+				id: "6AB2766E556C6296"
+				type: "item"
+				item: "create:brass_casing"
+				count: 4L
+			}]
+			rewards: [{
+				id: "09A5CEE08E2A56F5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Ống Nước"
+			x: 48.0d
+			y: -6.6d
+			dependencies: ["6AB2766E556C6296"]
+			dependency_requirement: "one_completed"
+			id: "12825308BE94F362"
+			tasks: [{
+				id: "07749E766392FC5E"
+				type: "item"
+				item: "create:smart_fluid_pipe"
+			}]
+			rewards: [
+				{
+					id: "7B6E437EE409F8D9"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "4C4FAC35E6DA1959"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Reach.."
+			x: 42.6d
+			y: 6.3d
+			subtitle: "Lại Hack òi"
+			description: ["Hack hoài z"]
+			dependencies: ["6AB2766E556C6296"]
+			dependency_requirement: "one_completed"
+			id: "2F2111728EFED8AD"
+			tasks: [{
+				id: "6463992421ACD0F7"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4A0AF3CF3A2C7744"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "78CBFFA402DA59FC"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Xe"
+			x: 48.9d
+			y: -3.5999999999999996d
+			dependencies: [
+				"1123B280ED35EAB1"
+				"12825308BE94F362"
+				"2DCDA53151320A2B"
+			]
+			dependency_requirement: "one_completed"
+			id: "4065B2D9C9E0A821"
+			tasks: [{
+				id: "0281C327F7500507"
+				type: "item"
+				item: "create_stuff_additions:brass_moped_item"
+			}]
+			rewards: [
+				{
+					id: "644BDD5F0915F408"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "61CC4470E3322972"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Lam"
+			x: 52.199999999999996d
+			y: 2.6999999999999997d
+			dependencies: ["6AB2766E556C6296"]
+			dependency_requirement: "one_completed"
+			id: "5E633B2174D55260"
+			tasks: [{
+				id: "5C590E30D36E84FD"
+				type: "item"
+				item: "create_stuff_additions:nixie_lamp"
+			}]
+			rewards: [
+				{
+					id: "77E715A115D4EF96"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "72383427F5EDB670"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Beo"
+			x: 45.3d
+			y: 4.8d
+			subtitle: "u50"
+			dependencies: [
+				"1F20BB7A67219DF9"
+				"2F2111728EFED8AD"
+				"2DCDA53151320A2B"
+			]
+			dependency_requirement: "one_completed"
+			id: "04B19DC3B1618838"
+			tasks: [{
+				id: "5290515E7D17A9C4"
+				type: "item"
+				item: "create:peculiar_bell"
+			}]
+			rewards: [
+				{
+					id: "3E4F1D517D23EF10"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "50128992D4B597E5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "S.M.A.R.T Hopper siêu cấp vjp pro"
+			x: 40.199999999999996d
+			y: 0.0d
+			subtitle: "Uầyyyy"
+			dependencies: [
+				"3110DE4D7FBCA5E3"
+				"0D1C94D6A4940DD4"
+				"2DCDA53151320A2B"
+			]
+			dependency_requirement: "one_completed"
+			id: "46ED946F979958E5"
+			tasks: [{
+				id: "0CC55AE8719B5843"
+				type: "item"
+				item: "create:smart_chute"
+			}]
+			rewards: [
+				{
+					id: "26A8990DDF3286F1"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "03932BF7DA28E024"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Brimstone"
+			x: 41.699999999999996d
+			y: -3.5999999999999996d
+			subtitle: ",,,"
+			dependencies: [
+				"47AFD8BF512B21D8"
+				"3110DE4D7FBCA5E3"
+				"2DCDA53151320A2B"
+			]
+			dependency_requirement: "one_completed"
+			id: "2D206A03F20E4FBA"
+			tasks: [{
+				id: "1A5E91E44550A8D6"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+			rewards: [
+				{
+					id: "591D2CF54B8874C0"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "7E2D4C055C8815A1"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "X.EEEEE"
+			x: 42.0d
+			y: 3.3d
+			subtitle: "Phế"
+			description: [
+				"Phuế"
+				""
+			]
+			dependencies: [
+				"0D1C94D6A4940DD4"
+				"2F2111728EFED8AD"
+				"2DCDA53151320A2B"
+			]
+			dependency_requirement: "one_completed"
+			id: "3F4474FD824B731A"
+			tasks: [{
+				id: "6FB9DA6FFD42570D"
+				type: "item"
+				item: "create_stuff_additions:tuned_brass_moped_item"
+			}]
+			rewards: [
+				{
+					id: "523240CCECEB979B"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "7327113CCE008479"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Khoan..."
+			x: 38.4d
+			y: 2.6999999999999997d
+			subtitle: "Khoan khoan đã"
+			dependencies: ["6AB2766E556C6296"]
+			dependency_requirement: "one_completed"
+			id: "0D1C94D6A4940DD4"
+			tasks: [{
+				id: "0A0717815EFA7933"
+				type: "item"
+				item: {
+					id: "create_stuff_additions:brass_portable_drill"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "1542A4D07C262AE6"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "66E662D5EBE94E6A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Wiu"
+			x: 38.4d
+			y: -3.0d
+			subtitle: "Siêu cấp vjp pro"
+			dependencies: ["6AB2766E556C6296"]
+			dependency_requirement: "one_completed"
+			id: "3110DE4D7FBCA5E3"
+			tasks: [{
+				id: "66E25DD53AFBCCCD"
+				type: "item"
+				item: "create:flywheel"
+			}]
+			rewards: [
+				{
+					id: "00351586289F8B9D"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "77BFCFC58AFBB4E5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Nhiệt"
+			x: 45.3d
+			y: -5.1d
+			subtitle: "Choáy QUÁ"
+			dependencies: [
+				"47AFD8BF512B21D8"
+				"12825308BE94F362"
+				"2DCDA53151320A2B"
+			]
+			dependency_requirement: "one_completed"
+			id: "037625B449E6061F"
+			tasks: [{
+				id: "38FACD854DE88153"
+				type: "item"
+				item: {
+					id: "create_stuff_additions:blaze_flame_thrower"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "616F2CCFDCAD43E3"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "7ABFAF8F80BEC022"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Tay nè nắm đê"
+			x: 48.3d
+			y: 6.3d
+			subtitle: "Ngon nắm đê"
+			description: [
+				""
+				""
+			]
+			dependencies: ["6AB2766E556C6296"]
+			dependency_requirement: "one_completed"
+			id: "1F20BB7A67219DF9"
+			tasks: [{
+				id: "641BDF8CF777B722"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+			rewards: [
+				{
+					id: "6E24DB547C5ED1C7"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "372DADA4A4AB7878"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Faifai 2.0"
+			x: 51.9d
+			y: -2.6999999999999997d
+			subtitle: "Fai Fai MAx?"
+			dependencies: ["6AB2766E556C6296"]
+			dependency_requirement: "one_completed"
+			id: "1123B280ED35EAB1"
+			tasks: [{
+				id: "6A230C9FE26A167F"
+				type: "item"
+				item: "createaddition:heater"
+			}]
+			rewards: [
+				{
+					id: "5F617A281232913C"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "0F0D226414A31DFB"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Whill"
+			x: 42.3d
+			y: -6.6d
+			subtitle: "Wiu"
+			dependencies: ["6AB2766E556C6296"]
+			dependency_requirement: "one_completed"
+			id: "47AFD8BF512B21D8"
+			tasks: [{
+				id: "769ED20AB06F184F"
+				type: "item"
+				item: "steampowered:bronze_flywheel"
+			}]
+			rewards: [
+				{
+					id: "7F3018BEC29B9887"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "458E2E8017E83582"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Crafting Tabồ"
+			x: 50.4d
+			y: 0.0d
+			subtitle: "Crafting table vip"
+			dependencies: [
+				"5E633B2174D55260"
+				"1123B280ED35EAB1"
+				"2DCDA53151320A2B"
+			]
+			dependency_requirement: "one_completed"
+			id: "709601068895D1BE"
+			tasks: [{
+				id: "0E739A03E279B425"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+			rewards: [
+				{
+					id: "556716A484ECAA73"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "03EB36BA3A6E63FF"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Công \"Thông Minh\""
+			x: 48.9d
+			y: 3.3d
+			subtitle: "Công Thông Minh Vào"
+			dependencies: [
+				"5E633B2174D55260"
+				"1F20BB7A67219DF9"
+				"2DCDA53151320A2B"
+			]
+			dependency_requirement: "one_completed"
+			id: "5283AD93AEA9005A"
+			tasks: [{
+				id: "011CADC263E61204"
+				type: "item"
+				item: "create:sequenced_gearshift"
+			}]
+			rewards: [
+				{
+					id: "2D995317B157CF87"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "6B46E4D8B687BA22"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Chamburrr"
+			x: 26.7d
+			y: 11.1d
+			subtitle: "Chuấy"
+			dependencies: ["1F29F0D4E1897201"]
+			dependency_requirement: "one_completed"
+			id: "24E8875ED49C1CF0"
+			tasks: [
+				{
+					id: "3ED17B08AC983234"
+					type: "item"
+					item: "steampowered:bronze_burner"
+				}
+				{
+					id: "436D15A05DB4539B"
+					type: "item"
+					item: "steampowered:bronze_steam_engine"
+				}
+				{
+					id: "59254D42DFB1F762"
+					type: "item"
+					item: "steampowered:bronze_boiler"
+				}
+				{
+					id: "3EE8DD817F69CF49"
+					type: "item"
+					item: "steampowered:bronze_flywheel"
+				}
+			]
+			rewards: [
+				{
+					id: "45E35E58A841F05B"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "20B5CAF20EB2DB6B"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Cast Iron Chamburrrr"
+			x: 24.0d
+			y: 13.2d
+			dependencies: ["24E8875ED49C1CF0"]
+			dependency_requirement: "one_completed"
+			id: "6B845F44F35FF561"
+			tasks: [
+				{
+					id: "71C63837BA527166"
+					type: "item"
+					item: "steampowered:cast_iron_burner"
+				}
+				{
+					id: "537B344EC1E5F4C5"
+					type: "item"
+					item: "steampowered:cast_iron_steam_engine"
+				}
+				{
+					id: "39592BA525BE2AF4"
+					type: "item"
+					item: "steampowered:cast_iron_boiler"
+				}
+				{
+					id: "5E8C50DA594E88F3"
+					type: "item"
+					item: "steampowered:cast_iron_flywheel"
+				}
+			]
+			rewards: [
+				{
+					id: "1173AE9FB5130385"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "253A9FE4F1B3560E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Steel Chamburrrrr"
+			x: 21.3d
+			y: 11.1d
+			dependencies: ["6B845F44F35FF561"]
+			dependency_requirement: "one_completed"
+			id: "08B13E1C0A6A84C7"
+			tasks: [
+				{
+					id: "413A9EA8FEE1B308"
+					type: "item"
+					item: "steampowered:steel_burner"
+				}
+				{
+					id: "18D00F1E57A909C4"
+					type: "item"
+					item: "steampowered:steel_steam_engine"
+				}
+				{
+					id: "5514648099B242BF"
+					type: "item"
+					item: "steampowered:steel_boiler"
+				}
+				{
+					id: "7CA4C757D18EF1BF"
+					type: "item"
+					item: "steampowered:steel_flywheel"
+				}
+			]
+			rewards: [
+				{
+					id: "60146915876EC410"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "4ECF6E72EC939579"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "#3 kobietnua"
+			icon: "createaddition:overcharged_casing"
+			x: 26.099999999999998d
+			y: 9.299999999999999d
+			dependencies: [
+				"30610754FA561BA0"
+				"5038CAEF7A07C00A"
+			]
+			dependency_requirement: "one_completed"
+			id: "0E726FBB32490201"
+			tasks: [{
+				id: "54B5070EEE1DCC5D"
+				type: "item"
+				item: "createaddition:overcharged_alloy"
+			}]
+			rewards: [{
+				id: "68773C4F55F24603"
+				type: "loot"
+				title: "[Create] Choice Loot"
+				table_id: 6214082589614879885L
+			}]
+		}
+		{
+			title: "#1 kobietnua"
+			icon: "create:refined_radiance_casing"
+			x: 24.0d
+			y: 7.8d
+			dependencies: ["5038CAEF7A07C00A"]
+			dependency_requirement: "one_completed"
+			id: "77B7CE19300245A6"
+			tasks: [{
+				id: "138DE0485312AF3E"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
+			rewards: [{
+				id: "2B3E862671A1A0F4"
+				type: "random"
+				title: "[Create] Choice Loot"
+				table_id: 6214082589614879885L
+			}]
+		}
+		{
+			title: "#2 ko bietnua"
+			icon: "create:shadow_steel_casing"
+			x: 21.9d
+			y: 9.299999999999999d
+			dependencies: ["5038CAEF7A07C00A"]
+			dependency_requirement: "one_completed"
+			id: "30610754FA561BA0"
+			tasks: [{
+				id: "27179F20D2476A0B"
+				type: "item"
+				item: "create:shadow_steel"
+			}]
+			rewards: [{
+				id: "23C22543B974EACC"
+				type: "loot"
+				title: "[Create] Choice Loot"
+				table_id: 6214082589614879885L
+			}]
+		}
+		{
+			title: "Uầy Crushh"
+			x: 22.5d
+			y: 12.0d
+			subtitle: "Crush nữa hỏ"
+			dependencies: [
+				"77B7CE19300245A6"
+				"0E726FBB32490201"
+				"5038CAEF7A07C00A"
+			]
+			dependency_requirement: "one_completed"
+			id: "2E5D5426FEB14979"
+			tasks: [{
+				id: "63775F3EDB5076E0"
+				type: "item"
+				item: "create_stuff_additions:quartz_crusher"
+			}]
+			rewards: [{
+				id: "7AABF0598BDED187"
+				type: "choice"
+				title: "[Create] Choice ReWard"
+				table_id: 6214082589614879885L
+			}]
+		}
+		{
+			title: "Mjölnir"
+			x: 25.5d
+			y: 12.0d
+			subtitle: "Xx.Thỏ.xX"
+			dependencies: [
+				"30610754FA561BA0"
+				"77B7CE19300245A6"
+				"5038CAEF7A07C00A"
+			]
+			dependency_requirement: "one_completed"
+			id: "3DCA4391D3DE7D01"
+			tasks: [{
+				id: "653C73523D0AF708"
+				type: "item"
+				item: {
+					id: "createaddition:overcharged_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "532B3CF46491EFFB"
+				type: "choice"
+				title: "[Create] Choice ReWard"
+				table_id: 6214082589614879885L
+			}]
+		}
+		{
+			title: "Trượng Thần"
+			x: 24.0d
+			y: 0.0d
+			shape: "octagon"
+			subtitle: "Đằng"
+			dependencies: [
+				"46ED946F979958E5"
+				"67FB963B952EE893"
+				"1FA5620BC6A408CE"
+				"38F95E992643BEF8"
+				"5E96FDB567FD200D"
+			]
+			dependency_requirement: "one_completed"
+			size: 3.0d
+			id: "64124B1E2D49C4A5"
+			tasks: [{
+				id: "005B3EC619BD3497"
+				type: "item"
+				item: "create:wand_of_symmetry"
+			}]
+			rewards: [
+				{
+					id: "008DFE2D57EF0126"
+					type: "choice"
+					title: "[Create] Choice ReWard"
+					table_id: 6214082589614879885L
+				}
+				{
+					id: "5ED9CA87D149C24C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "kobtnua"
+			x: 24.0d
+			y: 9.9d
+			shape: "pentagon"
+			subtitle: "kobietnua"
+			dependencies: ["69592BEA9478A2A8"]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "2F1B85018A2D56D9"
+			tasks: [{
+				id: "5038CAEF7A07C00A"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "51E7FC9E484452A7"
+					type: "choice"
+					title: "[Create] Choice ReWard"
+					table_id: 6214082589614879885L
+				}
+				{
+					id: "0D94BC46CD7953B9"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Èlectricccc"
+			x: 24.0d
+			y: 6.0d
+			subtitle: "Uấy"
+			dependencies: [
+				"08B13E1C0A6A84C7"
+				"24E8875ED49C1CF0"
+			]
+			dependency_requirement: "one_completed"
+			id: "38F95E992643BEF8"
+			tasks: [
+				{
+					id: "52C8DD29B630A1A6"
+					type: "item"
+					item: "createaddition:electric_motor"
+				}
+				{
+					id: "4CB8BDB3B9BA1ACB"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+			]
+			rewards: [
+				{
+					id: "6D8A4541D01FF8EA"
+					type: "loot"
+					title: "[Create] Random Loot"
+					table_id: 4274520010550316631L
+				}
+				{
+					id: "5776F9A970B2C040"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Thực Hiện Công"
+			x: -3.3d
+			y: -6.6d
+			subtitle: "AHHHHHH"
+			dependencies: [
+				"1BD858AC6D9FFA3F"
+				"0B7D80C5526B6A25"
+			]
+			dependency_requirement: "one_completed"
+			id: "1F28B25286ED30CC"
+			tasks: [{
+				id: "37C639AA83608B98"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+			rewards: [{
+				id: "48567191B180A1B2"
+				type: "loot"
+				title: "[Create] Random Loot"
+				table_id: 4274520010550316631L
+			}]
+		}
+	]
+}

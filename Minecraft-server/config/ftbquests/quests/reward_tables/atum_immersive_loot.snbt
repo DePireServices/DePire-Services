@@ -1,0 +1,36 @@
+{
+	id: "70A703E2666A1378"
+	order_index: 7
+	title: "[Atum] Immersive Loot"
+	icon: "minecraft:sandstone"
+	loot_size: 1
+	rewards: [
+		{ item: "atum:relic_dirty_bracelet" }
+		{ item: "atum:wolf_pelt" }
+		{ item: "atum:camel_cooked" }
+		{ item: "atum:wolf_pelt" }
+		{ item: "atum:quail_cooked" }
+		{ item: "atum:golden_date_enchanted" }
+		{ item: "atum:glistering_date" }
+		{ item: "atum:coin_dirty" }
+		{ item: "atum:khnumite" }
+		{ item: "atum:mandibles" }
+		{ item: "atum:dusty_bone" }
+		{ item: "atum:dusty_bone" }
+		{ item: "atum:linen_thread" }
+		{ item: "atum:papyrus_plant" }
+		{ item: "atum:relic_dirty_idol" }
+		{ item: "atum:relic_dirty_brooch" }
+		{ item: "atum:relic_dirty_ring" }
+		{ item: "atum:cloth_scrap" }
+		{ item: "atum:cloth_scrap" }
+		{ item: "atum:flax" }
+		{ item: "atum:emmer_flour" }
+		{ item: "atum:linen_cloth" }
+		{ item: "atum:relic_dirty_necklace" }
+		{ item: "atum:crunchy_scarab" }
+		{ item: "atum:camel" }
+		{ item: "atum:scroll" }
+		{ item: "atum:quail" }
+	]
+}

@@ -1,0 +1,999 @@
+{
+	id: "0533B299AB431530"
+	group: ""
+	order_index: 9
+	filename: "lereliquary_bthanh_ty"
+	title: "&l&e[Reliquary] &r&9Đồ Chơi 2.1"
+	icon: {
+		id: "xreliquary:mercy_cross"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	subtitle: ["Ngon."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Tẩy Trắng Cộng Đồng"
+			icon: "minecraft:bone_meal"
+			x: 0.0d
+			y: 0.0d
+			size: 3.0d
+			id: "26F2D5E44189FB79"
+			tasks: [{
+				id: "43B65A5B6244F0DC"
+				type: "checkmark"
+				title: "Đã Trang Bị [Thanh Tẩy]"
+			}]
+			rewards: [{
+				id: "28B54FB6BB0BD2D2"
+				type: "xp"
+				xp: 60
+			}]
+		}
+		{
+			title: "nƯớC Thánh"
+			x: -3.0d
+			y: -3.0d
+			subtitle: "nƯớC tề Thiên Đại Thánh"
+			dependencies: ["26F2D5E44189FB79"]
+			dependency_requirement: "one_completed"
+			id: "5E63ED069169EDF2"
+			tasks: [{
+				id: "312D14D179B92B77"
+				type: "item"
+				item: "xreliquary:glowing_water"
+			}]
+			rewards: [
+				{
+					id: "45626A2D7EB3C236"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "4988B8772BFA0072"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			title: "Đảm Bảo Vệ Sinh An Toàn Thực Phẩm !!!"
+			x: -7.0d
+			y: -3.0d
+			dependencies: ["5E63ED069169EDF2"]
+			dependency_requirement: "one_completed"
+			id: "41AE89B7C335E4D4"
+			tasks: [{
+				id: "0E546041AA13219D"
+				type: "item"
+				item: "xreliquary:glowing_bread"
+			}]
+			rewards: [
+				{
+					id: "6BB930ED1622F002"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7E382056286308D1"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			title: "An Toàn Trong Tầm Tay Chẻ em!!!"
+			x: -3.0d
+			y: -7.0d
+			dependencies: ["5E63ED069169EDF2"]
+			dependency_requirement: "one_completed"
+			id: "0881C3BCE63A70D9"
+			tasks: [{
+				id: "418F9C67F021B637"
+				type: "item"
+				item: "xreliquary:holy_hand_grenade"
+			}]
+			rewards: [
+				{
+					id: "4E27F80D89ABC7C2"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "772A62E180BE53DE"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			title: "Mãnh Vỡ Địa Ngục"
+			icon: "xreliquary:infernal_claw"
+			x: 3.0d
+			y: -3.0d
+			dependencies: ["26F2D5E44189FB79"]
+			dependency_requirement: "one_completed"
+			id: "1F9B9E8A3EC859E1"
+			tasks: [
+				{
+					id: "62F16651BB0740E9"
+					type: "item"
+					item: "xreliquary:infernal_tear"
+				}
+				{
+					id: "1A07073A8AE665AA"
+					type: "item"
+					item: "xreliquary:infernal_claw"
+				}
+			]
+			rewards: [
+				{
+					id: "6C3CE9244AEC7AD8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "271260A12A4C0548"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -7.0d
+			dependencies: ["1F9B9E8A3EC859E1"]
+			dependency_requirement: "one_completed"
+			id: "71B02E9C7B3465A0"
+			tasks: [{
+				id: "72FD82B60A9BCF31"
+				type: "item"
+				item: "xreliquary:salamander_eye"
+			}]
+			rewards: [
+				{
+					id: "02DF93E451593831"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "0541D95423EA8419"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -3.0d
+			dependencies: ["1F9B9E8A3EC859E1"]
+			dependency_requirement: "one_completed"
+			id: "3496DD46EF7BAE7E"
+			tasks: [{
+				id: "32EB599CA5C348D3"
+				type: "item"
+				item: "xreliquary:infernal_claws"
+			}]
+			rewards: [
+				{
+					id: "344731C4D178FF22"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "137F30AC61CF3884"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			dependencies: ["26F2D5E44189FB79"]
+			dependency_requirement: "one_completed"
+			id: "09AD65E93171EC88"
+			tasks: [{
+				id: "7292AC8F89126B45"
+				type: "item"
+				item: "xreliquary:fortune_coin"
+			}]
+			rewards: [
+				{
+					id: "390DA5E1D96BDF41"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "6A179C6328987EFD"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -10.0d
+			dependencies: [
+				"09AD65E93171EC88"
+				"4BB41EE0DB8CECFF"
+				"496920146070606D"
+			]
+			dependency_requirement: "one_completed"
+			id: "1D65A21C7ED94335"
+			tasks: [{
+				id: "504161EE37F634A2"
+				type: "item"
+				item: "xreliquary:hero_medallion"
+			}]
+			rewards: [
+				{
+					id: "2642B4EF153AF8EF"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "350E605E234311E4"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -9.0d
+			dependencies: [
+				"0881C3BCE63A70D9"
+				"41AE89B7C335E4D4"
+			]
+			dependency_requirement: "one_completed"
+			id: "4BB41EE0DB8CECFF"
+			tasks: [{
+				id: "057FD31CCDA4E345"
+				type: "item"
+				item: {
+					id: "xreliquary:mercy_cross"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7993DE9D2A3DC8F4"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "1E6E41AF010138EE"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: -9.0d
+			dependencies: [
+				"3496DD46EF7BAE7E"
+				"71B02E9C7B3465A0"
+			]
+			dependency_requirement: "one_completed"
+			id: "496920146070606D"
+			tasks: [{
+				id: "78832F45D35CE4C2"
+				type: "item"
+				item: "xreliquary:pyromancer_staff"
+			}]
+			rewards: [
+				{
+					id: "329CFA9124D7FC08"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2A9670BC3A3C0461"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["26F2D5E44189FB79"]
+			dependency_requirement: "one_completed"
+			id: "5BB3CE3178510247"
+			tasks: [{
+				id: "03F85E62A3DE4E3D"
+				type: "item"
+				item: "xreliquary:kraken_shell_fragment"
+			}]
+			rewards: [
+				{
+					id: "27803D163D16249E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "09CFA7B4949E8567"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 7.0d
+			dependencies: ["5BB3CE3178510247"]
+			dependency_requirement: "one_completed"
+			id: "6E42C3C542DA55FA"
+			tasks: [{
+				id: "49469976DF0C64CE"
+				type: "item"
+				item: {
+					id: "xreliquary:serpent_staff"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4D0301DB5C379908"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "070A04D9EE7A1EEF"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 3.0d
+			dependencies: ["5BB3CE3178510247"]
+			dependency_requirement: "one_completed"
+			id: "5B7FBF0CCB647321"
+			tasks: [{
+				id: "218BA6B06763A72E"
+				type: "item"
+				item: "xreliquary:kraken_shell"
+			}]
+			rewards: [
+				{
+					id: "077789478DD3B0D4"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "1FAB02592C6064A5"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 7.0d
+			dependencies: ["515C91CD0A627467"]
+			dependency_requirement: "one_completed"
+			id: "5AF9DFAC20655F5E"
+			tasks: [{
+				id: "2BF7C6CD6586F8BE"
+				type: "item"
+				item: "xreliquary:ice_magus_rod"
+			}]
+			rewards: [
+				{
+					id: "6EF5F08DE019BF1A"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "619E4073C4472E0D"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			dependencies: ["515C91CD0A627467"]
+			dependency_requirement: "one_completed"
+			id: "6FE5751223B11EC6"
+			tasks: [{
+				id: "3A7D31ACADB41A02"
+				type: "item"
+				item: "xreliquary:shears_of_winter"
+			}]
+			rewards: [
+				{
+					id: "7550096B339707FF"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "35A1EE66613B8960"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["26F2D5E44189FB79"]
+			dependency_requirement: "one_completed"
+			id: "515C91CD0A627467"
+			tasks: [{
+				id: "7B119FC7586406E0"
+				type: "item"
+				item: "xreliquary:frozen_core"
+			}]
+			rewards: [
+				{
+					id: "50AA9258527C9E23"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "57B8F67D4DC7DB34"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["26F2D5E44189FB79"]
+			dependency_requirement: "one_completed"
+			id: "49751F533D8E00B7"
+			tasks: [{
+				id: "5BEFBB5CB6A80D29"
+				type: "item"
+				item: "xreliquary:emperor_chalice"
+			}]
+			rewards: [
+				{
+					id: "79D7E4EC76AAC9A0"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5EB31A41FC1CC450"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: [
+				"49751F533D8E00B7"
+				"496920146070606D"
+				"1781A143707BF811"
+			]
+			dependency_requirement: "one_completed"
+			id: "384C9DA03D57897F"
+			tasks: [{
+				id: "7ABAF28915D2A87A"
+				type: "item"
+				item: "xreliquary:infernal_chalice"
+			}]
+			rewards: [
+				{
+					id: "47F3F1EFEFDEFFAE"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "0D17BC5F881B3359"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 0.0d
+			dependencies: ["26F2D5E44189FB79"]
+			dependency_requirement: "one_completed"
+			id: "31A5E07CCBCD3C8D"
+			tasks: [{
+				id: "2C0AF5093354A110"
+				type: "item"
+				item: "xreliquary:angelic_feather"
+			}]
+			rewards: [
+				{
+					id: "3FA46AE8C6E1C74C"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "6F3B0E56C952EA00"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 0.0d
+			dependencies: [
+				"31A5E07CCBCD3C8D"
+				"4BB41EE0DB8CECFF"
+				"29E2CFE0C3651EB1"
+			]
+			dependency_requirement: "one_completed"
+			id: "1963BA6CDAE53A1F"
+			tasks: [{
+				id: "7794CE422BB5B247"
+				type: "item"
+				item: "xreliquary:phoenix_down"
+			}]
+			rewards: [
+				{
+					id: "7978E7F61C37C29B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "06B47E453362D606"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			dependencies: ["26F2D5E44189FB79"]
+			dependency_requirement: "one_completed"
+			id: "5B4DF52B8B7537CE"
+			tasks: [{
+				id: "4CB37058E43A7A32"
+				type: "item"
+				item: "xreliquary:destruction_catalyst"
+			}]
+			rewards: [
+				{
+					id: "22DD0BE306748D12"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "588516B24BAACD25"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			dependencies: [
+				"1781A143707BF811"
+				"29E2CFE0C3651EB1"
+				"5B4DF52B8B7537CE"
+			]
+			dependency_requirement: "one_completed"
+			id: "215300B3879440A1"
+			tasks: [{
+				id: "6A7EA6AA9CB0DD9D"
+				type: "item"
+				item: "xreliquary:midas_touchstone"
+			}]
+			rewards: [
+				{
+					id: "30E9C47934261A79"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "628C67DD9F02C0EA"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 9.0d
+			dependencies: [
+				"5AF9DFAC20655F5E"
+				"6FE5751223B11EC6"
+			]
+			dependency_requirement: "one_completed"
+			id: "1781A143707BF811"
+			tasks: [{
+				id: "660F8CE3A30F4E5B"
+				type: "item"
+				item: "xreliquary:glacial_staff"
+			}]
+			rewards: [
+				{
+					id: "14612FEA54582FBC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3263E52D3AF01A4E"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 9.0d
+			dependencies: [
+				"5B7FBF0CCB647321"
+				"6E42C3C542DA55FA"
+				"03F85E62A3DE4E3D"
+			]
+			dependency_requirement: "one_completed"
+			id: "29E2CFE0C3651EB1"
+			tasks: [{
+				id: "055EBFC1A02D6F0E"
+				type: "item"
+				item: {
+					id: "xreliquary:harvest_rod"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [{
+								filter: {
+									id: "minecraft:bone_meal"
+									Count: 1b
+								}
+								amount: 0
+							}]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "22B34F5CE6F8B406"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2FEDEAFE84F29F23"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: -3.0d
+			dependencies: [
+				"7396FAB1B785AADD"
+				"779EB1FCB69A6EAB"
+			]
+			dependency_requirement: "one_completed"
+			id: "6348BA8B711DA852"
+			tasks: [{
+				id: "3003D100F2621FE9"
+				type: "item"
+				item: {
+					id: "xreliquary:ender_staff"
+					Count: 1b
+					tag: {
+						count: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							Items: [{
+								filter: {
+									id: "minecraft:ender_pearl"
+									Count: 1b
+								}
+								amount: 0
+							}]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "285B9F7E9A76D3DC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7A4DF630AF531577"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			title: "Chất!"
+			x: 20.0d
+			y: -3.0d
+			dependencies: ["43B65A5B6244F0DC"]
+			dependency_requirement: "one_completed"
+			id: "7396FAB1B785AADD"
+			tasks: [{
+				id: "581CC0FDDD08D969"
+				type: "item"
+				item: {
+					id: "xreliquary:void_tear"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "32B42040016B2A53"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "64DB80B6A8A0514D"
+					type: "loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 20.0d
+			y: -6.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"7396FAB1B785AADD"
+				"0A0CFCC416522F68"
+				"2DE5B0C2488D8F00"
+			]
+			dependency_requirement: "one_completed"
+			id: "251C9139FDA6690C"
+			tasks: [{
+				id: "39F0DD26299C5B67"
+				type: "item"
+				item: "xreliquary:sojourner_staff"
+			}]
+			rewards: [
+				{
+					id: "65E87F16759D2997"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "60B71BDF61CEF8B5"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 25.0d
+			y: -3.0d
+			dependencies: [
+				"7396FAB1B785AADD"
+				"779EB1FCB69A6EAB"
+			]
+			dependency_requirement: "one_completed"
+			id: "4807D2545FA76BC4"
+			tasks: [{
+				id: "581DED22EB6B0A03"
+				type: "item"
+				item: {
+					id: "xreliquary:rending_gale"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [{
+								filter: {
+									id: "minecraft:feather"
+									Count: 1b
+								}
+								amount: 0
+							}]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7D627629A9D7C474"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2C231486B229167C"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 20.0d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"182926F37D312236"
+				"6348BA8B711DA852"
+				"4807D2545FA76BC4"
+			]
+			dependency_requirement: "one_completed"
+			id: "779EB1FCB69A6EAB"
+			tasks: [{
+				id: "36CAA8779928818C"
+				type: "item"
+				item: "xreliquary:witherless_rose"
+			}]
+			rewards: [
+				{
+					id: "06BE064BD8405937"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7547E28FF26BB477"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 20.0d
+			y: 3.0d
+			dependencies: [
+				"581CC0FDDD08D969"
+				"43B65A5B6244F0DC"
+			]
+			dependency_requirement: "one_completed"
+			id: "182926F37D312236"
+			tasks: [{
+				id: "6A8588F9068E8CD1"
+				type: "item"
+				item: "xreliquary:lantern_of_paranoia"
+			}]
+			rewards: [
+				{
+					id: "24C730A10131EB2D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3CCE9B77B1709D6F"
+					type: "loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: 3.0d
+			dependencies: [
+				"182926F37D312236"
+				"251C9139FDA6690C"
+			]
+			dependency_requirement: "one_completed"
+			id: "0A0CFCC416522F68"
+			tasks: [{
+				id: "3058158A2FA6B9BC"
+				type: "item"
+				item: "xreliquary:apothecary_cauldron"
+			}]
+			rewards: [
+				{
+					id: "50501117F7855392"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5CD32014ED910462"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 25.0d
+			y: 3.0d
+			dependencies: [
+				"182926F37D312236"
+				"251C9139FDA6690C"
+			]
+			dependency_requirement: "one_completed"
+			id: "2DE5B0C2488D8F00"
+			tasks: [{
+				id: "088D372A274E240F"
+				type: "item"
+				item: {
+					id: "xreliquary:rod_of_lyssa"
+					Count: 1b
+					tag: {
+						hookEntityId: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6869BDAFB82F6469"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3B4A68864EF53723"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+		{
+			x: 20.099999999999998d
+			y: 0.0d
+			dependencies: ["43B65A5B6244F0DC"]
+			dependency_requirement: "one_completed"
+			id: "2EE95792ADB6006B"
+			tasks: [{
+				id: "20FD2DB146CBD5E6"
+				type: "item"
+				item: "xreliquary:twilight_cloak"
+			}]
+			rewards: [
+				{
+					id: "0AC769A8D8A03362"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5D19EBD5F380E91B"
+					type: "loot"
+					title: "[Reliquary] Imersive Loot"
+					table_id: 5426440866676681702L
+				}
+			]
+		}
+	]
+}
