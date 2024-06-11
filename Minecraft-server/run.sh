@@ -1,2 +1,6 @@
-#!/bin/bash
-java -Xms16G -Xmx16G -jar /workspaces/DePire-Services/Minecraft-server/forge-1.16.5-36.2.34.jar nogui
+#!/usr/bin/env sh
+# Forge requires a configured set of both JVM and program arguments.
+# Add custom JVM arguments to the user_jvm_args.txt
+# Add custom program arguments {such as nogui} to this file in the next line before the "$@" or
+#  pass them to this script directly
+java @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.18.2-40.2.21/unix_args.txt "$@"
