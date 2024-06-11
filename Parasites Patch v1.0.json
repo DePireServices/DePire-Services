@@ -1,0 +1,2564 @@
+{
+  "id": "Parasites Patch v1.0",
+  "jar": "1.12.2",
+  "time": "2020-04-13T00:57:42+07:00",
+  "releaseTime": "2017-09-18T15:39:46+07:00",
+  "type": "release",
+  "minecraftArguments": "--username ${auth_player_name} --version ${version_name} --gameDir ${game_directory} --assetsDir ${assets_root} --assetIndex ${assets_index_name} --uuid ${auth_uuid} --accessToken ${auth_access_token} --userType ${user_type} --tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker --versionType Forge",
+  "mainClass": "net.minecraft.launchwrapper.Launch",
+  "minimumLauncherVersion": 18,
+  "tlauncherVersion": 0,
+  "assets": "1.12",
+  "source": "local_version_repo",
+  "libraries": [
+    {
+      "name": "net.minecraftforge:forge:1.12.2-14.23.5.2854",
+      "artifact": {
+        "sha1": "762f5cb227a8dd88cfd3949033c78f24030b36aa",
+        "size": 4464068,
+        "path": "libraries/net/minecraftforge/forge/1.12.2-14.23.5.2854/forge-1.12.2-14.23.5.2854.jar",
+        "url": "http://dl2.tlrepo.com/libraries/net/minecraftforge/forge/1.12.2-14.23.5.2854/forge-1.12.2-14.23.5.2854.jar"
+      }
+    },
+    {
+      "name": "org.ow2.asm:asm-debug-all:5.2",
+      "artifact": {
+        "sha1": "3354e11e2b34215f06dab629ab88e06aca477c19",
+        "size": 387903,
+        "path": "org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar",
+        "url": "https://files.minecraftforge.net/maven/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar"
+      }
+    },
+    {
+      "name": "net.minecraft:launchwrapper:1.12",
+      "artifact": {
+        "sha1": "111e7bea9c968cdb3d06ef4632bf7ff0824d0f36",
+        "size": 32999,
+        "path": "net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar",
+        "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
+      }
+    },
+    {
+      "name": "org.jline:jline:3.5.1",
+      "artifact": {
+        "sha1": "51800e9d7a13608894a5a28eed0f5c7fa2f300fb",
+        "size": 614590,
+        "path": "org/jline/jline/3.5.1/jline-3.5.1.jar",
+        "url": "https://files.minecraftforge.net/maven/org/jline/jline/3.5.1/jline-3.5.1.jar"
+      }
+    },
+    {
+      "name": "com.typesafe.akka:akka-actor_2.11:2.3.3",
+      "artifact": {
+        "sha1": "ed62e9fc709ca0f2ff1a3220daa8b70a2870078e",
+        "size": 2514991,
+        "path": "com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar",
+        "url": "https://files.minecraftforge.net/maven/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar"
+      }
+    },
+    {
+      "name": "com.typesafe:config:1.2.1",
+      "artifact": {
+        "sha1": "f771f71fdae3df231bcd54d5ca2d57f0bf93f467",
+        "size": 219554,
+        "path": "com/typesafe/config/1.2.1/config-1.2.1.jar",
+        "url": "https://files.minecraftforge.net/maven/com/typesafe/config/1.2.1/config-1.2.1.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang:scala-actors-migration_2.11:1.1.0",
+      "artifact": {
+        "sha1": "dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f",
+        "size": 58018,
+        "path": "org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang:scala-compiler:2.11.1",
+      "artifact": {
+        "sha1": "56ea2e6c025e0821f28d73ca271218b8dd04926a",
+        "size": 13449765,
+        "path": "org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2_mc",
+      "artifact": {
+        "sha1": "0e517c53a7e9acd6b1668c5a35eccbaa3bab9aac",
+        "size": 25365,
+        "path": "org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2_mc/scala-continuations-library_2.11-1.0.2_mc.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2_mc/scala-continuations-library_2.11-1.0.2_mc.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2_mc",
+      "artifact": {
+        "sha1": "f361a3283452c57fa30c1ee69448995de23c60f7",
+        "size": 206575,
+        "path": "org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2_mc/scala-continuations-plugin_2.11.1-1.0.2_mc.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2_mc/scala-continuations-plugin_2.11.1-1.0.2_mc.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang:scala-library:2.11.1",
+      "artifact": {
+        "sha1": "0e11da23da3eabab9f4777b9220e60d44c1aab6a",
+        "size": 5538130,
+        "path": "org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang:scala-parser-combinators_2.11:1.0.1",
+      "artifact": {
+        "sha1": "f05d7345bf5a58924f2837c6c1f4d73a938e1ff0",
+        "size": 419701,
+        "path": "org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang:scala-reflect:2.11.1",
+      "artifact": {
+        "sha1": "6580347e61cc7f8e802941e7fde40fa83b8badeb",
+        "size": 4372892,
+        "path": "org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang:scala-swing_2.11:1.0.1",
+      "artifact": {
+        "sha1": "b1cdd92bd47b1e1837139c1c53020e86bb9112ae",
+        "size": 726500,
+        "path": "org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar"
+      }
+    },
+    {
+      "name": "org.scala-lang:scala-xml_2.11:1.0.2",
+      "artifact": {
+        "sha1": "7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0",
+        "size": 648679,
+        "path": "org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar",
+        "url": "https://files.minecraftforge.net/maven/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar"
+      }
+    },
+    {
+      "name": "lzma:lzma:0.0.1",
+      "artifact": {
+        "sha1": "521616dc7487b42bef0e803bd2fa3faf668101d7",
+        "size": 5762,
+        "path": "lzma/lzma/0.0.1/lzma-0.0.1.jar",
+        "url": "https://libraries.minecraft.net/lzma/lzma/0.0.1/lzma-0.0.1.jar"
+      }
+    },
+    {
+      "name": "java3d:vecmath:1.5.2",
+      "artifact": {
+        "sha1": "79846ba34cbd89e2422d74d53752f993dcc2ccaf",
+        "size": 318956,
+        "path": "java3d/vecmath/1.5.2/vecmath-1.5.2.jar",
+        "url": "https://libraries.minecraft.net/java3d/vecmath/1.5.2/vecmath-1.5.2.jar"
+      }
+    },
+    {
+      "name": "net.sf.trove4j:trove4j:3.0.3",
+      "artifact": {
+        "sha1": "42ccaf4761f0dfdfa805c9e340d99a755907e2dd",
+        "size": 2523218,
+        "path": "net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar",
+        "url": "https://libraries.minecraft.net/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar"
+      }
+    },
+    {
+      "name": "org.apache.maven:maven-artifact:3.5.3",
+      "artifact": {
+        "sha1": "7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4",
+        "size": 54961,
+        "path": "org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar",
+        "url": "https://files.minecraftforge.net/maven/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar"
+      }
+    },
+    {
+      "name": "net.sf.jopt-simple:jopt-simple:5.0.3",
+      "artifact": {
+        "sha1": "cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a",
+        "size": 78175,
+        "path": "net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar",
+        "url": "https://libraries.minecraft.net/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar"
+      }
+    },
+    {
+      "name": "com.mojang:patchy:1.1",
+      "artifact": {
+        "sha1": "aef610b34a1be37fa851825f12372b78424d8903",
+        "size": 15817,
+        "path": "com/mojang/patchy/1.1/patchy-1.1.jar",
+        "url": "https://libraries.minecraft.net/com/mojang/patchy/1.1/patchy-1.1.jar"
+      }
+    },
+    {
+      "name": "oshi-project:oshi-core:1.1",
+      "artifact": {
+        "sha1": "9ddf7b048a8d701be231c0f4f95fd986198fd2d8",
+        "size": 30973,
+        "path": "oshi-project/oshi-core/1.1/oshi-core-1.1.jar",
+        "url": "https://libraries.minecraft.net/oshi-project/oshi-core/1.1/oshi-core-1.1.jar"
+      }
+    },
+    {
+      "name": "net.java.dev.jna:jna:4.4.0",
+      "artifact": {
+        "sha1": "cb208278274bf12ebdb56c61bd7407e6f774d65a",
+        "size": 1091208,
+        "path": "net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar",
+        "url": "https://libraries.minecraft.net/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar"
+      }
+    },
+    {
+      "name": "net.java.dev.jna:platform:3.4.0",
+      "artifact": {
+        "sha1": "e3f70017be8100d3d6923f50b3d2ee17714e9c13",
+        "size": 913436,
+        "path": "net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar",
+        "url": "https://libraries.minecraft.net/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar"
+      }
+    },
+    {
+      "name": "com.ibm.icu:icu4j-core-mojang:51.2",
+      "artifact": {
+        "sha1": "63d216a9311cca6be337c1e458e587f99d382b84",
+        "size": 1634692,
+        "path": "com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar",
+        "url": "https://libraries.minecraft.net/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar"
+      }
+    },
+    {
+      "name": "net.sf.jopt-simple:jopt-simple:5.0.3",
+      "artifact": {
+        "sha1": "cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a",
+        "size": 78175,
+        "path": "net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar",
+        "url": "https://libraries.minecraft.net/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar"
+      }
+    },
+    {
+      "name": "com.paulscode:codecjorbis:20101023",
+      "artifact": {
+        "sha1": "c73b5636faf089d9f00e8732a829577de25237ee",
+        "size": 103871,
+        "path": "com/paulscode/codecjorbis/20101023/codecjorbis-20101023.jar",
+        "url": "https://libraries.minecraft.net/com/paulscode/codecjorbis/20101023/codecjorbis-20101023.jar"
+      }
+    },
+    {
+      "name": "com.paulscode:codecwav:20101023",
+      "artifact": {
+        "sha1": "12f031cfe88fef5c1dd36c563c0a3a69bd7261da",
+        "size": 5618,
+        "path": "com/paulscode/codecwav/20101023/codecwav-20101023.jar",
+        "url": "https://libraries.minecraft.net/com/paulscode/codecwav/20101023/codecwav-20101023.jar"
+      }
+    },
+    {
+      "name": "com.paulscode:libraryjavasound:20101123",
+      "artifact": {
+        "sha1": "5c5e304366f75f9eaa2e8cca546a1fb6109348b3",
+        "size": 21679,
+        "path": "com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123.jar",
+        "url": "https://libraries.minecraft.net/com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123.jar"
+      }
+    },
+    {
+      "name": "com.paulscode:librarylwjglopenal:20100824",
+      "artifact": {
+        "sha1": "73e80d0794c39665aec3f62eee88ca91676674ef",
+        "size": 18981,
+        "path": "com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar",
+        "url": "https://libraries.minecraft.net/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar"
+      }
+    },
+    {
+      "name": "com.paulscode:soundsystem:20120107",
+      "artifact": {
+        "sha1": "419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6",
+        "size": 65020,
+        "path": "com/paulscode/soundsystem/20120107/soundsystem-20120107.jar",
+        "url": "https://libraries.minecraft.net/com/paulscode/soundsystem/20120107/soundsystem-20120107.jar"
+      }
+    },
+    {
+      "name": "io.netty:netty-all:4.1.9.Final",
+      "artifact": {
+        "sha1": "0097860965d6a0a6b98e7f569f3f966727b8db75",
+        "size": 3511093,
+        "path": "io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar",
+        "url": "https://libraries.minecraft.net/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar"
+      }
+    },
+    {
+      "name": "com.google.guava:guava:21.0",
+      "artifact": {
+        "sha1": "3a3d111be1be1b745edfa7d91678a12d7ed38709",
+        "size": 2521113,
+        "path": "com/google/guava/guava/21.0/guava-21.0.jar",
+        "url": "https://libraries.minecraft.net/com/google/guava/guava/21.0/guava-21.0.jar"
+      }
+    },
+    {
+      "name": "org.apache.commons:commons-lang3:3.5",
+      "artifact": {
+        "sha1": "6c6c702c89bfff3cd9e80b04d668c5e190d588c6",
+        "size": 479881,
+        "path": "org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar",
+        "url": "https://libraries.minecraft.net/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar"
+      }
+    },
+    {
+      "name": "commons-io:commons-io:2.5",
+      "artifact": {
+        "sha1": "2852e6e05fbb95076fc091f6d1780f1f8fe35e0f",
+        "size": 208700,
+        "path": "commons-io/commons-io/2.5/commons-io-2.5.jar",
+        "url": "https://libraries.minecraft.net/commons-io/commons-io/2.5/commons-io-2.5.jar"
+      }
+    },
+    {
+      "name": "commons-codec:commons-codec:1.10",
+      "artifact": {
+        "sha1": "4b95f4897fa13f2cd904aee711aeafc0c5295cd8",
+        "size": 284184,
+        "path": "commons-codec/commons-codec/1.10/commons-codec-1.10.jar",
+        "url": "https://libraries.minecraft.net/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"
+      }
+    },
+    {
+      "name": "net.java.jinput:jinput:2.0.5",
+      "artifact": {
+        "sha1": "39c7796b469a600f72380316f6b1f11db6c2c7c4",
+        "size": 208338,
+        "path": "net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar",
+        "url": "https://libraries.minecraft.net/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar"
+      }
+    },
+    {
+      "name": "net.java.jutils:jutils:1.0.0",
+      "artifact": {
+        "sha1": "e12fe1fda814bd348c1579329c86943d2cd3c6a6",
+        "size": 7508,
+        "path": "net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar",
+        "url": "https://libraries.minecraft.net/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar"
+      }
+    },
+    {
+      "name": "com.google.code.gson:gson:2.8.0",
+      "artifact": {
+        "sha1": "c4ba5371a29ac9b2ad6129b1d39ea38750043eff",
+        "size": 231952,
+        "path": "com/google/code/gson/gson/2.8.0/gson-2.8.0.jar",
+        "url": "https://libraries.minecraft.net/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar"
+      }
+    },
+    {
+      "name": "com.mojang:authlib:1.5.25",
+      "artifact": {
+        "sha1": "9834cdf236c22e84b946bba989e2f94ef5897c3c",
+        "size": 65621,
+        "path": "com/mojang/authlib/1.5.25/authlib-1.5.25.jar",
+        "url": "https://libraries.minecraft.net/com/mojang/authlib/1.5.25/authlib-1.5.25.jar"
+      }
+    },
+    {
+      "name": "com.mojang:realms:1.10.22",
+      "artifact": {
+        "sha1": "bd0dccebdf3744c75f1ca20063f16e8f7d5e663f",
+        "size": 7135057,
+        "path": "com/mojang/realms/1.10.22/realms-1.10.22.jar",
+        "url": "https://libraries.minecraft.net/com/mojang/realms/1.10.22/realms-1.10.22.jar"
+      }
+    },
+    {
+      "name": "org.apache.commons:commons-compress:1.8.1",
+      "artifact": {
+        "sha1": "a698750c16740fd5b3871425f4cb3bbaa87f529d",
+        "size": 365552,
+        "path": "org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar",
+        "url": "https://libraries.minecraft.net/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar"
+      }
+    },
+    {
+      "name": "org.apache.httpcomponents:httpclient:4.3.3",
+      "artifact": {
+        "sha1": "18f4247ff4572a074444572cee34647c43e7c9c7",
+        "size": 589512,
+        "path": "org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar",
+        "url": "https://libraries.minecraft.net/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar"
+      }
+    },
+    {
+      "name": "commons-logging:commons-logging:1.1.3",
+      "artifact": {
+        "sha1": "f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f",
+        "size": 62050,
+        "path": "commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar",
+        "url": "https://libraries.minecraft.net/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar"
+      }
+    },
+    {
+      "name": "org.apache.httpcomponents:httpcore:4.3.2",
+      "artifact": {
+        "sha1": "31fbbff1ddbf98f3aa7377c94d33b0447c646b6e",
+        "size": 282269,
+        "path": "org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar",
+        "url": "https://libraries.minecraft.net/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar"
+      }
+    },
+    {
+      "name": "it.unimi.dsi:fastutil:7.1.0",
+      "artifact": {
+        "sha1": "9835253257524c1be7ab50c057aa2d418fb72082",
+        "size": 17655579,
+        "path": "it/unimi/dsi/fastutil/7.1.0/fastutil-7.1.0.jar",
+        "url": "https://libraries.minecraft.net/it/unimi/dsi/fastutil/7.1.0/fastutil-7.1.0.jar"
+      }
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-api:2.8.1",
+      "artifact": {
+        "sha1": "e801d13612e22cad62a3f4f3fe7fdbe6334a8e72",
+        "size": 228859,
+        "path": "org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar",
+        "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar"
+      }
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core:2.8.1",
+      "artifact": {
+        "sha1": "4ac28ff2f1ddf05dae3043a190451e8c46b73c31",
+        "size": 1402925,
+        "path": "org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar",
+        "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar"
+      }
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl:2.9.4-nightly-20150209",
+      "rules": [
+        {
+          "action": "allow"
+        },
+        {
+          "action": "disallow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "artifact": {
+        "sha1": "697517568c68e78ae0b4544145af031c81082dfe",
+        "size": 1047168,
+        "path": "org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar",
+        "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar"
+      }
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl_util:2.9.4-nightly-20150209",
+      "rules": [
+        {
+          "action": "allow"
+        },
+        {
+          "action": "disallow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "artifact": {
+        "sha1": "d51a7c040a721d13efdfbd34f8b257b2df882ad0",
+        "size": 173887,
+        "path": "org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar",
+        "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar"
+      }
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl-platform:2.9.4-nightly-20150209",
+      "rules": [
+        {
+          "action": "allow"
+        },
+        {
+          "action": "disallow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "natives": {
+        "linux": "natives-linux",
+        "osx": "natives-osx",
+        "windows": "natives-windows"
+      },
+      "extract": {
+        "exclude": [
+          "META-INF/"
+        ]
+      },
+      "artifact": {
+        "sha1": "b04f3ee8f5e43fa3b162981b50bb72fe1acabb33",
+        "size": 22,
+        "path": "org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209.jar",
+        "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209.jar"
+      },
+      "classifies": {
+        "linux": {
+          "sha1": "931074f46c795d2f7b30ed6395df5715cfd7675b",
+          "size": 578680,
+          "path": "org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar",
+          "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar"
+        },
+        "osx": {
+          "sha1": "bcab850f8f487c3f4c4dbabde778bb82bd1a40ed",
+          "size": 426822,
+          "path": "org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar",
+          "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar"
+        },
+        "windows": {
+          "sha1": "b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0",
+          "size": 613748,
+          "path": "org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar",
+          "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar"
+        }
+      }
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl:2.9.2-nightly-20140822",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "artifact": {
+        "sha1": "7707204c9ffa5d91662de95f0a224e2f721b22af",
+        "size": 1045632,
+        "path": "org/lwjgl/lwjgl/lwjgl/2.9.2-nightly-20140822/lwjgl-2.9.2-nightly-20140822.jar",
+        "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl/2.9.2-nightly-20140822/lwjgl-2.9.2-nightly-20140822.jar"
+      }
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl_util:2.9.2-nightly-20140822",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "artifact": {
+        "sha1": "f0e612c840a7639c1f77f68d72a28dae2f0c8490",
+        "size": 173887,
+        "path": "org/lwjgl/lwjgl/lwjgl_util/2.9.2-nightly-20140822/lwjgl_util-2.9.2-nightly-20140822.jar",
+        "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl_util/2.9.2-nightly-20140822/lwjgl_util-2.9.2-nightly-20140822.jar"
+      }
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl-platform:2.9.2-nightly-20140822",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "natives": {
+        "linux": "natives-linux",
+        "osx": "natives-osx",
+        "windows": "natives-windows"
+      },
+      "extract": {
+        "exclude": [
+          "META-INF/"
+        ]
+      },
+      "classifies": {
+        "linux": {
+          "sha1": "d898a33b5d0a6ef3fed3a4ead506566dce6720a5",
+          "size": 578539,
+          "path": "org/lwjgl/lwjgl/lwjgl-platform/2.9.2-nightly-20140822/lwjgl-platform-2.9.2-nightly-20140822-natives-linux.jar",
+          "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.2-nightly-20140822/lwjgl-platform-2.9.2-nightly-20140822-natives-linux.jar"
+        },
+        "osx": {
+          "sha1": "79f5ce2fea02e77fe47a3c745219167a542121d7",
+          "size": 468116,
+          "path": "org/lwjgl/lwjgl/lwjgl-platform/2.9.2-nightly-20140822/lwjgl-platform-2.9.2-nightly-20140822-natives-osx.jar",
+          "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.2-nightly-20140822/lwjgl-platform-2.9.2-nightly-20140822-natives-osx.jar"
+        },
+        "windows": {
+          "sha1": "78b2a55ce4dc29c6b3ec4df8ca165eba05f9b341",
+          "size": 613680,
+          "path": "org/lwjgl/lwjgl/lwjgl-platform/2.9.2-nightly-20140822/lwjgl-platform-2.9.2-nightly-20140822-natives-windows.jar",
+          "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.2-nightly-20140822/lwjgl-platform-2.9.2-nightly-20140822-natives-windows.jar"
+        }
+      }
+    },
+    {
+      "name": "net.java.jinput:jinput-platform:2.0.5",
+      "natives": {
+        "linux": "natives-linux",
+        "osx": "natives-osx",
+        "windows": "natives-windows"
+      },
+      "extract": {
+        "exclude": [
+          "META-INF/"
+        ]
+      },
+      "classifies": {
+        "linux": {
+          "sha1": "7ff832a6eb9ab6a767f1ade2b548092d0fa64795",
+          "size": 10362,
+          "path": "net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-linux.jar",
+          "url": "https://libraries.minecraft.net/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-linux.jar"
+        },
+        "osx": {
+          "sha1": "53f9c919f34d2ca9de8c51fc4e1e8282029a9232",
+          "size": 12186,
+          "path": "net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-osx.jar",
+          "url": "https://libraries.minecraft.net/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-osx.jar"
+        },
+        "windows": {
+          "sha1": "385ee093e01f587f30ee1c8a2ee7d408fd732e16",
+          "size": 155179,
+          "path": "net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-windows.jar",
+          "url": "https://libraries.minecraft.net/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-windows.jar"
+        }
+      }
+    },
+    {
+      "name": "com.mojang:text2speech:1.10.3",
+      "artifact": {
+        "sha1": "48fd510879dff266c3815947de66e3d4809f8668",
+        "size": 11055,
+        "path": "com/mojang/text2speech/1.10.3/text2speech-1.10.3.jar",
+        "url": "https://libraries.minecraft.net/com/mojang/text2speech/1.10.3/text2speech-1.10.3.jar"
+      }
+    },
+    {
+      "name": "com.mojang:text2speech:1.10.3",
+      "natives": {
+        "linux": "natives-linux",
+        "windows": "natives-windows"
+      },
+      "extract": {
+        "exclude": [
+          "META-INF/"
+        ]
+      },
+      "artifact": {
+        "sha1": "48fd510879dff266c3815947de66e3d4809f8668",
+        "size": 11055,
+        "path": "com/mojang/text2speech/1.10.3/text2speech-1.10.3.jar",
+        "url": "https://libraries.minecraft.net/com/mojang/text2speech/1.10.3/text2speech-1.10.3.jar"
+      },
+      "classifies": {
+        "linux": {
+          "sha1": "ab7896aec3b3dd272b06194357f2d98f832c0cfc",
+          "size": 7833,
+          "path": "com/mojang/text2speech/1.10.3/text2speech-1.10.3-natives-linux.jar",
+          "url": "https://libraries.minecraft.net/com/mojang/text2speech/1.10.3/text2speech-1.10.3-natives-linux.jar"
+        },
+        "windows": {
+          "sha1": "84a4b856389cc4f485275b1f63497a95a857a443",
+          "size": 81217,
+          "path": "com/mojang/text2speech/1.10.3/text2speech-1.10.3-natives-windows.jar",
+          "url": "https://libraries.minecraft.net/com/mojang/text2speech/1.10.3/text2speech-1.10.3-natives-windows.jar"
+        },
+        "sources": {
+          "sha1": "404339fe43d1011ee046a249b0ec7ae9ce04a834",
+          "size": 4632,
+          "path": "com/mojang/text2speech/1.10.3/text2speech-1.10.3-sources.jar",
+          "url": "https://libraries.minecraft.net/com/mojang/text2speech/1.10.3/text2speech-1.10.3-sources.jar"
+        }
+      }
+    },
+    {
+      "name": "ca.weblite:java-objc-bridge:1.0.0",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "natives": {
+        "osx": "natives-osx"
+      },
+      "extract": {
+        "exclude": [
+          "META-INF/"
+        ]
+      },
+      "artifact": {
+        "sha1": "6ef160c3133a78de015830860197602ca1c855d3",
+        "size": 40502,
+        "path": "ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0.jar",
+        "url": "https://libraries.minecraft.net/ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0.jar"
+      },
+      "classifies": {
+        "javadoc": {
+          "sha1": "fb0092f22cb4fe8e631452f577b7a238778abf2a",
+          "size": 174060,
+          "path": "ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0-javadoc.jar",
+          "url": "https://libraries.minecraft.net/ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0-javadoc.jar"
+        },
+        "osx": {
+          "sha1": "08befab4894d55875f33c3d300f4f71e6e828f64",
+          "size": 5629,
+          "path": "ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0-natives-osx.jar",
+          "url": "https://libraries.minecraft.net/ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0-natives-osx.jar"
+        },
+        "sources": {
+          "sha1": "865837a198189aee737019561ece842827f24278",
+          "size": 43283,
+          "path": "ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0-sources.jar",
+          "url": "https://libraries.minecraft.net/ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0-sources.jar"
+        }
+      }
+    },
+    {
+      "name": "ca.weblite:java-objc-bridge:1.0.0",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "artifact": {
+        "sha1": "6ef160c3133a78de015830860197602ca1c855d3",
+        "size": 40502,
+        "path": "ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0.jar",
+        "url": "https://libraries.minecraft.net/ca/weblite/java-objc-bridge/1.0.0/java-objc-bridge-1.0.0.jar"
+      }
+    }
+  ],
+  "downloads": {
+    "client": {
+      "sha1": "0f275bc1547d01fa5f56ba34bdc87d981ee12daf",
+      "size": 10180113,
+      "url": "https://launcher.mojang.com/v1/objects/0f275bc1547d01fa5f56ba34bdc87d981ee12daf/client.jar"
+    },
+    "server": {
+      "sha1": "886945bfb2b978778c3a0288fd7fab09d315b25f",
+      "size": 30222121,
+      "url": "https://launcher.mojang.com/v1/objects/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar"
+    }
+  },
+  "assetIndex": {
+    "id": "1.12",
+    "totalSize": 129336389,
+    "size": 143138,
+    "url": "https://launchermeta.mojang.com/v1/packages/1584b57c1a0b5e593fad1f5b8f78536ca640547b/1.12.json"
+  },
+  "additionalFiles": [],
+  "modpack": {
+    "modpackMemory": false,
+    "memory": 0,
+    "id": -2767848789100,
+    "name": "Parasites Patch v1.0",
+    "categories": [],
+    "tags": [],
+    "pictures": [],
+    "version": {
+      "mods": [
+        {
+          "stateGameElement": "active",
+          "id": 10000020,
+          "name": "TL skin and cape",
+          "version": {
+            "id": 11000372,
+            "name": "1.4",
+            "metadata": {
+              "sha1": "d0483ac68cbeea22d6a2c46984c4cc7de4d3ce42",
+              "size": 193898,
+              "path": "mods/tlskincape1.12.2-1.4.jar",
+              "url": "/mods/10000020/11000372/tlskincape1.12.2-1.4.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127253405600,
+          "name": "AIImprovements-1.12-0.0.1b3",
+          "version": {
+            "id": -3127254395400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "ef4b64cd4fc10522ead1f659b81e471af455c3fe",
+              "size": 7266,
+              "path": "mods/AIImprovements-1.12-0.0.1b3.jar",
+              "url": "mods/AIImprovements-1.12-0.0.1b3.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127254433800,
+          "name": "AutoRegLib-1.3-32",
+          "version": {
+            "id": -3127256357300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "267269ca7f1a71fb3bb35bdb8e61702a4da6263e",
+              "size": 108306,
+              "path": "mods/AutoRegLib-1.3-32.jar",
+              "url": "mods/AutoRegLib-1.3-32.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127256390900,
+          "name": "betteranimalsplus-1.12.2-9.0.1",
+          "version": {
+            "id": -3127382374100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "673f1f60061c91305335d9ca13c3ee4563322bcd",
+              "size": 8211365,
+              "path": "mods/betteranimalsplus-1.12.2-9.0.1.jar",
+              "url": "mods/betteranimalsplus-1.12.2-9.0.1.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127382407000,
+          "name": "BetterFps-1.4.8",
+          "version": {
+            "id": -3127385717800,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "245235d5c67daff00ee658ee1f88ae8c3e4584b8",
+              "size": 155196,
+              "path": "mods/BetterFps-1.4.8.jar",
+              "url": "mods/BetterFps-1.4.8.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127385757800,
+          "name": "BiomesOPlenty-1.12.2-7.0.1.2444-universal",
+          "version": {
+            "id": -3127451967900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "6f281febea0746d2229f692cb719bd017ec70b32",
+              "size": 4702147,
+              "path": "mods/BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
+              "url": "mods/BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127452002700,
+          "name": "coroutil-1.12.1-1.2.37",
+          "version": {
+            "id": -3127484409400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "90392789dfbcadf440415a775d3ec81326deee2f",
+              "size": 2327451,
+              "path": "mods/coroutil-1.12.1-1.2.37.jar",
+              "url": "mods/coroutil-1.12.1-1.2.37.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127484448000,
+          "name": "CreativeCore_v1.10.47_mc1.12.2",
+          "version": {
+            "id": -3127501609400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "33c69aaae7bbb412009bffd816a51900decbc3a2",
+              "size": 1211292,
+              "path": "mods/CreativeCore_v1.10.47_mc1.12.2.jar",
+              "url": "mods/CreativeCore_v1.10.47_mc1.12.2.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127501665300,
+          "name": "DoomlikeDungeons-1.13.2-MC1.12.2",
+          "version": {
+            "id": -3127512477300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e6150146ce8c9d0a337a1ceed234773d8340cc9f",
+              "size": 702996,
+              "path": "mods/DoomlikeDungeons-1.13.2-MC1.12.2.jar",
+              "url": "mods/DoomlikeDungeons-1.13.2-MC1.12.2.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127512525000,
+          "name": "DynamicTrees-1.12.2-0.9.22",
+          "version": {
+            "id": -3127523633200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "8540eb3ff3b75fcaefb3eea616c38c04c4eb567b",
+              "size": 890832,
+              "path": "mods/DynamicTrees-1.12.2-0.9.22.jar",
+              "url": "mods/DynamicTrees-1.12.2-0.9.22.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127523672200,
+          "name": "DynamicTreesBOP-1.12.2-1.4.4",
+          "version": {
+            "id": -3127531101900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "a321f9008c3f45b9fdaf05271d518230d420af0f",
+              "size": 407011,
+              "path": "mods/DynamicTreesBOP-1.12.2-1.4.4.jar",
+              "url": "mods/DynamicTreesBOP-1.12.2-1.4.4.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127531161100,
+          "name": "FamiliarFauna-1.12.2-1.0.11",
+          "version": {
+            "id": -3127536958500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e38af1ced9f5ce3f39e87b8cf79241849b52945d",
+              "size": 381455,
+              "path": "mods/FamiliarFauna-1.12.2-1.0.11.jar",
+              "url": "mods/FamiliarFauna-1.12.2-1.0.11.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127537000200,
+          "name": "Forgelin-1.8.4",
+          "version": {
+            "id": -3127619673300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "7a87553fcb808a45d9c7e03f113b355ac7fd10d7",
+              "size": 6278399,
+              "path": "mods/Forgelin-1.8.4.jar",
+              "url": "mods/Forgelin-1.8.4.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127619709900,
+          "name": "iChunUtil-1.12.2-7.2.2",
+          "version": {
+            "id": -3127630596900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "2b53b0f9543c98adb0b89caa4da954a477259367",
+              "size": 581963,
+              "path": "mods/iChunUtil-1.12.2-7.2.2.jar",
+              "url": "mods/iChunUtil-1.12.2-7.2.2.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127630641400,
+          "name": "jei_1.12.2-4.16.1.302",
+          "version": {
+            "id": -3127637834000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3e88d2896ca868c3cedb65e117ad3a1b82488fa8",
+              "size": 653210,
+              "path": "mods/jei_1.12.2-4.16.1.302.jar",
+              "url": "mods/jei_1.12.2-4.16.1.302.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127637899800,
+          "name": "lostcities-1.12-2.0.22",
+          "version": {
+            "id": -3127650348200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "dcea94d4a3d05f8282e014fcfe69048feafe4ce0",
+              "size": 789743,
+              "path": "mods/lostcities-1.12-2.0.22.jar",
+              "url": "mods/lostcities-1.12-2.0.22.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127650740200,
+          "name": "lostsouls-1.12-1.1.4",
+          "version": {
+            "id": -3127652540700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4126212c6faa12c112a2de8854fa9257f4c7d3c6",
+              "size": 30677,
+              "path": "mods/lostsouls-1.12-1.1.4.jar",
+              "url": "mods/lostsouls-1.12-1.1.4.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127652585800,
+          "name": "mcw-bridges-1.0.4-mc1.12.2",
+          "version": {
+            "id": -3127654569200,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "325c3e2d142e95915e394fac90a68e6d2717a750",
+              "size": 118950,
+              "path": "mods/mcw-bridges-1.0.4-mc1.12.2.jar",
+              "url": "mods/mcw-bridges-1.0.4-mc1.12.2.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127654609300,
+          "name": "MixinBootstrap-1.0.5",
+          "version": {
+            "id": -3127676901500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "b7d74a7f969111567358ff905efe69144b7ca55d",
+              "size": 1066150,
+              "path": "mods/MixinBootstrap-1.0.5.jar",
+              "url": "mods/MixinBootstrap-1.0.5.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127677054600,
+          "name": "MobDismemberment-1.12.2-7.0.0",
+          "version": {
+            "id": -3127679284500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "e8f62b290746e6713e5233cc1c187e20a08489e3",
+              "size": 22320,
+              "path": "mods/MobDismemberment-1.12.2-7.0.0.jar",
+              "url": "mods/MobDismemberment-1.12.2-7.0.0.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127679331200,
+          "name": "MouseTweaks-2.10-mc1.12.2",
+          "version": {
+            "id": -3127680803500,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "0d3b0589021905b2eab8ba93805e9fdef463288e",
+              "size": 75170,
+              "path": "mods/MouseTweaks-2.10-mc1.12.2.jar",
+              "url": "mods/MouseTweaks-2.10-mc1.12.2.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127680852900,
+          "name": "OreLib-1.12.2-3.6.0.1",
+          "version": {
+            "id": -3127689747000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "5debb0481552c54bb6ad72d56b05b31d92e2f5d8",
+              "size": 341728,
+              "path": "mods/OreLib-1.12.2-3.6.0.1.jar",
+              "url": "mods/OreLib-1.12.2-3.6.0.1.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127689817000,
+          "name": "Quark-r1.6-179",
+          "version": {
+            "id": -3127768167100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "35521fd8911b6ef893afbfe7d0d5d04962b3360d",
+              "size": 3877577,
+              "path": "mods/Quark-r1.6-179.jar",
+              "url": "mods/Quark-r1.6-179.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127768221000,
+          "name": "Rex's-Additional-Structures-1.12.x-(v.2.3.1)",
+          "version": {
+            "id": -3127780775900,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "7345e07cf2fdee3fd5578647824aa5b7468ccb93",
+              "size": 818178,
+              "path": "mods/Rex's-Additional-Structures-1.12.x-(v.2.3.1).jar",
+              "url": "mods/Rex's-Additional-Structures-1.12.x-(v.2.3.1).jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127780845800,
+          "name": "RoguelikeDungeonsFnarEdition-1.12.2-2.3.1",
+          "version": {
+            "id": -3127791011700,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "f02cda1566ac81ac9719ee64063e4595edb5a398",
+              "size": 816201,
+              "path": "mods/RoguelikeDungeonsFnarEdition-1.12.2-2.3.1.jar",
+              "url": "mods/RoguelikeDungeonsFnarEdition-1.12.2-2.3.1.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127791109100,
+          "name": "SpartanShields-1.12.2-1.5.4",
+          "version": {
+            "id": -3127798469300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "3da2ffb767146e872eac0ceb510edd512c173f7f",
+              "size": 430944,
+              "path": "mods/SpartanShields-1.12.2-1.5.4.jar",
+              "url": "mods/SpartanShields-1.12.2-1.5.4.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127798519400,
+          "name": "SpartanWeaponry-1.12.2-beta-1.3.8",
+          "version": {
+            "id": -3127811641100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "254775e457573926179bfef60b4e09de52e11951",
+              "size": 937558,
+              "path": "mods/SpartanWeaponry-1.12.2-beta-1.3.8.jar",
+              "url": "mods/SpartanWeaponry-1.12.2-beta-1.3.8.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127811741500,
+          "name": "SRParasites-1.12.2v1.8.2",
+          "version": {
+            "id": -3127897860000,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4f9e520a01a23fc9f23e04fe000f0c3990a204a8",
+              "size": 5573877,
+              "path": "mods/SRParasites-1.12.2v1.8.2.jar",
+              "url": "mods/SRParasites-1.12.2v1.8.2.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127897917100,
+          "name": "stg-1.12.2-1.2.2",
+          "version": {
+            "id": -3127898633300,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d4c0056cf16bb81226f54e4a9fe70b7c57d1ce0c",
+              "size": 24016,
+              "path": "mods/stg-1.12.2-1.2.2.jar",
+              "url": "mods/stg-1.12.2-1.2.2.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127898674100,
+          "name": "wolfarmor-1.12.2-3.7.5-universal-signed",
+          "version": {
+            "id": -3127927063400,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "d581e47974dc3c032de9cd3050c49611cee7ccda",
+              "size": 1988782,
+              "path": "mods/wolfarmor-1.12.2-3.7.5-universal-signed.jar",
+              "url": "mods/wolfarmor-1.12.2-3.7.5-universal-signed.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": -3127927407600,
+          "name": "zombieawareness-1.12.1-1.11.16",
+          "version": {
+            "id": -3127931850100,
+            "name": "1.0",
+            "metadata": {
+              "sha1": "4d5f353e9dfd66b5648918ba5f8338cf936fc2f0",
+              "size": 285951,
+              "path": "mods/zombieawareness-1.12.1-1.11.16.jar",
+              "url": "mods/zombieawareness-1.12.1-1.11.16.jar"
+            }
+          },
+          "userInstall": true,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 315037,
+          "name": "QuickTeleports",
+          "version": {
+            "id": 2851881,
+            "name": "v1.12.2-1.1.1",
+            "metadata": {
+              "sha1": "6cbd78b77357a4db27866c6e42673bb471d71ef5",
+              "size": 25463,
+              "path": "mods/quickteleports-1.12.2-1.1.1.jar",
+              "url": "/mods/315037/2851881/quickteleports-1.12.2-1.1.1.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 243707,
+          "name": "Corail Tombstone",
+          "version": {
+            "id": 3411517,
+            "name": "4.4.6 for 1.12.2",
+            "metadata": {
+              "sha1": "7fd3ca5b2ef8b963fd1b72bc17efe2bf0bfeb02b",
+              "size": 1105819,
+              "path": "mods/tombstone-1.12.2-4.4.6.jar",
+              "url": "/mods/243707/3411517/tombstone-1.12.2-4.4.6.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 246391,
+          "name": "Tough As Nails",
+          "version": {
+            "id": 2710969,
+            "name": "1.12.2-3.1.0.141-universal",
+            "metadata": {
+              "sha1": "594c723d9708616b0f69bec1fb2d884d9ade7444",
+              "size": 357504,
+              "path": "mods/ToughAsNails-1.12.2-3.1.0.141-universal.jar",
+              "url": "/mods/246391/2710969/ToughAsNails-1.12.2-3.1.0.141-universal.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 223094,
+          "name": "Inventory Tweaks",
+          "version": {
+            "id": 2923460,
+            "name": "1.64+dev.151",
+            "metadata": {
+              "sha1": "3ba1e59a5109f3e94a4a0170877006b72fa77b1e",
+              "size": 286144,
+              "path": "mods/InventoryTweaks-1.64+dev.151.jar",
+              "url": "/mods/223094/2923460/InventoryTweaks-1.64%252Bdev.151.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 9999999,
+          "name": "OptiFine",
+          "version": {
+            "id": 11001818,
+            "name": "OptiFine-1.12.2_HD_U_G5",
+            "metadata": {
+              "sha1": "db971767e460269f2317bb5df57d8f522be65e2c",
+              "size": 2457427,
+              "path": "mods/OptiFine-1.12.2_HD_U_G5.jar",
+              "url": "/mods/9999999/11001818/OptiFine-1.12.2_HD_U_G5.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 32274,
+          "name": "JourneyMap",
+          "version": {
+            "id": 2916002,
+            "name": "journeymap-1.12.2-5.7.1",
+            "metadata": {
+              "sha1": "3da4323f71bcadcf140002a9f49578f0cd5ce8a8",
+              "size": 6990968,
+              "path": "mods/journeymap-1.12.2-5.7.1.jar",
+              "url": "/mods/32274/2916002/journeymap-1.12.2-5.7.1.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 238372,
+          "name": "Neat",
+          "version": {
+            "id": 2595310,
+            "name": "1.4-17",
+            "metadata": {
+              "sha1": "831c286d99fe78503e966ef80ad27f54ae6a81cb",
+              "size": 18527,
+              "path": "mods/Neat 1.4-17.jar",
+              "url": "/mods/238372/2595310/Neat%201.4-17.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 237167,
+          "name": "FTB Library",
+          "version": {
+            "id": 2985811,
+            "name": "FTBLib-5.4.7.2",
+            "metadata": {
+              "sha1": "7c20cd223bc2334edf153e074f35acdbcab3c976",
+              "size": 934370,
+              "path": "mods/FTBLib-5.4.7.2.jar",
+              "url": "/mods/237167/2985811/FTBLib-5.4.7.2.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 237102,
+          "name": "FTB Utilities",
+          "version": {
+            "id": 3157548,
+            "name": "5.4.1.131",
+            "metadata": {
+              "sha1": "d1f6545ac58ad895f2c8bcd0d4963d92f14b1938",
+              "size": 425832,
+              "path": "mods/FTBUtilities-5.4.1.131.jar",
+              "url": "/mods/237102/3157548/FTBUtilities-5.4.1.131.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 32274,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 314904,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 237167,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 268495,
+          "name": "Simple Storage Network",
+          "version": {
+            "id": 3227897,
+            "name": "1.12.2-1.8.1",
+            "metadata": {
+              "sha1": "ce8175ef76f665e9eabae0c08a702a78d2b2763e",
+              "size": 442982,
+              "path": "mods/SimpleStorageNetwork-1.12.2-1.8.1.jar",
+              "url": "/mods/268495/3227897/SimpleStorageNetwork-1.12.2-1.8.1.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 232758,
+          "name": "Cyclops Core",
+          "version": {
+            "id": 3159497,
+            "name": "1.12.2-1.6.7",
+            "metadata": {
+              "sha1": "29939475b84a3771d8675dd48cd7d9c74b0771d8",
+              "size": 1060985,
+              "path": "mods/CyclopsCore-1.12.2-1.6.7.jar",
+              "url": "/mods/232758/3159497/CyclopsCore-1.12.2-1.6.7.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 237875,
+          "name": "Colossal Chests",
+          "version": {
+            "id": 2718588,
+            "name": "1.12.2-1.7.3",
+            "metadata": {
+              "sha1": "23ed78b55237d1ead295bcb21887a689b8772960",
+              "size": 200954,
+              "path": "mods/ColossalChests-1.12.2-1.7.3.jar",
+              "url": "/mods/237875/2718588/ColossalChests-1.12.2-1.7.3.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 232758,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 268560,
+          "name": "Mekanism",
+          "version": {
+            "id": 2835175,
+            "name": "1.12.2-9.8.3.390",
+            "metadata": {
+              "sha1": "1d5b531b7c107d6946b3e957f4554e2cb7686320",
+              "size": 7863657,
+              "path": "mods/Mekanism-1.12.2-9.8.3.390.jar",
+              "url": "/mods/268560/2835175/Mekanism-1.12.2-9.8.3.390.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 245211,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 238222,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 267602,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 248020,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 253449,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 220318,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 226410,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 324164,
+              "dependencyType": "optional"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 268566,
+          "name": "Mekanism Generators",
+          "version": {
+            "id": 2835177,
+            "name": "1.12.2-9.8.3.390",
+            "metadata": {
+              "sha1": "6980bbbc9d18c5dea7e2242fe9d542da2d41c481",
+              "size": 336364,
+              "path": "mods/MekanismGenerators-1.12.2-9.8.3.390.jar",
+              "url": "/mods/268566/2835177/MekanismGenerators-1.12.2-9.8.3.390.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 268560,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 268567,
+          "name": "Mekanism Tools",
+          "version": {
+            "id": 2835178,
+            "name": "1.12.2-9.8.3.390",
+            "metadata": {
+              "sha1": "8c32f71f2db7a695abc8413aa7dfe8c28c485585",
+              "size": 159785,
+              "path": "mods/MekanismTools-1.12.2-9.8.3.390.jar",
+              "url": "/mods/268567/2835178/MekanismTools-1.12.2-9.8.3.390.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 268560,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 227049,
+          "name": "Iron Backpacks",
+          "version": {
+            "id": 2564573,
+            "name": "1.12.2-3.0.8-12",
+            "metadata": {
+              "sha1": "50758105dabe8f0d4c6e311e14ad2c1f5673d2cd",
+              "size": 465363,
+              "path": "mods/IronBackpacks-1.12.2-3.0.8-12.jar",
+              "url": "/mods/227049/2564573/IronBackpacks-1.12.2-3.0.8-12.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 238222,
+              "dependencyType": "optional"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 250363,
+          "name": "AutoRegLib",
+          "version": {
+            "id": 2746011,
+            "name": "1.3-32",
+            "metadata": {
+              "sha1": "267269ca7f1a71fb3bb35bdb8e61702a4da6263e",
+              "size": 108306,
+              "path": "mods/AutoRegLib-1.3-32.jar",
+              "url": "/mods/250363/2746011/AutoRegLib-1.3-32.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 243121,
+          "name": "Quark",
+          "version": {
+            "id": 2924091,
+            "name": "r1.6-179",
+            "metadata": {
+              "sha1": "35521fd8911b6ef893afbfe7d0d5d04962b3360d",
+              "size": 3877577,
+              "path": "mods/Quark-r1.6-179.jar",
+              "url": "/mods/243121/2924091/Quark-r1.6-179.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 250363,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 245755,
+          "name": "Waystones",
+          "version": {
+            "id": 2859589,
+            "name": "_1.12.2-4.1.0",
+            "metadata": {
+              "sha1": "877a5cd3ed8e3f29e900b74c8c5400ee6e43c3bf",
+              "size": 178994,
+              "path": "mods/Waystones_1.12.2-4.1.0.jar",
+              "url": "/mods/245755/2859589/Waystones_1.12.2-4.1.0.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 253449,
+          "name": "Hwyla",
+          "version": {
+            "id": 2568751,
+            "name": "1.8.26-B41_1.12.2",
+            "metadata": {
+              "sha1": "7280d5c0dab42436549bcefc63ff64a1049e5501",
+              "size": 453778,
+              "path": "mods/Hwyla-1.8.26-B41_1.12.2.jar",
+              "url": "/mods/253449/2568751/Hwyla-1.8.26-B41_1.12.2.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 79287,
+          "name": "Waila Harvestability",
+          "version": {
+            "id": 2481605,
+            "name": "mc1.12-1.1.12",
+            "metadata": {
+              "sha1": "7e1abc8dd61390285167284a5eb3bf0e57a52760",
+              "size": 31462,
+              "path": "mods/WailaHarvestability-mc1.12-1.1.12.jar",
+              "url": "/mods/79287/2481605/WailaHarvestability-mc1.12-1.1.12.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 253449,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 270789,
+          "name": "Redstone Flux",
+          "version": {
+            "id": 2920436,
+            "name": "1.12-2.1.1.1-universal",
+            "metadata": {
+              "sha1": "7835c1dcc006e5d4a406a6b0615012b825e25044",
+              "size": 31802,
+              "path": "mods/RedstoneFlux-1.12-2.1.1.1-universal.jar",
+              "url": "/mods/270789/2920436/RedstoneFlux-1.12-2.1.1.1-universal.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 255232,
+          "name": "p455w0rd's Library",
+          "version": {
+            "id": 11001471,
+            "name": "2.3.161",
+            "metadata": {
+              "sha1": "be56bc229b7f418675bf46277e37a8272def5327",
+              "size": 328793,
+              "path": "mods/p455w0rdslib-1.12.2-2.3.161.jar",
+              "url": "/mods/255232/11001471/p455w0rdslib-1.12.2-2.3.161.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 270789,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 244651,
+              "dependencyType": "optional"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 257225,
+          "name": "Tough Expansion",
+          "version": {
+            "id": 2555993,
+            "name": "1.12-3.4.23",
+            "metadata": {
+              "sha1": "978b66fc1dad1b54087bbdfb9bd0465e8d644a8b",
+              "size": 140854,
+              "path": "mods/ToughExpansion-1.12-3.4.23.jar",
+              "url": "/mods/257225/2555993/ToughExpansion-1.12-3.4.23.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 255232,
+              "dependencyType": "required"
+            },
+            {
+              "gameType": "mod",
+              "id": 242638,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 246391,
+              "dependencyType": "required"
+            },
+            {
+              "gameType": "mod",
+              "id": 270789,
+              "dependencyType": "required"
+            },
+            {
+              "gameType": "mod",
+              "id": 227083,
+              "dependencyType": "optional"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 291874,
+          "name": "Serene Seasons",
+          "version": {
+            "id": 2799213,
+            "name": "1.12.2-1.2.18-universal",
+            "metadata": {
+              "sha1": "05acc4faf6f5ca31215599c0ebf778ba18a9121b",
+              "size": 185187,
+              "path": "mods/SereneSeasons-1.12.2-1.2.18-universal.jar",
+              "url": "/mods/291874/2799213/SereneSeasons-1.12.2-1.2.18-universal.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 225561,
+          "name": "Extra Utilities",
+          "version": {
+            "id": 2678374,
+            "name": "2 - 1.12 - 1.9",
+            "metadata": {
+              "sha1": "9f9a217b23626cb338cf229054ed490d913610dc",
+              "size": 3226408,
+              "path": "mods/extrautils2-1.12-1.9.9.jar",
+              "url": "/mods/225561/2678374/extrautils2-1.12-1.9.9.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 336272,
+          "name": "Mutant Beasts",
+          "version": {
+            "id": 3225395,
+            "name": "1.12.2-1.0.2",
+            "metadata": {
+              "sha1": "b2ae04070cfa531647c88fea17f2cd229289e297",
+              "size": 1200094,
+              "path": "mods/MutantBeasts-1.12.2-1.0.2.jar",
+              "url": "/mods/336272/3225395/MutantBeasts-1.12.2-1.0.2.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 226321,
+          "name": "Bloodmoon",
+          "version": {
+            "id": 2537917,
+            "name": "MC1.12.2-1.5.3",
+            "metadata": {
+              "sha1": "181062c89f2016f06e73864eab7c2ff016ccc754",
+              "size": 47505,
+              "path": "mods/Bloodmoon-MC1.12.2-1.5.3.jar",
+              "url": "/mods/226321/2537917/Bloodmoon-MC1.12.2-1.5.3.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 278717,
+          "name": "Sit",
+          "version": {
+            "id": 2848862,
+            "name": "sit-1.12.2-v1.3",
+            "metadata": {
+              "sha1": "1a19c5aa9373e5e9b666cd1e8a2b3632c5983d72",
+              "size": 10110,
+              "path": "mods/sit-1.12.2-v1.3.jar",
+              "url": "/mods/278717/2848862/sit-1.12.2-v1.3.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 231382,
+          "name": "Brandon's Core",
+          "version": {
+            "id": 3408276,
+            "name": "BrandonsCore-1.12.2-2.4.20.162-universal",
+            "metadata": {
+              "sha1": "f6035eb93d9c7b91334ed7bfc17ed36c8c9d86c8",
+              "size": 827900,
+              "path": "mods/BrandonsCore-1.12.2-2.4.20.162-universal.jar",
+              "url": "/mods/231382/3408276/BrandonsCore-1.12.2-2.4.20.162-universal.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 270789,
+              "dependencyType": "required"
+            },
+            {
+              "gameType": "mod",
+              "id": 242818,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 242818,
+          "name": "CodeChicken Lib 1.8.+",
+          "version": {
+            "id": 2779848,
+            "name": "CodeChicken Lib 1.12.2-3.2.3",
+            "metadata": {
+              "sha1": "b6a7e3b889c354216059a3bfad298e30a1e46a2d",
+              "size": 704330,
+              "path": "mods/CodeChickenLib-1.12.2-3.2.3.358-universal.jar",
+              "url": "/mods/242818/2779848/CodeChickenLib-1.12.2-3.2.3.358-universal.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 248020,
+          "name": "Flux Networks",
+          "version": {
+            "id": 3178199,
+            "name": "Flux-Networks-1.12.2-4.1.1",
+            "metadata": {
+              "sha1": "561e36a86cfa0c19cdaddc897f47acebf1909ef3",
+              "size": 475994,
+              "path": "mods/FluxNetworks-1.12.2-4.1.1.34.jar",
+              "url": "/mods/248020/3178199/FluxNetworks-1.12.2-4.1.1.34.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 352656,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 268560,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 242638,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 293327,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 270789,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 223008,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 223794,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 227083,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 238222,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 245211,
+              "dependencyType": "optional"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 245480,
+          "name": "ValkyrieLib",
+          "version": {
+            "id": 2691542,
+            "name": "valkyrielib-1.12.2-2.0.20.1",
+            "metadata": {
+              "sha1": "e640e231cb83ea9ff7cda8710e6d7c44467b9658",
+              "size": 733580,
+              "path": "mods/valkyrielib-1.12.2-2.0.20.1.jar",
+              "url": "/mods/245480/2691542/valkyrielib-1.12.2-2.0.20.1.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 245453,
+          "name": "Environmental Tech",
+          "version": {
+            "id": 2691536,
+            "name": "environmentaltech-1.12.2-2.0.20.1",
+            "metadata": {
+              "sha1": "2505c74c38e7083448a9473a7fba4713d9d620c1",
+              "size": 1001848,
+              "path": "mods/environmentaltech-1.12.2-2.0.20.1.jar",
+              "url": "/mods/245453/2691536/environmentaltech-1.12.2-2.0.20.1.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 245480,
+              "dependencyType": "required"
+            },
+            {
+              "gameType": "mod",
+              "id": 289532,
+              "dependencyType": "optional"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 243076,
+          "name": "Refined Storage",
+          "version": {
+            "id": 2940914,
+            "name": "1.6.16",
+            "metadata": {
+              "sha1": "007c8fb5bcc2bb99b7bbb055440e20b276251d77",
+              "size": 1912377,
+              "path": "mods/refinedstorage-1.6.16.jar",
+              "url": "/mods/243076/2940914/refinedstorage-1.6.16.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 308192,
+          "name": "Matter Overdrive Legacy Edition",
+          "version": {
+            "id": 2699215,
+            "name": "MatterOverdrive-1.12.2-0.7.1.0-universal",
+            "metadata": {
+              "sha1": "4e1424cccfcfd3d9a1deec1a34a675095b80d469",
+              "size": 18220530,
+              "path": "mods/MatterOverdrive-1.12.2-0.7.1.0-universal.jar",
+              "url": "/mods/308192/2699215/MatterOverdrive-1.12.2-0.7.1.0-universal.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 244201,
+          "name": "Techguns",
+          "version": {
+            "id": 2958103,
+            "name": "1.12.2-2.0.2.0_pre3.2",
+            "metadata": {
+              "sha1": "65a5cc41422bc665ec4b7d5e115efc7d95b002d7",
+              "size": 28126750,
+              "path": "mods/techguns-1.12.2-2.0.2.0_pre3.2.jar",
+              "url": "/mods/244201/2958103/techguns-1.12.2-2.0.2.0_pre3.2.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 235279,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 237102,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 238222,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 239197,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 232154,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 306770,
+              "dependencyType": "optional"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 289380,
+          "name": "Obfuscate",
+          "version": {
+            "id": 2916310,
+            "name": "0.4.2",
+            "metadata": {
+              "sha1": "0bc9cb77f1e71d4edf98a40135e0762e6c9f9c35",
+              "size": 129099,
+              "path": "mods/obfuscate-0.4.2-1.12.2.jar",
+              "url": "/mods/289380/2916310/obfuscate-0.4.2-1.12.2.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 457570,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 459701,
+              "dependencyType": "optional"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 289479,
+          "name": "MrCrayfish's Gun Mod",
+          "version": {
+            "id": 2854400,
+            "name": "Gun Mod 0.15.3",
+            "metadata": {
+              "sha1": "0b52ae06c251073ef046e9528ccb1ccfb3168e68",
+              "size": 814386,
+              "path": "mods/guns-0.15.3-1.12.2.jar",
+              "url": "/mods/289479/2854400/guns-0.15.3-1.12.2.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 317269,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 289380,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 246974,
+          "name": "Solar Flux Reborn",
+          "version": {
+            "id": 3050838,
+            "name": "[1.12.2]  - 12.4.11",
+            "metadata": {
+              "sha1": "521624cbd22f7dcef0ddc9f9f0898b2368439404",
+              "size": 715629,
+              "path": "mods/SolarFluxReborn-1.12.2-12.4.11.jar",
+              "url": "/mods/246974/3050838/SolarFluxReborn-1.12.2-12.4.11.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 223565,
+          "name": "Draconic Evolution",
+          "version": {
+            "id": 3051542,
+            "name": "Draconic-Evolution-1.12.2-2.3.27.353-universal",
+            "metadata": {
+              "sha1": "578f6ef815162666d122a67f447072c8959dbb4d",
+              "size": 5708541,
+              "path": "mods/Draconic-Evolution-1.12.2-2.3.27.353-universal.jar",
+              "url": "/mods/223565/3051542/Draconic-Evolution-1.12.2-2.3.27.353-universal.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 270789,
+              "dependencyType": "required"
+            },
+            {
+              "gameType": "mod",
+              "id": 242818,
+              "dependencyType": "required"
+            },
+            {
+              "gameType": "mod",
+              "id": 306028,
+              "dependencyType": "optional"
+            },
+            {
+              "gameType": "mod",
+              "id": 231382,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 312462,
+          "name": "Enchanted Golden Apple Crafting",
+          "version": {
+            "id": 2665683,
+            "name": "enchantedgoldenapplecrafting-1.0.1",
+            "metadata": {
+              "sha1": "9e627a85324bb3c10b47c4c9d0ce3eaa9a9ea0c8",
+              "size": 5349,
+              "path": "mods/enchantedgoldenapplecrafting-1.0.1.jar",
+              "url": "/mods/312462/2665683/enchantedgoldenapplecrafting-1.0.1.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 280294,
+          "name": "FPS Reducer",
+          "version": {
+            "id": 3362160,
+            "name": "FpsReducer-mc1.12.2-1.20",
+            "metadata": {
+              "sha1": "50c323de01f2235d351bf5417da6d4ef494b12e6",
+              "size": 79700,
+              "path": "mods/FpsReducer-mc1.12.2-1.20.jar",
+              "url": "/mods/280294/3362160/FpsReducer-mc1.12.2-1.20.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 228525,
+          "name": "Bookshelf",
+          "version": {
+            "id": 2836960,
+            "name": "1.12.2-2.3.590",
+            "metadata": {
+              "sha1": "83a1864dd78f48102609849dd36866d6cf32b907",
+              "size": 266636,
+              "path": "mods/Bookshelf-1.12.2-2.3.590.jar",
+              "url": "/mods/228525/2836960/Bookshelf-1.12.2-2.3.590.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 59413,
+          "name": "Enchanting Plus",
+          "version": {
+            "id": 2724705,
+            "name": "1.12.2-5.0.179",
+            "metadata": {
+              "sha1": "075bd2585f73a83b9105d3e35ae2071c29f0c7c0",
+              "size": 146787,
+              "path": "mods/EnchantingPlus-1.12.2-5.0.179.jar",
+              "url": "/mods/59413/2724705/EnchantingPlus-1.12.2-5.0.179.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 228525,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 267602,
+          "name": "ConnectedTexturesMod",
+          "version": {
+            "id": 2915363,
+            "name": "CTM - MC1.12.2-1.0.2.31",
+            "metadata": {
+              "sha1": "892e0788531269bfa2f356e4e12825e19d4e5412",
+              "size": 199045,
+              "path": "mods/CTM-MC1.12.2-1.0.2.31.jar",
+              "url": "/mods/267602/2915363/CTM-MC1.12.2-1.0.2.31.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 235279,
+          "name": "Chisel",
+          "version": {
+            "id": 2915375,
+            "name": " MC1.12.2-1.0.2.45",
+            "metadata": {
+              "sha1": "d378cee9195841ea78bb9800f543d718ef2c60ef",
+              "size": 4755282,
+              "path": "mods/Chisel-MC1.12.2-1.0.2.45.jar",
+              "url": "/mods/235279/2915375/Chisel-MC1.12.2-1.0.2.45.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 267602,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 238403,
+          "name": "Better Builder's Wands",
+          "version": {
+            "id": 2691084,
+            "name": "0.13.2 [MC1",
+            "metadata": {
+              "sha1": "3505169dfeea40d726b23072cb695d3c0e5014da",
+              "size": 77866,
+              "path": "mods/BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar",
+              "url": "/mods/238403/2691084/BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 272335,
+          "name": "Cucumber Library",
+          "version": {
+            "id": 2645867,
+            "name": "Cucumber-1.12.2-1.1.3",
+            "metadata": {
+              "sha1": "8be30f1977cd9df566dfbae2977793335e576591",
+              "size": 126699,
+              "path": "mods/Cucumber-1.12.2-1.1.3.jar",
+              "url": "/mods/272335/2645867/Cucumber-1.12.2-1.1.3.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 246640,
+          "name": "Mystical Agriculture",
+          "version": {
+            "id": 2704562,
+            "name": "1.12.2-1.7.5",
+            "metadata": {
+              "sha1": "dd7b50ccebda09f8cb44d35997827ae3450455d1",
+              "size": 1536124,
+              "path": "mods/MysticalAgriculture-1.12.2-1.7.5.jar",
+              "url": "/mods/246640/2704562/MysticalAgriculture-1.12.2-1.7.5.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 272335,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 229060,
+          "name": "iChunUtil",
+          "version": {
+            "id": 2801262,
+            "name": "1.12.2-7.2.2",
+            "metadata": {
+              "sha1": "2b53b0f9543c98adb0b89caa4da954a477259367",
+              "size": 581963,
+              "path": "mods/iChunUtil-1.12.2-7.2.2.jar",
+              "url": "/mods/229060/2801262/iChunUtil-1.12.2-7.2.2.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 252188,
+          "name": "GooglyEyes",
+          "version": {
+            "id": 2801268,
+            "name": "1.12.2-7.1.1",
+            "metadata": {
+              "sha1": "5d6b6038acc27a289fc31dfc0efdcc7fe412f10c",
+              "size": 24273,
+              "path": "mods/GooglyEyes-1.12.2-7.1.1.jar",
+              "url": "/mods/252188/2801268/GooglyEyes-1.12.2-7.1.1.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [
+            {
+              "gameType": "mod",
+              "id": 229060,
+              "dependencyType": "required"
+            }
+          ]
+        },
+        {
+          "stateGameElement": "active",
+          "id": 224218,
+          "name": "Compact Machines",
+          "version": {
+            "id": 2707509,
+            "name": "compactmachines3-1.12.2-3.0.18-b278",
+            "metadata": {
+              "sha1": "aca4d439b8a7c480217c43ebda60772ef6eb392e",
+              "size": 730062,
+              "path": "mods/compactmachines3-1.12.2-3.0.18-b278.jar",
+              "url": "/mods/224218/2707509/compactmachines3-1.12.2-3.0.18-b278.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 223703,
+          "name": "CompactStorage",
+          "version": {
+            "id": 2572444,
+            "name": "3",
+            "metadata": {
+              "sha1": "35af88fa955d0be6ff549be825e8e51d43dbf274",
+              "size": 221716,
+              "path": "mods/CompactStorage-3.1-12.jar",
+              "url": "/mods/223703/2572444/CompactStorage-3.1-12.jar"
+            }
+          },
+          "userInstall": false,
+          "populateStatus": false
+        }
+      ],
+      "resourcePacks": [],
+      "maps": [],
+      "shaderpacks": [],
+      "forgeVersion": "14.23.5.2854",
+      "gameVersion": "1.12.2",
+      "id": -2767848828501,
+      "name": "1.0"
+    },
+    "versions": [],
+    "userInstall": false,
+    "populateStatus": false
+  },
+  "skinVersion": true
+}

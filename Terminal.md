@@ -10,5 +10,5 @@ chmod +x ./startturnel.sh
 chmod +x ./online.sh
 ./online.sh
 #
-chmod +x ./startserver.sh
-./startserver.sh
+chmod +x ./LaunchServer.sh
+./LaunchServer.sh
