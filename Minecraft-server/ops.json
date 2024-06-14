@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "e3374410-49e4-3478-84a7-1a4f8f1c9b48",
+    "name": "Iris_0001",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "d421097e-b004-47ab-9cb0-8d4e13144eb2",
     "name": "Iris_0001",
     "level": 4,
